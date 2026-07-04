@@ -23,7 +23,8 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/shopnow', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/shopnow', 
+  {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
