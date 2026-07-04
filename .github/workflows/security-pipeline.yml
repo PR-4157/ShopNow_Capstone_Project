@@ -1,0 +1,41 @@
+name: ShopNow Security Pipeline
+
+on:
+  push:
+    branches:
+      - sprint2
+      - main
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Install Trivy
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          scan-type: fs
+          scan-ref: .
+
+      - name: Make Scripts Executable
+        run: |
+          chmod +x scripts/build.sh
+          chmod +x scripts/scan.sh
+
+      - name: Build Docker Images
+        run: ./scripts/build.sh
+
+      - name: Scan Docker Images
+        run: ./scripts/scan.sh
+
+      - name: Upload Trivy Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: trivy-reports
+          path: reports/
