@@ -1,4 +1,4 @@
-<img width="1512" height="982" alt="T_5" src="https://github.com/user-attachments/assets/9436adae-8c59-4c23-b900-1819bae870ee" /># Container Image Vulnerability Scanner with Reporting 
+# Container Image Vulnerability Scanner with Reporting
 
 ## Project Overview
 
