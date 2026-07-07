@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.72.0"
   },
-  "ReportID": "019f3c7d-e96e-7abe-b1ed-0c3a76a0c29f",
-  "CreatedAt": "2026-07-07T17:41:52.558705+05:30",
+  "ReportID": "019f3c87-2d25-7839-85e7-f82cffb89b30",
+  "CreatedAt": "2026-07-07T17:51:59.71754+05:30",
   "ArtifactID": "sha256:c916d0c8e8950249cce12a7c5217f7b1f6524ae864891edecc184160b60d5193",
   "ArtifactName": "shopnow-admin:v1",
   "ArtifactType": "container_image",
