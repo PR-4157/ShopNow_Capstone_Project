@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Load environment variables
+source .env
+
 echo "=================================="
 echo "Starting Trivy Image Scan"
 echo "=================================="
@@ -7,23 +10,40 @@ echo "=================================="
 # Create reports folder if it doesn't exist
 mkdir -p reports
 
+echo ""
 echo "Running Trivy Filesystem Scan..."
-trivy fs -f json -o reports/trivy-fs.json .
+trivy fs \
+  -f "$TRIVY_FORMAT" \
+  -o "$REPORTS_DIR/trivy-fs.json" \
+  .
 
+echo ""
 echo "Scanning Backend Image..."
-trivy image -f json -o reports/backend.json shopnow-backend:v1
+trivy image \
+  -f "$TRIVY_FORMAT" \
+  -o "$REPORTS_DIR/backend-report.json" \
+  "$BACKEND_IMAGE"
 
+echo ""
 echo "Scanning Frontend Image..."
-trivy image -f json -o reports/frontend.json shopnow-frontend:v1
+trivy image \
+  -f "$TRIVY_FORMAT" \
+  -o "$REPORTS_DIR/backend-report.json" \
+  "$FRONTEND_IMAGE"
 
+echo ""
 echo "Scanning Admin Image..."
-trivy image -f json -o reports/admin.json shopnow-admin:v1
+trivy image \
+  -f "$TRIVY_FORMAT" \
+  -o "$REPORTS_DIR/backend-report.json" \
+  "$ADMIN_IMAGE"
 
+echo ""
 echo "Checking for HIGH and CRITICAL vulnerabilities..."
 trivy image \
   --exit-code 1 \
-  --severity HIGH,CRITICAL \
-  shopnow-backend:v1
+  --severity "$SEVERITY" \
+  "$BACKEND_IMAGE"
 
 echo ""
 echo "=================================="
