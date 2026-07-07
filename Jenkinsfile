@@ -3,6 +3,12 @@ pipeline {
 
     stages {
 
+        stage('Checkout Code') {
+            steps {
+                checkout scm
+            }
+        }
+
         stage('Build Docker Images') {
             steps {
                 sh 'chmod +x scripts/build.sh'
@@ -10,10 +16,16 @@ pipeline {
             }
         }
 
-        stage('Scan Docker Images') {
+        stage('Run Trivy Scan') {
             steps {
                 sh 'chmod +x scripts/scan.sh'
                 sh './scripts/scan.sh'
+            }
+        }
+
+        stage('Archive Reports') {
+            steps {
+                archiveArtifacts artifacts: 'reports/*.json', fingerprint: true
             }
         }
 
@@ -21,15 +33,15 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'reports/*.json', fingerprint: true
+            echo 'Pipeline Finished'
         }
 
         success {
-            echo 'Security pipeline completed successfully!'
+            echo 'Security Scan Passed'
         }
 
         failure {
-            echo 'Security pipeline failed!'
+            echo 'Security Scan Failed'
         }
     }
 }
