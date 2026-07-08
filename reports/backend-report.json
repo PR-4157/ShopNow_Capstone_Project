@@ -3,9 +3,9 @@
   "Trivy": {
     "Version": "0.72.0"
   },
-  "ReportID": "019f3c87-2d25-7839-85e7-f82cffb89b30",
-  "CreatedAt": "2026-07-07T17:51:59.71754+05:30",
-  "ArtifactID": "sha256:c916d0c8e8950249cce12a7c5217f7b1f6524ae864891edecc184160b60d5193",
+  "ReportID": "019f422d-4523-7595-b72c-99ae2ed9bba1",
+  "CreatedAt": "2026-07-08T20:11:30.915367+05:30",
+  "ArtifactID": "sha256:7b71705f7d1a716a84664d4527ef3f7e947f2af1515bfaa48c8418a20365939c",
   "ArtifactName": "shopnow-admin:v1",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -15,7 +15,7 @@
       "Name": "3.17.7",
       "EOSL": true
     },
-    "ImageID": "sha256:2b706e94ef6eec0c31eb5c03665d2392081661bb1b70393c365000ee2b41c13c",
+    "ImageID": "sha256:969d348fb003b0c8006213522f21fae94cf8546a2d1b3218da38c73632cb3aca",
     "DiffIDs": [
       "sha256:458ecd8dac6739be741006504b1fe187dda55ab9eb124e7cd79d5f1c9bb74975",
       "sha256:e49d7f89f9f88204bd7d17276b761f3cd69885db7a6a2e77f108952c0d3b855a",
@@ -31,7 +31,7 @@
       "shopnow-admin:v1"
     ],
     "RepoDigests": [
-      "shopnow-admin@sha256:2b706e94ef6eec0c31eb5c03665d2392081661bb1b70393c365000ee2b41c13c"
+      "shopnow-admin@sha256:969d348fb003b0c8006213522f21fae94cf8546a2d1b3218da38c73632cb3aca"
     ],
     "Reference": "shopnow-admin:v1",
     "ImageConfig": {
@@ -3994,7 +3994,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:ce1188424f4e1bb159e57de0b020aa91133eed5108381a65ae38dab2b356420a",
+          "Fingerprint": "sha256:c823dcd26ed1a7fc35d030f45d7bb9cc8f5749599c540642cb3f2d0a30a435da",
           "Title": "busybox: use-after-free in awk",
           "Description": "A use-after-free vulnerability was discovered in xasprintf function in xfuncs_printf.c:344 in BusyBox v.1.36.1.",
           "Severity": "MEDIUM",
@@ -4051,7 +4051,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:54714d3977cda46a651d494408021a3c845cf5a49f9d088ab4b53af7461211e7",
+          "Fingerprint": "sha256:07e622e944a4b8578bd1b15b10ed263e51818455815793b98c4b271a9314e36d",
           "Title": "busybox: use-after-free",
           "Description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
           "Severity": "MEDIUM",
@@ -4110,7 +4110,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:ada2ed175b2820fddc5bb618c3a663ce1750f1def5057de9b02f00aded5233f3",
+          "Fingerprint": "sha256:1d38fb865d0c8c68e205446aecf7a39aeeb98b3803de61a445dfa9ed95f79fb3",
           "Title": "busybox: use-after-free",
           "Description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
           "Severity": "MEDIUM",
@@ -4169,7 +4169,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:92caa4c0e0706bbddb0e96bff1ccaae700ed7340b399e9b2b6ffdfad57667a44",
+          "Fingerprint": "sha256:14c43cc6c74fa9f2b9369c466951ccf21341283ce2e3b49ab80e12943b9645c6",
           "Title": "busybox: A heap-buffer-overflow",
           "Description": "A heap-buffer-overflow was discovered in BusyBox v.1.36.1 in the next_token function at awk.c:1159.",
           "Severity": "MEDIUM",
@@ -4225,7 +4225,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:58ff86d89133354ad25c8b733a133a21605ba30d9340225bcdd7fb1f4a06f66a",
+          "Fingerprint": "sha256:b24049eaba7b594f9ab8b33985b2315a259bca812b45e1d200e2b5cbfb54dc21",
           "Title": "busybox: use-after-free in awk",
           "Description": "A use-after-free vulnerability was discovered in xasprintf function in xfuncs_printf.c:344 in BusyBox v.1.36.1.",
           "Severity": "MEDIUM",
@@ -4282,7 +4282,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:6ee71c98d5603652009479c0e34fc44f2f21903eaf91a3f5ba9a8cb2ed6b0195",
+          "Fingerprint": "sha256:352d3741a6ded97c81e7b2fa5d0e58f0e87a5f1c6ea5a451b7161cea9c7b5903",
           "Title": "busybox: use-after-free",
           "Description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
           "Severity": "MEDIUM",
@@ -4341,7 +4341,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:5d2e0f4ff109424106a22a3c9aa072732953191c6c9e3e45ae5a103e61e21fbc",
+          "Fingerprint": "sha256:42e9192be85ec3048b622ba83c812042f4be271322dcd048a9aa1da969fa156f",
           "Title": "busybox: use-after-free",
           "Description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
           "Severity": "MEDIUM",
@@ -4400,7 +4400,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:486922a0f17445f62489665cc5f95da84f5cb5259f56ff38fdaa95d8cec845c9",
+          "Fingerprint": "sha256:461a65edd89bef9d65ed7e747a253b9e4847d837938272c945f28661cb236d8d",
           "Title": "busybox: A heap-buffer-overflow",
           "Description": "A heap-buffer-overflow was discovered in BusyBox v.1.36.1 in the next_token function at awk.c:1159.",
           "Severity": "MEDIUM",
@@ -4456,7 +4456,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:feb45677cba3c7a3c443303fdd345061a6e89f21cfe08be2ae61b829d7c2ffd0",
+          "Fingerprint": "sha256:f23bc3c790a56a5d49c8ab378a034f7de1eb7c5bc4b83b2bce1faa58a5dda8ca",
           "Title": "curl: freeing stack buffer in utf8asn1str",
           "Description": "libcurl's ASN1 parser has this utf8asn1str() function used for parsing an ASN.1 UTF-8 string. Itcan detect an invalid field and return error. Unfortunately, when doing so it also invokes `free()` on a 4 byte localstack buffer.  Most modern malloc implementations detect this error and immediately abort. Some however accept the input pointer and add that memory to its list of available chunks. This leads to the overwriting of nearby stack memory. The content of the overwrite is decided by the `free()` implementation; likely to be memory pointers and a set of flags.  The most likely outcome of exploting this flaw is a crash, although it cannot be ruled out that more serious results can be had in special circumstances.",
           "Severity": "HIGH",
@@ -4514,7 +4514,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:e71803086fb7635b5d49809e3d5a8fd10ba8512cb2c65ba4e1af2b3826c87685",
+          "Fingerprint": "sha256:99a7c8d88f4f6fe9e9d824aab2f202abcde12dd20f02790b53c8f507449900ba",
           "Title": "curl: OCSP verification bypass with TLS session reuse",
           "Description": "curl inadvertently kept the SSL session ID for connections in its cache even when the verify status (*OCSP stapling*) test failed. A subsequent transfer to\nthe same hostname could then succeed if the session ID cache was still fresh, which then skipped the verify status check.",
           "Severity": "MEDIUM",
@@ -4583,7 +4583,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:a4a1057486a15eeffaf2d7b8c9cb753861d888e870ca9aeaf57bc9264e630809",
+          "Fingerprint": "sha256:8002d5d932355b9a37e0b618c88595188b0cb7d4460b74512c719f2965fc83c1",
           "Title": "curl: HTTP/2 push headers memory-leak",
           "Description": "When an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.",
           "Severity": "MEDIUM",
@@ -4617,14 +4617,14 @@
             "http://seclists.org/fulldisclosure/2024/Jul/19",
             "http://seclists.org/fulldisclosure/2024/Jul/20",
             "http://www.openwall.com/lists/oss-security/2024/03/27/3",
-            "https://access.redhat.com/errata/RHSA-2024:5654",
+            "https://access.redhat.com/errata/RHSA-2024:5529",
             "https://access.redhat.com/security/cve/CVE-2024-2398",
             "https://bugzilla.redhat.com/2270498",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2270498",
             "https://curl.se/docs/CVE-2024-2398.html",
             "https://curl.se/docs/CVE-2024-2398.json",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2398",
-            "https://errata.almalinux.org/8/ALSA-2024-5654.html",
+            "https://errata.almalinux.org/9/ALSA-2024-5529.html",
             "https://errata.rockylinux.org/RLSA-2024:5654",
             "https://github.com/advisories/GHSA-mq8w-c2j9-rqxc",
             "https://hackerone.com/reports/2402845",
@@ -4669,7 +4669,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:a1c9ad86b7025632ebba04dc22bdb516f4270e00cc1130584d930fefd7f3fbf2",
+          "Fingerprint": "sha256:076a83ebd0124effb44eac03f5dae68dcdde103bfa1bdfa123a3e48925192c6c",
           "Title": "curl: TLS certificate check bypass with mbedTLS",
           "Description": "libcurl did not check the server certificate of TLS connections done to a host specified as an IP address, when built to use mbedTLS.  libcurl would wrongly avoid using the set hostname function when the specified hostname was given as an IP address, therefore completely skipping the certificate check. This affects all uses of TLS protocols (HTTPS, FTPS, IMAPS, POPS3, SMTPS, etc).",
           "Severity": "MEDIUM",
@@ -4736,7 +4736,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:be438f21ed270d92377e58a648bc9e0a1d279644527df72a7c7408051e6c2484",
+          "Fingerprint": "sha256:e6376af00ab11820cc89e2db41636722b1249e2ec513c096cf37a37c7dc2ff2f",
           "Title": "curl: macidn punycode buffer overread",
           "Description": "libcurl's URL API function\n[curl_url_get()](https://curl.se/libcurl/c/curl_url_get.html) offers punycode\nconversions, to and from IDN. Asking to convert a name that is exactly 256\nbytes, libcurl ends up reading outside of a stack based buffer when built to\nuse the *macidn* IDN backend. The conversion function then fills up the\nprovided buffer exactly - but does not null terminate the string.\n\nThis flaw can lead to stack contents accidently getting returned as part of\nthe converted string.",
           "Severity": "MEDIUM",
@@ -4793,7 +4793,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:e259f39b588a663132751933fce39b68543a8fe66253e97e0d1756355495e0fd",
+          "Fingerprint": "sha256:4999f4d26e5cc9a12552809fc0e1f622dc08cffda7fd7774d84efa186570aa30",
           "Title": "curl: Usage of disabled protocol",
           "Description": "When a protocol selection parameter option disables all protocols without adding any then the default set of protocols would remain in the allowed set due to an error in the logic for removing protocols. The below command would perform a request to curl.se with a plaintext protocol which has been explicitly disabled.      curl --proto -all,-http http://curl.se  The flaw is only present if the set of selected protocols disables the entire set of available protocols, in itself a command with no practical use and therefore unlikely to be encountered in real situations. The curl security team has thus assessed this to be low severity bug.",
           "Severity": "LOW",
@@ -4867,7 +4867,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:2453bee4819841704aad364558f77afbe85f9821c9d8b643b9a20f5ea6257f04",
+          "Fingerprint": "sha256:95ad16468f6aa6f46a275405c5388204154518b3fd1796088950df5f26fb62eb",
           "Title": "curl: QUIC certificate check bypass with wolfSSL",
           "Description": "libcurl skips the certificate verification for a QUIC connection under certain conditions, when built to use wolfSSL. If told to use an unknown/bad cipher or curve, the error path accidentally skips the verification and returns OK, thus ignoring any certificate problems.",
           "Severity": "LOW",
@@ -4932,7 +4932,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:5cb7c192dea019616f3477210bf334a1be3551ba0ee6590b15b93b20971a904c",
+          "Fingerprint": "sha256:dcc398ede0d3290be59ae1c5f2e90da3b93d7149f1ca7b2e61cf045750f58b22",
           "Title": "openssl: Possible denial of service in X.509 name checks",
           "Description": "Issue summary: Applications performing certificate name checks (e.g., TLS\nclients checking server certificates) may attempt to read an invalid memory\naddress resulting in abnormal termination of the application process.\n\nImpact summary: Abnormal termination of an application can a cause a denial of\nservice.\n\nApplications performing certificate name checks (e.g., TLS clients checking\nserver certificates) may attempt to read an invalid memory address when\ncomparing the expected name with an `otherName` subject alternative name of an\nX.509 certificate. This may result in an exception that terminates the\napplication program.\n\nNote that basic certificate chain validation (signatures, dates, ...) is not\naffected, the denial of service can occur only when the application also\nspecifies an expected DNS name, Email address or IP address.\n\nTLS servers rarely solicit client certificates, and even when they do, they\ngenerally don't perform a name check against a reference identifier (expected\nidentity), but rather extract the presented identity after checking the\ncertificate chain.  So TLS servers are generally not affected and the severity\nof the issue is Moderate.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
           "Severity": "HIGH",
@@ -5019,7 +5019,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:728f0a0f33cc3c2b65778f023a42afd24402fb223ba813e9149fcbce9773bc36",
+          "Fingerprint": "sha256:98b730720608e18e928134e1bf3d3ebc4f64c562a0b0db51c41249d69143bdb9",
           "Title": "openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing",
           "Description": "Issue summary: Parsing CMS AuthEnvelopedData or EnvelopedData message with\nmaliciously crafted AEAD parameters can trigger a stack buffer overflow.\n\nImpact summary: A stack buffer overflow may lead to a crash, causing Denial\nof Service, or potentially remote code execution.\n\nWhen parsing CMS (Auth)EnvelopedData structures that use AEAD ciphers such as\nAES-GCM, the IV (Initialization Vector) encoded in the ASN.1 parameters is\ncopied into a fixed-size stack buffer without verifying that its length fits\nthe destination. An attacker can supply a crafted CMS message with an\noversized IV, causing a stack-based out-of-bounds write before any\nauthentication or tag verification occurs.\n\nApplications and services that parse untrusted CMS or PKCS#7 content using\nAEAD ciphers (e.g., S/MIME (Auth)EnvelopedData with AES-GCM) are vulnerable.\nBecause the overflow occurs prior to authentication, no valid key material\nis required to trigger it. While exploitability to remote code execution\ndepends on platform and toolchain mitigations, the stack-based write\nprimitive represents a severe risk.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the CMS implementation is outside the OpenSSL FIPS module\nboundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3 and 3.0 are vulnerable to this issue.\n\nOpenSSL 1.1.1 and 1.0.2 are not affected by this issue.",
           "Severity": "HIGH",
@@ -5157,7 +5157,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:b7eac1e8515c80f4b09e51d10952eec63d7c1aeba02861b90505db09e93d407f",
+          "Fingerprint": "sha256:1ad69916a37306a3b2b226a4cf0f9b66e8860b1b39c9da3a381898d074b1cb0c",
           "Title": "openssl: OpenSSL: Denial of Service via malformed PKCS#12 file processing",
           "Description": "Issue summary: Processing a malformed PKCS#12 file can trigger a NULL pointer\ndereference in the PKCS12_item_decrypt_d2i_ex() function.\n\nImpact summary: A NULL pointer dereference can trigger a crash which leads to\nDenial of Service for an application processing PKCS#12 files.\n\nThe PKCS12_item_decrypt_d2i_ex() function does not check whether the oct\nparameter is NULL before dereferencing it. When called from\nPKCS12_unpack_p7encdata() with a malformed PKCS#12 file, this parameter can\nbe NULL, causing a crash. The vulnerability is limited to Denial of Service\nand cannot be escalated to achieve code execution or memory disclosure.\n\nExploiting this issue requires an attacker to provide a malformed PKCS#12 file\nto an application that processes it. For that reason the issue was assessed as\nLow severity according to our Security Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the PKCS#12 implementation is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.",
           "Severity": "HIGH",
@@ -5271,7 +5271,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:98c4101ca788623952046c1bf4b645b8e0614c202782474ba4f73fff867bafe6",
+          "Fingerprint": "sha256:6b47915a80d377515ba57011cb158b2b6a5b2ec30b6513220d844134bfe34228",
           "Title": "openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing",
           "Description": "Issue summary: Calling PKCS12_get_friendlyname() function on a maliciously\ncrafted PKCS#12 file with a BMPString (UTF-16BE) friendly name containing\nnon-ASCII BMP code point can trigger a one byte write before the allocated\nbuffer.\n\nImpact summary: The out-of-bounds write can cause a memory corruption\nwhich can have various consequences including a Denial of Service.\n\nThe OPENSSL_uni2utf8() function performs a two-pass conversion of a PKCS#12\nBMPString (UTF-16BE) to UTF-8. In the second pass, when emitting UTF-8 bytes,\nthe helper function bmp_to_utf8() incorrectly forwards the remaining UTF-16\nsource byte count as the destination buffer capacity to UTF8_putc(). For BMP\ncode points above U+07FF, UTF-8 requires three bytes, but the forwarded\ncapacity can be just two bytes. UTF8_putc() then returns -1, and this negative\nvalue is added to the output length without validation, causing the\nlength to become negative. The subsequent trailing NUL byte is then written\nat a negative offset, causing write outside of heap allocated buffer.\n\nThe vulnerability is reachable via the public PKCS12_get_friendlyname() API\nwhen parsing attacker-controlled PKCS#12 files. While PKCS12_parse() uses a\ndifferent code path that avoids this issue, PKCS12_get_friendlyname() directly\ninvokes the vulnerable function. Exploitation requires an attacker to provide\na malicious PKCS#12 file to be parsed by the application and the attacker\ncan just trigger a one zero byte write before the allocated buffer.\nFor that reason the issue was assessed as Low severity according to our\nSecurity Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the PKCS#12 implementation is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0 and 1.1.1 are vulnerable to this issue.\n\nOpenSSL 1.0.2 is not affected by this issue.",
           "Severity": "MEDIUM",
@@ -5301,7 +5301,7 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:3042",
+            "https://access.redhat.com/errata/RHSA-2026:4472",
             "https://access.redhat.com/security/cve/CVE-2025-69419",
             "https://bugzilla.redhat.com/2430386",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2430375",
@@ -5329,7 +5329,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69421",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
-            "https://errata.almalinux.org/8/ALSA-2026-3042.html",
+            "https://errata.almalinux.org/9/ALSA-2026-4472.html",
             "https://errata.rockylinux.org/RLSA-2026:1473",
             "https://github.com/advisories/GHSA-x77r-97gw-wh89",
             "https://github.com/openssl/openssl/commit/41be0f216404f14457bbf3b9cc488dba60b49296",
@@ -5369,7 +5369,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:8d579ca581d8e1f9cb1b485089ce9cb7bcc8fb9cbf30a26bef90987443bcc3aa",
+          "Fingerprint": "sha256:d04e8507a87eeeac4738302a1dbd61f2d1d6658b17dbaa5b092a296183af11af",
           "Title": "openssl: Out-of-bounds read \u0026 write in RFC 3211 KEK Unwrap",
           "Description": "Issue summary: An application trying to decrypt CMS messages encrypted using\npassword based encryption can trigger an out-of-bounds read and write.\n\nImpact summary: This out-of-bounds read may trigger a crash which leads to\nDenial of Service for an application. The out-of-bounds write can cause\na memory corruption which can have various consequences including\na Denial of Service or Execution of attacker-supplied code.\n\nAlthough the consequences of a successful exploit of this vulnerability\ncould be severe, the probability that the attacker would be able to\nperform it is low. Besides, password based (PWRI) encryption support in CMS\nmessages is very rarely used. For that reason the issue was assessed as\nModerate severity according to our Security Policy.\n\nThe FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected by this\nissue, as the CMS implementation is outside the OpenSSL FIPS module\nboundary.",
           "Severity": "MEDIUM",
@@ -5401,7 +5401,7 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/09/30/5",
-            "https://access.redhat.com/errata/RHSA-2026:0337",
+            "https://access.redhat.com/errata/RHSA-2026:2776",
             "https://access.redhat.com/security/cve/CVE-2025-9230",
             "https://bugzilla.redhat.com/2396054",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2396054",
@@ -5412,7 +5412,7 @@
             "https://cert-portal.siemens.com/productcert/html/ssa-265688.html",
             "https://cert-portal.siemens.com/productcert/html/ssa-485750.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-9230",
-            "https://errata.almalinux.org/8/ALSA-2026-0337.html",
+            "https://errata.almalinux.org/9/ALSA-2026-2776.html",
             "https://errata.rockylinux.org/RLSA-2025:21255",
             "https://github.com/openssl/openssl/commit/5965ea5dd6960f36d8b7f74f8eac67a8eb8f2b45",
             "https://github.com/openssl/openssl/commit/9e91358f365dee6c446dcdcdb01c04d2743fd280",
@@ -5453,7 +5453,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:44ccd6d74aa0ee6b6c376e7fe98e6d1014bf3feaed169bb8c6e1a0d8f38adb5b",
+          "Fingerprint": "sha256:b2079b7c78d5c0124d856ed8a7d5f51cf4127bf89a54305c0b4f7f8875008623",
           "Title": "openssl: Timing side-channel in ECDSA signature computation",
           "Description": "Issue summary: A timing side-channel which could potentially allow recovering\nthe private key exists in the ECDSA signature computation.\n\nImpact summary: A timing side-channel in ECDSA signature computations\ncould allow recovering the private key by an attacker. However, measuring\nthe timing would require either local access to the signing application or\na very fast network connection with low latency.\n\nThere is a timing signal of around 300 nanoseconds when the top word of\nthe inverted ECDSA nonce value is zero. This can happen with significant\nprobability only for some of the supported elliptic curves. In particular\nthe NIST P-521 curve is affected. To be able to measure this leak, the attacker\nprocess must either be located in the same physical computer or must\nhave a very fast network connection with low latency. For that reason\nthe severity of this vulnerability is Low.\n\nThe FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are affected by this issue.",
           "Severity": "LOW",
@@ -5483,7 +5483,7 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/01/20/2",
-            "https://access.redhat.com/errata/RHSA-2025:15699",
+            "https://access.redhat.com/errata/RHSA-2025:16046",
             "https://access.redhat.com/security/cve/CVE-2024-13176",
             "https://bugzilla.redhat.com/2359885",
             "https://bugzilla.redhat.com/2359888",
@@ -5643,7 +5643,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-50102",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-50104",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-5399",
-            "https://errata.almalinux.org/10/ALSA-2025-15699.html",
+            "https://errata.almalinux.org/9/ALSA-2025-16046.html",
             "https://errata.rockylinux.org/RLSA-2025:15699",
             "https://github.com/advisories/GHSA-r9fv-h47r-823f",
             "https://github.com/openssl/openssl/commit/07272b05b04836a762b4baa874958af51d513844",
@@ -5694,7 +5694,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:8b33ca42c07df9fac29d2cf7de4020347bd9163e59978d2088d4bed97d738be5",
+          "Fingerprint": "sha256:18556c7271130263fdf2753dcbe6ae806841e712733ed9d650ffebc22b50590c",
           "Title": "openssl: Unbounded memory growth with session handling in TLSv1.3",
           "Description": "Issue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.",
           "Severity": "LOW",
@@ -5789,7 +5789,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:ec32649eff468413d94388bac3d907b1ba296e9949df7c491d2613229c54e57d",
+          "Fingerprint": "sha256:4b28eff32e9c15a17c4d5fb90045b59efbf5b1f84ecbd8518a5f3f7144eb6f35",
           "Title": "openssl: Excessive time spent checking DSA keys and parameters",
           "Description": "Issue summary: Checking excessively long DSA keys or parameters may be very\nslow.\n\nImpact summary: Applications that use the functions EVP_PKEY_param_check()\nor EVP_PKEY_public_check() to check a DSA public key or DSA parameters may\nexperience long delays. Where the key or parameters that are being checked\nhave been obtained from an untrusted source this may lead to a Denial of\nService.\n\nThe functions EVP_PKEY_param_check() or EVP_PKEY_public_check() perform\nvarious checks on DSA parameters. Some of those computations take a long time\nif the modulus (`p` parameter) is too large.\n\nTrying to use a very large modulus is slow and OpenSSL will not allow using\npublic keys with a modulus which is over 10,000 bits in length for signature\nverification. However the key and parameter check functions do not limit\nthe modulus size when performing the checks.\n\nAn application that calls EVP_PKEY_param_check() or EVP_PKEY_public_check()\nand supplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nThese functions are not called by OpenSSL itself on untrusted DSA keys so\nonly applications that directly call these functions may be vulnerable.\n\nAlso vulnerable are the OpenSSL pkey and pkeyparam command line applications\nwhen using the `-check` option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.",
           "Severity": "LOW",
@@ -5874,7 +5874,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:aad2364aedaf60ec77ffe729c2013588c248ff3541e724b17c69a80c84e41792",
+          "Fingerprint": "sha256:92bbe9c367460eaf5314392891a5086eaf81d825455ee3dc67b87e754d14ed3b",
           "Title": "openssl: Use After Free with SSL_free_buffers",
           "Description": "Issue summary: Calling the OpenSSL API function SSL_free_buffers may cause\nmemory to be accessed that was previously freed in some situations\n\nImpact summary: A use after free can have a range of potential consequences such\nas the corruption of valid data, crashes or execution of arbitrary code.\nHowever, only applications that directly call the SSL_free_buffers function are\naffected by this issue. Applications that do not call this function are not\nvulnerable. Our investigations indicate that this function is rarely used by\napplications.\n\nThe SSL_free_buffers function is used to free the internal OpenSSL buffer used\nwhen processing an incoming record from the network. The call is only expected\nto succeed if the buffer is not currently in use. However, two scenarios have\nbeen identified where the buffer is freed even when still in use.\n\nThe first scenario occurs where a record header has been received from the\nnetwork and processed by OpenSSL, but the full record body has not yet arrived.\nIn this case calling SSL_free_buffers will succeed even though a record has only\nbeen partially processed and the buffer is still in use.\n\nThe second scenario occurs where a full record containing application data has\nbeen received and processed by OpenSSL but the application has only read part of\nthis data. Again a call to SSL_free_buffers will succeed even though the buffer\nis still in use.\n\nWhile these scenarios could occur accidentally during normal operation a\nmalicious attacker could attempt to engineer a stituation where this occurs.\nWe are not aware of this issue being actively exploited.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
           "Severity": "LOW",
@@ -5882,7 +5882,7 @@
             "CWE-416"
           ],
           "VendorSeverity": {
-            "alma": 3,
+            "alma": 1,
             "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
@@ -5904,10 +5904,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:26275",
+            "https://access.redhat.com/errata/RHSA-2024:9333",
             "https://access.redhat.com/security/cve/CVE-2024-4741",
+            "https://bugzilla.redhat.com/2274020",
+            "https://bugzilla.redhat.com/2281029",
             "https://bugzilla.redhat.com/2283757",
-            "https://bugzilla.redhat.com/2481898",
+            "https://bugzilla.redhat.com/2294581",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2274020",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2281029",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2283757",
@@ -5916,7 +5918,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4603",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4741",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-5535",
-            "https://errata.almalinux.org/8/ALSA-2026-26275.html",
+            "https://errata.almalinux.org/9/ALSA-2024-9333.html",
             "https://errata.rockylinux.org/RLSA-2024:9333",
             "https://github.com/advisories/GHSA-6vgq-8qjq-h578",
             "https://github.com/openssl/openssl/commit/704f725b96aa373ee45ecfb23f6abfe8be8d9177",
@@ -5960,7 +5962,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:83e2e4a085a02b9138f1d6fa4ed75fc629ad9edbf3be8b1f08b311f8210a5999",
+          "Fingerprint": "sha256:b359d9efdcbb0aaccfc2095f872af5abd5f45f305b61745f2aaa1fed510ae283",
           "Title": "openssl: SSL_select_next_proto buffer overread",
           "Description": "Issue summary: Calling the OpenSSL API function SSL_select_next_proto with an\nempty supported client protocols buffer may cause a crash or memory contents to\nbe sent to the peer.\n\nImpact summary: A buffer overread can have a range of potential consequences\nsuch as unexpected application beahviour or a crash. In particular this issue\ncould result in up to 255 bytes of arbitrary private data from memory being sent\nto the peer leading to a loss of confidentiality. However, only applications\nthat directly call the SSL_select_next_proto function with a 0 length list of\nsupported client protocols are affected by this issue. This would normally never\nbe a valid scenario and is typically not under attacker control but may occur by\naccident in the case of a configuration or programming error in the calling\napplication.\n\nThe OpenSSL API function SSL_select_next_proto is typically used by TLS\napplications that support ALPN (Application Layer Protocol Negotiation) or NPN\n(Next Protocol Negotiation). NPN is older, was never standardised and\nis deprecated in favour of ALPN. We believe that ALPN is significantly more\nwidely deployed than NPN. The SSL_select_next_proto function accepts a list of\nprotocols from the server and a list of protocols from the client and returns\nthe first protocol that appears in the server list that also appears in the\nclient list. In the case of no overlap between the two lists it returns the\nfirst item in the client list. In either case it will signal whether an overlap\nbetween the two lists was found. In the case where SSL_select_next_proto is\ncalled with a zero length client list it fails to notice this condition and\nreturns the memory immediately following the client list pointer (and reports\nthat there was no overlap in the lists).\n\nThis function is typically called from a server side application callback for\nALPN or a client side application callback for NPN. In the case of ALPN the list\nof protocols supplied by the client is guaranteed by libssl to never be zero in\nlength. The list of server protocols comes from the application and should never\nnormally be expected to be of zero length. In this case if the\nSSL_select_next_proto function has been called as expected (with the list\nsupplied by the client passed in the client/client_len parameters), then the\napplication will not be vulnerable to this issue. If the application has\naccidentally been configured with a zero length server list, and has\naccidentally passed that zero length server list in the client/client_len\nparameters, and has additionally failed to correctly handle a \"no overlap\"\nresponse (which would normally result in a handshake failure in ALPN) then it\nwill be vulnerable to this problem.\n\nIn the case of NPN, the protocol permits the client to opportunistically select\na protocol when there is no overlap. OpenSSL returns the first client protocol\nin the no overlap case in support of this. The list of client protocols comes\nfrom the application and should never normally be expected to be of zero length.\nHowever if the SSL_select_next_proto function is accidentally called with a\nclient_len of 0 then an invalid memory pointer will be returned instead. If the\napplication uses this output as the opportunistic protocol then the loss of\nconfidentiality will occur.\n\nThis issue has been assessed as Low severity because applications are most\nlikely to be vulnerable if they are using NPN instead of ALPN - but NPN is not\nwidely used. It also requires an application configuration or programming error.\nFinally, this issue would not typically be under attacker control making active\nexploitation unlikely.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.\n\nDue to the low severity of this issue we are not issuing new releases of\nOpenSSL at this time. The fix will be included in the next releases when they\nbecome available.",
           "Severity": "LOW",
@@ -5993,7 +5995,7 @@
             "http://www.openwall.com/lists/oss-security/2024/06/27/1",
             "http://www.openwall.com/lists/oss-security/2024/06/28/4",
             "http://www.openwall.com/lists/oss-security/2024/08/15/1",
-            "https://access.redhat.com/errata/RHSA-2025:1673",
+            "https://access.redhat.com/errata/RHSA-2025:1671",
             "https://access.redhat.com/security/cve/CVE-2024-5535",
             "https://bugzilla.redhat.com/2294581",
             "https://bugzilla.redhat.com/2294676",
@@ -6058,7 +6060,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4603",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4741",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-5535",
-            "https://errata.almalinux.org/8/ALSA-2025-1673.html",
+            "https://errata.almalinux.org/9/ALSA-2025-1671.html",
             "https://errata.rockylinux.org/RLSA-2024:9333",
             "https://github.com/advisories/GHSA-4fc7-mvrr-wv2c",
             "https://github.com/openssl/openssl/commit/4ada436a1946cbb24db5ab4ca082b69c1bc10f37",
@@ -6109,7 +6111,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:883ad72b48a7df8ae4b183a3e9f1ec12eee8bba1064602bfc61326c1feed742b",
+          "Fingerprint": "sha256:be6a567433eab20827b89defe6b78132408d03447ddd07383a3f7e86028e82eb",
           "Title": "openssl: Low-level invalid GF(2^m) parameters lead to OOB memory access",
           "Description": "Issue summary: Use of the low-level GF(2^m) elliptic curve APIs with untrusted\nexplicit values for the field polynomial can lead to out-of-bounds memory reads\nor writes.\n\nImpact summary: Out of bound memory writes can lead to an application crash or\neven a possibility of a remote code execution, however, in all the protocols\ninvolving Elliptic Curve Cryptography that we're aware of, either only \"named\ncurves\" are supported, or, if explicit curve parameters are supported, they\nspecify an X9.62 encoding of binary (GF(2^m)) curves that can't represent\nproblematic input values. Thus the likelihood of existence of a vulnerable\napplication is low.\n\nIn particular, the X9.62 encoding is used for ECC keys in X.509 certificates,\nso problematic inputs cannot occur in the context of processing X.509\ncertificates.  Any problematic use-cases would have to be using an \"exotic\"\ncurve encoding.\n\nThe affected APIs include: EC_GROUP_new_curve_GF2m(), EC_GROUP_new_from_params(),\nand various supporting BN_GF2m_*() functions.\n\nApplications working with \"exotic\" explicit binary (GF(2^m)) curve parameters,\nthat make it possible to represent invalid field polynomials with a zero\nconstant term, via the above or similar APIs, may terminate abruptly as a\nresult of reading or writing outside of array bounds.  Remote code execution\ncannot easily be ruled out.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
           "Severity": "LOW",
@@ -6185,7 +6187,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:a10579f29b1ca8e87791f9eb517f2320098fbb4a96ca2a927285f062fdc9dadf",
+          "Fingerprint": "sha256:b97f89fe3d6144471088319ed0b80931c107a74803f7071076281553fc5b793a",
           "Title": "openssl: OpenSSL: Denial of Service due to out-of-bounds write in BIO filter",
           "Description": "Issue summary: Writing large, newline-free data into a BIO chain using the\nline-buffering filter where the next BIO performs short writes can trigger\na heap-based out-of-bounds write.\n\nImpact summary: This out-of-bounds write can cause memory corruption which\ntypically results in a crash, leading to Denial of Service for an application.\n\nThe line-buffering BIO filter (BIO_f_linebuffer) is not used by default in\nTLS/SSL data paths. In OpenSSL command-line applications, it is typically\nonly pushed onto stdout/stderr on VMS systems. Third-party applications that\nexplicitly use this filter with a BIO chain that can short-write and that\nwrite large, newline-free data influenced by an attacker would be affected.\nHowever, the circumstances where this could happen are unlikely to be under\nattacker control, and BIO_f_linebuffer is unlikely to be handling non-curated\ndata controlled by an attacker. For that reason the issue was assessed as\nLow severity.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the BIO implementation is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.",
           "Severity": "LOW",
@@ -6294,7 +6296,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:fc2458c23ef28079f981d3c20b7942d5d29f376ad3c2726c465e45c4af16d3cf",
+          "Fingerprint": "sha256:733cb566fc0f73eb2f058cde385ca7ec9dc2100a57eceed3315e7feff06f4f1f",
           "Title": "openssl: OpenSSL: Information disclosure and data tampering via specific low-level OCB encryption/decryption calls",
           "Description": "Issue summary: When using the low-level OCB API directly with AES-NI or\u003cbr\u003eother hardware-accelerated code paths, inputs whose length is not a multiple\u003cbr\u003eof 16 bytes can leave the final partial block unencrypted and unauthenticated.\u003cbr\u003e\u003cbr\u003eImpact summary: The trailing 1-15 bytes of a message may be exposed in\u003cbr\u003ecleartext on encryption and are not covered by the authentication tag,\u003cbr\u003eallowing an attacker to read or tamper with those bytes without detection.\u003cbr\u003e\u003cbr\u003eThe low-level OCB encrypt and decrypt routines in the hardware-accelerated\u003cbr\u003estream path process full 16-byte blocks but do not advance the input/output\u003cbr\u003epointers. The subsequent tail-handling code then operates on the original\u003cbr\u003ebase pointers, effectively reprocessing the beginning of the buffer while\u003cbr\u003eleaving the actual trailing bytes unprocessed. The authentication checksum\u003cbr\u003ealso excludes the true tail bytes.\u003cbr\u003e\u003cbr\u003eHowever, typical OpenSSL consumers using EVP are not affected because the\u003cbr\u003ehigher-level EVP and provider OCB implementations split inputs so that full\u003cbr\u003eblocks and trailing partial blocks are processed in separate calls, avoiding\u003cbr\u003ethe problematic code path. Additionally, TLS does not use OCB ciphersuites.\u003cbr\u003eThe vulnerability only affects applications that call the low-level\u003cbr\u003eCRYPTO_ocb128_encrypt() or CRYPTO_ocb128_decrypt() functions directly with\u003cbr\u003enon-block-aligned lengths in a single call on hardware-accelerated builds.\u003cbr\u003eFor these reasons the issue was assessed as Low severity.\u003cbr\u003e\u003cbr\u003eThe FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected\u003cbr\u003eby this issue, as OCB mode is not a FIPS-approved algorithm.\u003cbr\u003e\u003cbr\u003eOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0 and 1.1.1 are vulnerable to this issue.\u003cbr\u003e\u003cbr\u003eOpenSSL 1.0.2 is not affected by this issue.",
           "Severity": "LOW",
@@ -6403,7 +6405,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:08677d28f6f16b1a3dcece7ef9e768a98a49c33e82a741d65cce375b5cee19ce",
+          "Fingerprint": "sha256:f14e5e5fdc0b376ed39d5fdb594751101e923a193d6fa113bd27fb4c5da0eca0",
           "Title": "openssl: OpenSSL: Denial of Service via malformed TimeStamp Response",
           "Description": "Issue summary: A type confusion vulnerability exists in the TimeStamp Response\nverification code where an ASN1_TYPE union member is accessed without first\nvalidating the type, causing an invalid or NULL pointer dereference when\nprocessing a malformed TimeStamp Response file.\n\nImpact summary: An application calling TS_RESP_verify_response() with a\nmalformed TimeStamp Response can be caused to dereference an invalid or\nNULL pointer when reading, resulting in a Denial of Service.\n\nThe functions ossl_ess_get_signing_cert() and ossl_ess_get_signing_cert_v2()\naccess the signing cert attribute value without validating its type.\nWhen the type is not V_ASN1_SEQUENCE, this results in accessing invalid memory\nthrough the ASN1_TYPE union, causing a crash.\n\nExploiting this vulnerability requires an attacker to provide a malformed\nTimeStamp Response to an application that verifies timestamp responses. The\nTimeStamp protocol (RFC 3161) is not widely used and the impact of the\nexploit is just a Denial of Service. For these reasons the issue was\nassessed as Low severity.\n\nThe FIPS modules in 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the TimeStamp Response implementation is outside the OpenSSL FIPS module\nboundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0 and 1.1.1 are vulnerable to this issue.\n\nOpenSSL 1.0.2 is not affected by this issue.",
           "Severity": "LOW",
@@ -6512,7 +6514,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:ac1880ec736a80a84a4946521d778b856e49bb6665173fb2d8b171f38361905e",
+          "Fingerprint": "sha256:357032258b23e9bb6fbccc66486b90bcd5361877ff5d8665fe45094e2e96f4bd",
           "Title": "openssl: Out-of-bounds read in HTTP client no_proxy handling",
           "Description": "Issue summary: An application using the OpenSSL HTTP client API functions may\ntrigger an out-of-bounds read if the 'no_proxy' environment variable is set and\nthe host portion of the authority component of the HTTP URL is an IPv6 address.\n\nImpact summary: An out-of-bounds read can trigger a crash which leads to\nDenial of Service for an application.\n\nThe OpenSSL HTTP client API functions can be used directly by applications\nbut they are also used by the OCSP client functions and CMP (Certificate\nManagement Protocol) client implementation in OpenSSL. However the URLs used\nby these implementations are unlikely to be controlled by an attacker.\n\nIn this vulnerable code the out of bounds read can only trigger a crash.\nFurthermore the vulnerability requires an attacker-controlled URL to be\npassed from an application to the OpenSSL function and the user has to have\na 'no_proxy' environment variable set. For the aforementioned reasons the\nissue was assessed as Low severity.\n\nThe vulnerable code was introduced in the following patch releases:\n3.0.16, 3.1.8, 3.2.4, 3.3.3, 3.4.0 and 3.5.0.\n\nThe FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected by this\nissue, as the HTTP client implementation is outside the OpenSSL FIPS module\nboundary.",
           "Severity": "LOW",
@@ -6580,7 +6582,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:95ee116be71bad64fd7574cadf2db6fbd5f6f127108d03f640bc21801de8d59a",
+          "Fingerprint": "sha256:93ebd10ec25d8ac2994a7f4c93d0a4fb1d0f30971966c080a27f7ea3f1865145",
           "Title": "openssl: OpenSSL: Denial of Service due to type confusion in PKCS#12 file processing",
           "Description": "Issue summary: An invalid or NULL pointer dereference can happen in\nan application processing a malformed PKCS#12 file.\n\nImpact summary: An application processing a malformed PKCS#12 file can be\ncaused to dereference an invalid or NULL pointer on memory read, resulting\nin a Denial of Service.\n\nA type confusion vulnerability exists in PKCS#12 parsing code where\nan ASN1_TYPE union member is accessed without first validating the type,\ncausing an invalid pointer read.\n\nThe location is constrained to a 1-byte address space, meaning any\nattempted pointer manipulation can only target addresses between 0x00 and 0xFF.\nThis range corresponds to the zero page, which is unmapped on most modern\noperating systems and will reliably result in a crash, leading only to a\nDenial of Service. Exploiting this issue also requires a user or application\nto process a maliciously crafted PKCS#12 file. It is uncommon to accept\nuntrusted PKCS#12 files in applications as they are usually used to store\nprivate keys which are trusted by definition. For these reasons, the issue\nwas assessed as Low severity.\n\nThe FIPS modules in 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the PKCS12 implementation is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0 and 1.1.1 are vulnerable to this issue.\n\nOpenSSL 1.0.2 is not affected by this issue.",
           "Severity": "LOW",
@@ -6689,7 +6691,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:65a4ed2ffc66218394c9e92d97b20f1cfa67705e51b4c4bcf8f6ae580a00c68a",
+          "Fingerprint": "sha256:bd1f9d4ba78f6db9574b63dbda12ee76d2d18826e451e913feaff983c9b91a7f",
           "Title": "openssl: OpenSSL: Denial of Service via type confusion in PKCS#7 signature verification",
           "Description": "Issue summary: A type confusion vulnerability exists in the signature\nverification of signed PKCS#7 data where an ASN1_TYPE union member is\naccessed without first validating the type, causing an invalid or NULL\npointer dereference when processing malformed PKCS#7 data.\n\nImpact summary: An application performing signature verification of PKCS#7\ndata or calling directly the PKCS7_digest_from_attributes() function can be\ncaused to dereference an invalid or NULL pointer when reading, resulting in\na Denial of Service.\n\nThe function PKCS7_digest_from_attributes() accesses the message digest attribute\nvalue without validating its type. When the type is not V_ASN1_OCTET_STRING,\nthis results in accessing invalid memory through the ASN1_TYPE union, causing\na crash.\n\nExploiting this vulnerability requires an attacker to provide a malformed\nsigned PKCS#7 to an application that verifies it. The impact of the\nexploit is just a Denial of Service, the PKCS7 API is legacy and applications\nshould be using the CMS API instead. For these reasons the issue was\nassessed as Low severity.\n\nThe FIPS modules in 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the PKCS#7 parsing implementation is outside the OpenSSL FIPS module\nboundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.",
           "Severity": "LOW",
@@ -6799,7 +6801,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:03466808847201b7b7b2eba5f79b9bbfab74ed6a967f97631729a83ed3dca205",
+          "Fingerprint": "sha256:100ce6f485b098f96004778767a21f384d3b3e8eb632b20351d99c5e0203c14e",
           "Title": "curl: freeing stack buffer in utf8asn1str",
           "Description": "libcurl's ASN1 parser has this utf8asn1str() function used for parsing an ASN.1 UTF-8 string. Itcan detect an invalid field and return error. Unfortunately, when doing so it also invokes `free()` on a 4 byte localstack buffer.  Most modern malloc implementations detect this error and immediately abort. Some however accept the input pointer and add that memory to its list of available chunks. This leads to the overwriting of nearby stack memory. The content of the overwrite is decided by the `free()` implementation; likely to be memory pointers and a set of flags.  The most likely outcome of exploting this flaw is a crash, although it cannot be ruled out that more serious results can be had in special circumstances.",
           "Severity": "HIGH",
@@ -6857,7 +6859,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:4e8f8035c74bb9e59e615b894d18c35c3c31e458373dd12677a241ce9d5fa9e5",
+          "Fingerprint": "sha256:69053bfdce1b3380b3ca8a9e9d2bee34b2bf8e941a3fa64db831a7ef9853df48",
           "Title": "curl: OCSP verification bypass with TLS session reuse",
           "Description": "curl inadvertently kept the SSL session ID for connections in its cache even when the verify status (*OCSP stapling*) test failed. A subsequent transfer to\nthe same hostname could then succeed if the session ID cache was still fresh, which then skipped the verify status check.",
           "Severity": "MEDIUM",
@@ -6926,7 +6928,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:4a949b67e183e9320b2afe440f214f63c237040f21f80f1804a02ff5c47d7b06",
+          "Fingerprint": "sha256:aedb039447e6039018c097eb29221ccf00f69183286cb42912148cd93a1ac614",
           "Title": "curl: HTTP/2 push headers memory-leak",
           "Description": "When an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.",
           "Severity": "MEDIUM",
@@ -6960,14 +6962,14 @@
             "http://seclists.org/fulldisclosure/2024/Jul/19",
             "http://seclists.org/fulldisclosure/2024/Jul/20",
             "http://www.openwall.com/lists/oss-security/2024/03/27/3",
-            "https://access.redhat.com/errata/RHSA-2024:5654",
+            "https://access.redhat.com/errata/RHSA-2024:5529",
             "https://access.redhat.com/security/cve/CVE-2024-2398",
             "https://bugzilla.redhat.com/2270498",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2270498",
             "https://curl.se/docs/CVE-2024-2398.html",
             "https://curl.se/docs/CVE-2024-2398.json",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2398",
-            "https://errata.almalinux.org/8/ALSA-2024-5654.html",
+            "https://errata.almalinux.org/9/ALSA-2024-5529.html",
             "https://errata.rockylinux.org/RLSA-2024:5654",
             "https://github.com/advisories/GHSA-mq8w-c2j9-rqxc",
             "https://hackerone.com/reports/2402845",
@@ -7012,7 +7014,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:fa7d451791d58899df8999d5440b7816689ccabed216e31f4ed6a6f124880745",
+          "Fingerprint": "sha256:2f829c252bef1ed3f2e82676272a76f0a661d8de98ba191bdbb7116eb9458ed9",
           "Title": "curl: TLS certificate check bypass with mbedTLS",
           "Description": "libcurl did not check the server certificate of TLS connections done to a host specified as an IP address, when built to use mbedTLS.  libcurl would wrongly avoid using the set hostname function when the specified hostname was given as an IP address, therefore completely skipping the certificate check. This affects all uses of TLS protocols (HTTPS, FTPS, IMAPS, POPS3, SMTPS, etc).",
           "Severity": "MEDIUM",
@@ -7079,7 +7081,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:ab361de64ee728241d56ec04be9d3d0e9ea6e30060de0d6a61db62bcada99ff8",
+          "Fingerprint": "sha256:f4b1dd9b180b9be0c9b1d79fd86fb0c5ca73e38213338199a4903a71441c711c",
           "Title": "curl: macidn punycode buffer overread",
           "Description": "libcurl's URL API function\n[curl_url_get()](https://curl.se/libcurl/c/curl_url_get.html) offers punycode\nconversions, to and from IDN. Asking to convert a name that is exactly 256\nbytes, libcurl ends up reading outside of a stack based buffer when built to\nuse the *macidn* IDN backend. The conversion function then fills up the\nprovided buffer exactly - but does not null terminate the string.\n\nThis flaw can lead to stack contents accidently getting returned as part of\nthe converted string.",
           "Severity": "MEDIUM",
@@ -7136,7 +7138,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:9be72dc8d08d218014b22a6398b26f9b86df1145f633fca7ed193a0c76e976b0",
+          "Fingerprint": "sha256:2103c72465a24010c0c36cb88f9f6f4e7670108af325d9dbbdda08d7217bd0b9",
           "Title": "curl: Usage of disabled protocol",
           "Description": "When a protocol selection parameter option disables all protocols without adding any then the default set of protocols would remain in the allowed set due to an error in the logic for removing protocols. The below command would perform a request to curl.se with a plaintext protocol which has been explicitly disabled.      curl --proto -all,-http http://curl.se  The flaw is only present if the set of selected protocols disables the entire set of available protocols, in itself a command with no practical use and therefore unlikely to be encountered in real situations. The curl security team has thus assessed this to be low severity bug.",
           "Severity": "LOW",
@@ -7210,7 +7212,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:e50a79bde8ae7af77eb949e4693fa6d71ab1a84a5d5f8effd72502cc29e242e5",
+          "Fingerprint": "sha256:550af451fd6cf61f2a295d36351d61d97373851c3f18c0fdb0c51142c5399f94",
           "Title": "curl: QUIC certificate check bypass with wolfSSL",
           "Description": "libcurl skips the certificate verification for a QUIC connection under certain conditions, when built to use wolfSSL. If told to use an unknown/bad cipher or curve, the error path accidentally skips the verification and returns OK, thus ignoring any certificate problems.",
           "Severity": "LOW",
@@ -7275,7 +7277,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:617ceeb64955139dec6d843e6f342e73a488c8340553adba3f1acffd56b591b1",
+          "Fingerprint": "sha256:daa2e582bf1b568c77b72dee2ad252f1fed3cf34272ae9f5935018b75e26eebc",
           "Title": "libexpat: Integer Overflow or Wraparound",
           "Description": "An issue was discovered in libexpat before 2.6.3. dtdCopy in xmlparse.c can have an integer overflow for nDefaultAtts on 32-bit platforms (where UINT_MAX equals SIZE_MAX).",
           "Severity": "CRITICAL",
@@ -7306,9 +7308,11 @@
           },
           "References": [
             "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45491",
-            "https://access.redhat.com/errata/RHSA-2024:8859",
+            "https://access.redhat.com/errata/RHSA-2024:6754",
             "https://access.redhat.com/security/cve/CVE-2024-45491",
+            "https://bugzilla.redhat.com/2308615",
             "https://bugzilla.redhat.com/2308616",
+            "https://bugzilla.redhat.com/2308617",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2308615",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2308616",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2308617",
@@ -7317,7 +7321,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45490",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45491",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45492",
-            "https://errata.almalinux.org/8/ALSA-2024-8859.html",
+            "https://errata.almalinux.org/9/ALSA-2024-6754.html",
             "https://errata.rockylinux.org/RLSA-2024:6754",
             "https://github.com/bottlerocket-os/bottlerocket-core-kit/blob/develop/advisories/2.4.1/BRSA-rsshgwurguax.toml",
             "https://github.com/libexpat/libexpat/blob/R_2_6_3/expat/Changes",
@@ -7359,7 +7363,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:94bd46bb3dd458c7f3289b2b63b5b85f220407e0f3eeb9f1611202f1c3a07a8b",
+          "Fingerprint": "sha256:12c6e18fc8e2500a41a467ba86b14ffc6f0ddbe2207680c964a914d6efd761c7",
           "Title": "libexpat: integer overflow",
           "Description": "An issue was discovered in libexpat before 2.6.3. nextScaffoldPart in xmlparse.c can have an integer overflow for m_groupSize on 32-bit platforms (where UINT_MAX equals SIZE_MAX).",
           "Severity": "CRITICAL",
@@ -7390,7 +7394,7 @@
           },
           "References": [
             "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45492",
-            "https://access.redhat.com/errata/RHSA-2024:6989",
+            "https://access.redhat.com/errata/RHSA-2024:6754",
             "https://access.redhat.com/security/cve/CVE-2024-45492",
             "https://bugzilla.redhat.com/2308615",
             "https://bugzilla.redhat.com/2308616",
@@ -7403,7 +7407,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45490",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45491",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45492",
-            "https://errata.almalinux.org/8/ALSA-2024-6989.html",
+            "https://errata.almalinux.org/9/ALSA-2024-6754.html",
             "https://errata.rockylinux.org/RLSA-2024:6754",
             "https://github.com/bottlerocket-os/bottlerocket-core-kit/blob/develop/advisories/2.4.1/BRSA-zij7i3861ei3.toml",
             "https://github.com/libexpat/libexpat/blob/R_2_6_3/expat/Changes",
@@ -7443,7 +7447,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:c0e99877ee11fb8a8b82c4c7640b2db5c138dd36a18754d0f071a2225450e167",
+          "Fingerprint": "sha256:f30d76216df05eaf69107b3b7cb141bebcebeb6d67b88c17042774cc2d25caf6",
           "Title": "libexpat: Negative Length Parsing Vulnerability in libexpat",
           "Description": "An issue was discovered in libexpat before 2.6.3. xmlparse.c does not reject a negative length for XML_ParseBuffer.",
           "Severity": "HIGH",
@@ -7481,7 +7485,7 @@
             "http://seclists.org/fulldisclosure/2024/Dec/6",
             "http://seclists.org/fulldisclosure/2024/Dec/7",
             "http://seclists.org/fulldisclosure/2024/Dec/8",
-            "https://access.redhat.com/errata/RHSA-2024:6989",
+            "https://access.redhat.com/errata/RHSA-2024:6754",
             "https://access.redhat.com/security/cve/CVE-2024-45490",
             "https://bugzilla.redhat.com/2308615",
             "https://bugzilla.redhat.com/2308616",
@@ -7494,7 +7498,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45490",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45491",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45492",
-            "https://errata.almalinux.org/8/ALSA-2024-6989.html",
+            "https://errata.almalinux.org/9/ALSA-2024-6754.html",
             "https://errata.rockylinux.org/RLSA-2024:6754",
             "https://github.com/bottlerocket-os/bottlerocket-core-kit/blob/develop/advisories/2.4.1/BRSA-6zgfowt0osgt.toml",
             "https://github.com/libexpat/libexpat/blob/R_2_6_3/expat/Changes",
@@ -7535,7 +7539,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:ad2da985a8fea746178f6dbdcb84ac1d9bda493a5c70fc463c3f0e716969dd17",
+          "Fingerprint": "sha256:ed7ccd4e0e9379b911ca9a12148dbb1e55f387a47e9bd6e0ce15b8fd33b06190",
           "Title": "libexpat: expat: DoS via XML_ResumeParser",
           "Description": "An issue was discovered in libexpat before 2.6.4. There is a crash within the XML_ResumeParser function because XML_StopParser can stop/suspend an unstarted parser.",
           "Severity": "MEDIUM",
@@ -7567,7 +7571,7 @@
           },
           "References": [
             "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-50602",
-            "https://access.redhat.com/errata/RHSA-2024:9502",
+            "https://access.redhat.com/errata/RHSA-2024:9541",
             "https://access.redhat.com/security/cve/CVE-2024-50602",
             "https://bugzilla.redhat.com/2321987",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2321987",
@@ -7577,7 +7581,7 @@
             "https://docs.python.org/release/3.12.8/whatsnew/changelog.html#python-3-12-8",
             "https://docs.python.org/release/3.13.1/whatsnew/changelog.html#python-3-13-1",
             "https://docs.python.org/release/3.9.21/whatsnew/changelog.html",
-            "https://errata.almalinux.org/8/ALSA-2024-9502.html",
+            "https://errata.almalinux.org/9/ALSA-2024-9541.html",
             "https://errata.rockylinux.org/RLSA-2024:9502",
             "https://github.com/bottlerocket-os/bottlerocket-core-kit/blob/develop/advisories/4.0.0/BRSA-u9kwccsbt96l.toml",
             "https://github.com/libexpat/libexpat/pull/915",
@@ -7615,7 +7619,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:cef9b9df42ab94b890994d09fc8c427f86c481beed74098b1b981091e0a42626",
+          "Fingerprint": "sha256:da79bb916b9a3859ecf31d984a624ddfb49c4aaf4923a085519378497deada3c",
           "Title": "openssl: Possible denial of service in X.509 name checks",
           "Description": "Issue summary: Applications performing certificate name checks (e.g., TLS\nclients checking server certificates) may attempt to read an invalid memory\naddress resulting in abnormal termination of the application process.\n\nImpact summary: Abnormal termination of an application can a cause a denial of\nservice.\n\nApplications performing certificate name checks (e.g., TLS clients checking\nserver certificates) may attempt to read an invalid memory address when\ncomparing the expected name with an `otherName` subject alternative name of an\nX.509 certificate. This may result in an exception that terminates the\napplication program.\n\nNote that basic certificate chain validation (signatures, dates, ...) is not\naffected, the denial of service can occur only when the application also\nspecifies an expected DNS name, Email address or IP address.\n\nTLS servers rarely solicit client certificates, and even when they do, they\ngenerally don't perform a name check against a reference identifier (expected\nidentity), but rather extract the presented identity after checking the\ncertificate chain.  So TLS servers are generally not affected and the severity\nof the issue is Moderate.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
           "Severity": "HIGH",
@@ -7702,7 +7706,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:19922dee628a9c761f575deabfe101254742dbe9f1906a30c6df62aa06a07490",
+          "Fingerprint": "sha256:289ebb10504a1fb4ec2a5095c3588021f91464c8f90eed510ec6fc7ac5f98d3f",
           "Title": "openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing",
           "Description": "Issue summary: Parsing CMS AuthEnvelopedData or EnvelopedData message with\nmaliciously crafted AEAD parameters can trigger a stack buffer overflow.\n\nImpact summary: A stack buffer overflow may lead to a crash, causing Denial\nof Service, or potentially remote code execution.\n\nWhen parsing CMS (Auth)EnvelopedData structures that use AEAD ciphers such as\nAES-GCM, the IV (Initialization Vector) encoded in the ASN.1 parameters is\ncopied into a fixed-size stack buffer without verifying that its length fits\nthe destination. An attacker can supply a crafted CMS message with an\noversized IV, causing a stack-based out-of-bounds write before any\nauthentication or tag verification occurs.\n\nApplications and services that parse untrusted CMS or PKCS#7 content using\nAEAD ciphers (e.g., S/MIME (Auth)EnvelopedData with AES-GCM) are vulnerable.\nBecause the overflow occurs prior to authentication, no valid key material\nis required to trigger it. While exploitability to remote code execution\ndepends on platform and toolchain mitigations, the stack-based write\nprimitive represents a severe risk.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the CMS implementation is outside the OpenSSL FIPS module\nboundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3 and 3.0 are vulnerable to this issue.\n\nOpenSSL 1.1.1 and 1.0.2 are not affected by this issue.",
           "Severity": "HIGH",
@@ -7840,7 +7844,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:77fa9142c8c685ca18c881cd5c51b6d5bfe01957719301a02f783effa7dc5a7d",
+          "Fingerprint": "sha256:ed0fe6c854d39446bb3336c871d47808811115f8d9fafea26d40fd3e529e8434",
           "Title": "openssl: OpenSSL: Denial of Service via malformed PKCS#12 file processing",
           "Description": "Issue summary: Processing a malformed PKCS#12 file can trigger a NULL pointer\ndereference in the PKCS12_item_decrypt_d2i_ex() function.\n\nImpact summary: A NULL pointer dereference can trigger a crash which leads to\nDenial of Service for an application processing PKCS#12 files.\n\nThe PKCS12_item_decrypt_d2i_ex() function does not check whether the oct\nparameter is NULL before dereferencing it. When called from\nPKCS12_unpack_p7encdata() with a malformed PKCS#12 file, this parameter can\nbe NULL, causing a crash. The vulnerability is limited to Denial of Service\nand cannot be escalated to achieve code execution or memory disclosure.\n\nExploiting this issue requires an attacker to provide a malformed PKCS#12 file\nto an application that processes it. For that reason the issue was assessed as\nLow severity according to our Security Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the PKCS#12 implementation is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.",
           "Severity": "HIGH",
@@ -7954,7 +7958,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:39c5c76b7e758f1894e57123833f67c899bb6c72edb90eee9d5cd0eb649d3ae8",
+          "Fingerprint": "sha256:979f6c7be748dcfeebc9238effe28f992259556f495cba13c0e53a40a42ad4c4",
           "Title": "openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing",
           "Description": "Issue summary: Calling PKCS12_get_friendlyname() function on a maliciously\ncrafted PKCS#12 file with a BMPString (UTF-16BE) friendly name containing\nnon-ASCII BMP code point can trigger a one byte write before the allocated\nbuffer.\n\nImpact summary: The out-of-bounds write can cause a memory corruption\nwhich can have various consequences including a Denial of Service.\n\nThe OPENSSL_uni2utf8() function performs a two-pass conversion of a PKCS#12\nBMPString (UTF-16BE) to UTF-8. In the second pass, when emitting UTF-8 bytes,\nthe helper function bmp_to_utf8() incorrectly forwards the remaining UTF-16\nsource byte count as the destination buffer capacity to UTF8_putc(). For BMP\ncode points above U+07FF, UTF-8 requires three bytes, but the forwarded\ncapacity can be just two bytes. UTF8_putc() then returns -1, and this negative\nvalue is added to the output length without validation, causing the\nlength to become negative. The subsequent trailing NUL byte is then written\nat a negative offset, causing write outside of heap allocated buffer.\n\nThe vulnerability is reachable via the public PKCS12_get_friendlyname() API\nwhen parsing attacker-controlled PKCS#12 files. While PKCS12_parse() uses a\ndifferent code path that avoids this issue, PKCS12_get_friendlyname() directly\ninvokes the vulnerable function. Exploitation requires an attacker to provide\na malicious PKCS#12 file to be parsed by the application and the attacker\ncan just trigger a one zero byte write before the allocated buffer.\nFor that reason the issue was assessed as Low severity according to our\nSecurity Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the PKCS#12 implementation is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0 and 1.1.1 are vulnerable to this issue.\n\nOpenSSL 1.0.2 is not affected by this issue.",
           "Severity": "MEDIUM",
@@ -7984,7 +7988,7 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:3042",
+            "https://access.redhat.com/errata/RHSA-2026:4472",
             "https://access.redhat.com/security/cve/CVE-2025-69419",
             "https://bugzilla.redhat.com/2430386",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2430375",
@@ -8012,7 +8016,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-69421",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
-            "https://errata.almalinux.org/8/ALSA-2026-3042.html",
+            "https://errata.almalinux.org/9/ALSA-2026-4472.html",
             "https://errata.rockylinux.org/RLSA-2026:1473",
             "https://github.com/advisories/GHSA-x77r-97gw-wh89",
             "https://github.com/openssl/openssl/commit/41be0f216404f14457bbf3b9cc488dba60b49296",
@@ -8052,7 +8056,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:7f7e26405b922ed99e5f1c6aa8af4637d033756c984237aa206c8f40cef0a55a",
+          "Fingerprint": "sha256:f5056d2a2a7f6e194ebba9e8437cf9ccd68e5f0bf095d67f71fbe74a994fafd6",
           "Title": "openssl: Out-of-bounds read \u0026 write in RFC 3211 KEK Unwrap",
           "Description": "Issue summary: An application trying to decrypt CMS messages encrypted using\npassword based encryption can trigger an out-of-bounds read and write.\n\nImpact summary: This out-of-bounds read may trigger a crash which leads to\nDenial of Service for an application. The out-of-bounds write can cause\na memory corruption which can have various consequences including\na Denial of Service or Execution of attacker-supplied code.\n\nAlthough the consequences of a successful exploit of this vulnerability\ncould be severe, the probability that the attacker would be able to\nperform it is low. Besides, password based (PWRI) encryption support in CMS\nmessages is very rarely used. For that reason the issue was assessed as\nModerate severity according to our Security Policy.\n\nThe FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected by this\nissue, as the CMS implementation is outside the OpenSSL FIPS module\nboundary.",
           "Severity": "MEDIUM",
@@ -8084,7 +8088,7 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/09/30/5",
-            "https://access.redhat.com/errata/RHSA-2026:0337",
+            "https://access.redhat.com/errata/RHSA-2026:2776",
             "https://access.redhat.com/security/cve/CVE-2025-9230",
             "https://bugzilla.redhat.com/2396054",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2396054",
@@ -8095,7 +8099,7 @@
             "https://cert-portal.siemens.com/productcert/html/ssa-265688.html",
             "https://cert-portal.siemens.com/productcert/html/ssa-485750.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-9230",
-            "https://errata.almalinux.org/8/ALSA-2026-0337.html",
+            "https://errata.almalinux.org/9/ALSA-2026-2776.html",
             "https://errata.rockylinux.org/RLSA-2025:21255",
             "https://github.com/openssl/openssl/commit/5965ea5dd6960f36d8b7f74f8eac67a8eb8f2b45",
             "https://github.com/openssl/openssl/commit/9e91358f365dee6c446dcdcdb01c04d2743fd280",
@@ -8136,7 +8140,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:6277a0138a6a268f8b35f497ed8707ca0ffce44bc90fe6952496b9796de56687",
+          "Fingerprint": "sha256:38ea5df5bebffe889901902b388e7bce144c1b88fb2ef5897171f9413d07cd2e",
           "Title": "openssl: Timing side-channel in ECDSA signature computation",
           "Description": "Issue summary: A timing side-channel which could potentially allow recovering\nthe private key exists in the ECDSA signature computation.\n\nImpact summary: A timing side-channel in ECDSA signature computations\ncould allow recovering the private key by an attacker. However, measuring\nthe timing would require either local access to the signing application or\na very fast network connection with low latency.\n\nThere is a timing signal of around 300 nanoseconds when the top word of\nthe inverted ECDSA nonce value is zero. This can happen with significant\nprobability only for some of the supported elliptic curves. In particular\nthe NIST P-521 curve is affected. To be able to measure this leak, the attacker\nprocess must either be located in the same physical computer or must\nhave a very fast network connection with low latency. For that reason\nthe severity of this vulnerability is Low.\n\nThe FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are affected by this issue.",
           "Severity": "LOW",
@@ -8166,7 +8170,7 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/01/20/2",
-            "https://access.redhat.com/errata/RHSA-2025:15699",
+            "https://access.redhat.com/errata/RHSA-2025:16046",
             "https://access.redhat.com/security/cve/CVE-2024-13176",
             "https://bugzilla.redhat.com/2359885",
             "https://bugzilla.redhat.com/2359888",
@@ -8326,7 +8330,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-50102",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-50104",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-5399",
-            "https://errata.almalinux.org/10/ALSA-2025-15699.html",
+            "https://errata.almalinux.org/9/ALSA-2025-16046.html",
             "https://errata.rockylinux.org/RLSA-2025:15699",
             "https://github.com/advisories/GHSA-r9fv-h47r-823f",
             "https://github.com/openssl/openssl/commit/07272b05b04836a762b4baa874958af51d513844",
@@ -8377,7 +8381,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:0cb1d0e376d8789f99a2760bed8edddefff1dc674aae580d22342505670529de",
+          "Fingerprint": "sha256:4e6ced9bd4174fdb51d047986c89844cba4e34f9aaff3d5ce9dde20417a7ee0d",
           "Title": "openssl: Unbounded memory growth with session handling in TLSv1.3",
           "Description": "Issue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.",
           "Severity": "LOW",
@@ -8472,7 +8476,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:4fd2125612c46d7f55964ddd299ba913f8b5838b80246d8a3b60cc8ec3f2f3ef",
+          "Fingerprint": "sha256:a8aff204eae82556baf8ea795a87418a233b4ae9b6e03e581705429013118606",
           "Title": "openssl: Excessive time spent checking DSA keys and parameters",
           "Description": "Issue summary: Checking excessively long DSA keys or parameters may be very\nslow.\n\nImpact summary: Applications that use the functions EVP_PKEY_param_check()\nor EVP_PKEY_public_check() to check a DSA public key or DSA parameters may\nexperience long delays. Where the key or parameters that are being checked\nhave been obtained from an untrusted source this may lead to a Denial of\nService.\n\nThe functions EVP_PKEY_param_check() or EVP_PKEY_public_check() perform\nvarious checks on DSA parameters. Some of those computations take a long time\nif the modulus (`p` parameter) is too large.\n\nTrying to use a very large modulus is slow and OpenSSL will not allow using\npublic keys with a modulus which is over 10,000 bits in length for signature\nverification. However the key and parameter check functions do not limit\nthe modulus size when performing the checks.\n\nAn application that calls EVP_PKEY_param_check() or EVP_PKEY_public_check()\nand supplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nThese functions are not called by OpenSSL itself on untrusted DSA keys so\nonly applications that directly call these functions may be vulnerable.\n\nAlso vulnerable are the OpenSSL pkey and pkeyparam command line applications\nwhen using the `-check` option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.",
           "Severity": "LOW",
@@ -8557,7 +8561,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:c9a13a90a187d18f2c11ade2841fa7f3b2cc757b248a4c7fb7bb82bcab4e23bb",
+          "Fingerprint": "sha256:7a8a6e789795536a787b1e13ce9a3a7a382d140f119d1ed88046eb04b67d3104",
           "Title": "openssl: Use After Free with SSL_free_buffers",
           "Description": "Issue summary: Calling the OpenSSL API function SSL_free_buffers may cause\nmemory to be accessed that was previously freed in some situations\n\nImpact summary: A use after free can have a range of potential consequences such\nas the corruption of valid data, crashes or execution of arbitrary code.\nHowever, only applications that directly call the SSL_free_buffers function are\naffected by this issue. Applications that do not call this function are not\nvulnerable. Our investigations indicate that this function is rarely used by\napplications.\n\nThe SSL_free_buffers function is used to free the internal OpenSSL buffer used\nwhen processing an incoming record from the network. The call is only expected\nto succeed if the buffer is not currently in use. However, two scenarios have\nbeen identified where the buffer is freed even when still in use.\n\nThe first scenario occurs where a record header has been received from the\nnetwork and processed by OpenSSL, but the full record body has not yet arrived.\nIn this case calling SSL_free_buffers will succeed even though a record has only\nbeen partially processed and the buffer is still in use.\n\nThe second scenario occurs where a full record containing application data has\nbeen received and processed by OpenSSL but the application has only read part of\nthis data. Again a call to SSL_free_buffers will succeed even though the buffer\nis still in use.\n\nWhile these scenarios could occur accidentally during normal operation a\nmalicious attacker could attempt to engineer a stituation where this occurs.\nWe are not aware of this issue being actively exploited.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
           "Severity": "LOW",
@@ -8565,7 +8569,7 @@
             "CWE-416"
           ],
           "VendorSeverity": {
-            "alma": 3,
+            "alma": 1,
             "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
@@ -8587,10 +8591,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:26275",
+            "https://access.redhat.com/errata/RHSA-2024:9333",
             "https://access.redhat.com/security/cve/CVE-2024-4741",
+            "https://bugzilla.redhat.com/2274020",
+            "https://bugzilla.redhat.com/2281029",
             "https://bugzilla.redhat.com/2283757",
-            "https://bugzilla.redhat.com/2481898",
+            "https://bugzilla.redhat.com/2294581",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2274020",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2281029",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2283757",
@@ -8599,7 +8605,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4603",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4741",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-5535",
-            "https://errata.almalinux.org/8/ALSA-2026-26275.html",
+            "https://errata.almalinux.org/9/ALSA-2024-9333.html",
             "https://errata.rockylinux.org/RLSA-2024:9333",
             "https://github.com/advisories/GHSA-6vgq-8qjq-h578",
             "https://github.com/openssl/openssl/commit/704f725b96aa373ee45ecfb23f6abfe8be8d9177",
@@ -8643,7 +8649,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:661e650a13d3addb546085f008806e7f5b79eeaa2fd9655b7584688f505b56c3",
+          "Fingerprint": "sha256:2a06ba97d72710aca3a025436e4b944c2d10be440d23cb3d0dee81a0304b0c4e",
           "Title": "openssl: SSL_select_next_proto buffer overread",
           "Description": "Issue summary: Calling the OpenSSL API function SSL_select_next_proto with an\nempty supported client protocols buffer may cause a crash or memory contents to\nbe sent to the peer.\n\nImpact summary: A buffer overread can have a range of potential consequences\nsuch as unexpected application beahviour or a crash. In particular this issue\ncould result in up to 255 bytes of arbitrary private data from memory being sent\nto the peer leading to a loss of confidentiality. However, only applications\nthat directly call the SSL_select_next_proto function with a 0 length list of\nsupported client protocols are affected by this issue. This would normally never\nbe a valid scenario and is typically not under attacker control but may occur by\naccident in the case of a configuration or programming error in the calling\napplication.\n\nThe OpenSSL API function SSL_select_next_proto is typically used by TLS\napplications that support ALPN (Application Layer Protocol Negotiation) or NPN\n(Next Protocol Negotiation). NPN is older, was never standardised and\nis deprecated in favour of ALPN. We believe that ALPN is significantly more\nwidely deployed than NPN. The SSL_select_next_proto function accepts a list of\nprotocols from the server and a list of protocols from the client and returns\nthe first protocol that appears in the server list that also appears in the\nclient list. In the case of no overlap between the two lists it returns the\nfirst item in the client list. In either case it will signal whether an overlap\nbetween the two lists was found. In the case where SSL_select_next_proto is\ncalled with a zero length client list it fails to notice this condition and\nreturns the memory immediately following the client list pointer (and reports\nthat there was no overlap in the lists).\n\nThis function is typically called from a server side application callback for\nALPN or a client side application callback for NPN. In the case of ALPN the list\nof protocols supplied by the client is guaranteed by libssl to never be zero in\nlength. The list of server protocols comes from the application and should never\nnormally be expected to be of zero length. In this case if the\nSSL_select_next_proto function has been called as expected (with the list\nsupplied by the client passed in the client/client_len parameters), then the\napplication will not be vulnerable to this issue. If the application has\naccidentally been configured with a zero length server list, and has\naccidentally passed that zero length server list in the client/client_len\nparameters, and has additionally failed to correctly handle a \"no overlap\"\nresponse (which would normally result in a handshake failure in ALPN) then it\nwill be vulnerable to this problem.\n\nIn the case of NPN, the protocol permits the client to opportunistically select\na protocol when there is no overlap. OpenSSL returns the first client protocol\nin the no overlap case in support of this. The list of client protocols comes\nfrom the application and should never normally be expected to be of zero length.\nHowever if the SSL_select_next_proto function is accidentally called with a\nclient_len of 0 then an invalid memory pointer will be returned instead. If the\napplication uses this output as the opportunistic protocol then the loss of\nconfidentiality will occur.\n\nThis issue has been assessed as Low severity because applications are most\nlikely to be vulnerable if they are using NPN instead of ALPN - but NPN is not\nwidely used. It also requires an application configuration or programming error.\nFinally, this issue would not typically be under attacker control making active\nexploitation unlikely.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.\n\nDue to the low severity of this issue we are not issuing new releases of\nOpenSSL at this time. The fix will be included in the next releases when they\nbecome available.",
           "Severity": "LOW",
@@ -8676,7 +8682,7 @@
             "http://www.openwall.com/lists/oss-security/2024/06/27/1",
             "http://www.openwall.com/lists/oss-security/2024/06/28/4",
             "http://www.openwall.com/lists/oss-security/2024/08/15/1",
-            "https://access.redhat.com/errata/RHSA-2025:1673",
+            "https://access.redhat.com/errata/RHSA-2025:1671",
             "https://access.redhat.com/security/cve/CVE-2024-5535",
             "https://bugzilla.redhat.com/2294581",
             "https://bugzilla.redhat.com/2294676",
@@ -8741,7 +8747,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4603",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4741",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-5535",
-            "https://errata.almalinux.org/8/ALSA-2025-1673.html",
+            "https://errata.almalinux.org/9/ALSA-2025-1671.html",
             "https://errata.rockylinux.org/RLSA-2024:9333",
             "https://github.com/advisories/GHSA-4fc7-mvrr-wv2c",
             "https://github.com/openssl/openssl/commit/4ada436a1946cbb24db5ab4ca082b69c1bc10f37",
@@ -8792,7 +8798,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:1190132dfe36035fed2e0c2a5149412e9ed3784612115736fe32d10342fb50a8",
+          "Fingerprint": "sha256:a02015eb640620e18874ca50455bb234de263b916ae12491935154bc9690da1d",
           "Title": "openssl: Low-level invalid GF(2^m) parameters lead to OOB memory access",
           "Description": "Issue summary: Use of the low-level GF(2^m) elliptic curve APIs with untrusted\nexplicit values for the field polynomial can lead to out-of-bounds memory reads\nor writes.\n\nImpact summary: Out of bound memory writes can lead to an application crash or\neven a possibility of a remote code execution, however, in all the protocols\ninvolving Elliptic Curve Cryptography that we're aware of, either only \"named\ncurves\" are supported, or, if explicit curve parameters are supported, they\nspecify an X9.62 encoding of binary (GF(2^m)) curves that can't represent\nproblematic input values. Thus the likelihood of existence of a vulnerable\napplication is low.\n\nIn particular, the X9.62 encoding is used for ECC keys in X.509 certificates,\nso problematic inputs cannot occur in the context of processing X.509\ncertificates.  Any problematic use-cases would have to be using an \"exotic\"\ncurve encoding.\n\nThe affected APIs include: EC_GROUP_new_curve_GF2m(), EC_GROUP_new_from_params(),\nand various supporting BN_GF2m_*() functions.\n\nApplications working with \"exotic\" explicit binary (GF(2^m)) curve parameters,\nthat make it possible to represent invalid field polynomials with a zero\nconstant term, via the above or similar APIs, may terminate abruptly as a\nresult of reading or writing outside of array bounds.  Remote code execution\ncannot easily be ruled out.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
           "Severity": "LOW",
@@ -8868,7 +8874,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:6f25360c13187125191f147a704375dece1c1373fa26271e17efda98fb66cd7c",
+          "Fingerprint": "sha256:2e6c359d293e4d0a6c98411d470435d193cd45a92595bde4d469ad496775ccf1",
           "Title": "openssl: OpenSSL: Denial of Service due to out-of-bounds write in BIO filter",
           "Description": "Issue summary: Writing large, newline-free data into a BIO chain using the\nline-buffering filter where the next BIO performs short writes can trigger\na heap-based out-of-bounds write.\n\nImpact summary: This out-of-bounds write can cause memory corruption which\ntypically results in a crash, leading to Denial of Service for an application.\n\nThe line-buffering BIO filter (BIO_f_linebuffer) is not used by default in\nTLS/SSL data paths. In OpenSSL command-line applications, it is typically\nonly pushed onto stdout/stderr on VMS systems. Third-party applications that\nexplicitly use this filter with a BIO chain that can short-write and that\nwrite large, newline-free data influenced by an attacker would be affected.\nHowever, the circumstances where this could happen are unlikely to be under\nattacker control, and BIO_f_linebuffer is unlikely to be handling non-curated\ndata controlled by an attacker. For that reason the issue was assessed as\nLow severity.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the BIO implementation is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.",
           "Severity": "LOW",
@@ -8977,7 +8983,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:029c67441bc471990e635948c4423ebd49f8bc2513a11b7fa6f77c61acbf6585",
+          "Fingerprint": "sha256:df764fc6d8c7e634bc9eb22ca3eee4a15dd2430228b94b53bf4cdab6ed8595b1",
           "Title": "openssl: OpenSSL: Information disclosure and data tampering via specific low-level OCB encryption/decryption calls",
           "Description": "Issue summary: When using the low-level OCB API directly with AES-NI or\u003cbr\u003eother hardware-accelerated code paths, inputs whose length is not a multiple\u003cbr\u003eof 16 bytes can leave the final partial block unencrypted and unauthenticated.\u003cbr\u003e\u003cbr\u003eImpact summary: The trailing 1-15 bytes of a message may be exposed in\u003cbr\u003ecleartext on encryption and are not covered by the authentication tag,\u003cbr\u003eallowing an attacker to read or tamper with those bytes without detection.\u003cbr\u003e\u003cbr\u003eThe low-level OCB encrypt and decrypt routines in the hardware-accelerated\u003cbr\u003estream path process full 16-byte blocks but do not advance the input/output\u003cbr\u003epointers. The subsequent tail-handling code then operates on the original\u003cbr\u003ebase pointers, effectively reprocessing the beginning of the buffer while\u003cbr\u003eleaving the actual trailing bytes unprocessed. The authentication checksum\u003cbr\u003ealso excludes the true tail bytes.\u003cbr\u003e\u003cbr\u003eHowever, typical OpenSSL consumers using EVP are not affected because the\u003cbr\u003ehigher-level EVP and provider OCB implementations split inputs so that full\u003cbr\u003eblocks and trailing partial blocks are processed in separate calls, avoiding\u003cbr\u003ethe problematic code path. Additionally, TLS does not use OCB ciphersuites.\u003cbr\u003eThe vulnerability only affects applications that call the low-level\u003cbr\u003eCRYPTO_ocb128_encrypt() or CRYPTO_ocb128_decrypt() functions directly with\u003cbr\u003enon-block-aligned lengths in a single call on hardware-accelerated builds.\u003cbr\u003eFor these reasons the issue was assessed as Low severity.\u003cbr\u003e\u003cbr\u003eThe FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected\u003cbr\u003eby this issue, as OCB mode is not a FIPS-approved algorithm.\u003cbr\u003e\u003cbr\u003eOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0 and 1.1.1 are vulnerable to this issue.\u003cbr\u003e\u003cbr\u003eOpenSSL 1.0.2 is not affected by this issue.",
           "Severity": "LOW",
@@ -9086,7 +9092,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:e0d9bef045b7c9215143dcad215dff3ad02c79c20ca2911013449c67da20dc06",
+          "Fingerprint": "sha256:77cd07e15a5ae8d1cba025b014672af54732073358fad7cb125b1c1830cc7e62",
           "Title": "openssl: OpenSSL: Denial of Service via malformed TimeStamp Response",
           "Description": "Issue summary: A type confusion vulnerability exists in the TimeStamp Response\nverification code where an ASN1_TYPE union member is accessed without first\nvalidating the type, causing an invalid or NULL pointer dereference when\nprocessing a malformed TimeStamp Response file.\n\nImpact summary: An application calling TS_RESP_verify_response() with a\nmalformed TimeStamp Response can be caused to dereference an invalid or\nNULL pointer when reading, resulting in a Denial of Service.\n\nThe functions ossl_ess_get_signing_cert() and ossl_ess_get_signing_cert_v2()\naccess the signing cert attribute value without validating its type.\nWhen the type is not V_ASN1_SEQUENCE, this results in accessing invalid memory\nthrough the ASN1_TYPE union, causing a crash.\n\nExploiting this vulnerability requires an attacker to provide a malformed\nTimeStamp Response to an application that verifies timestamp responses. The\nTimeStamp protocol (RFC 3161) is not widely used and the impact of the\nexploit is just a Denial of Service. For these reasons the issue was\nassessed as Low severity.\n\nThe FIPS modules in 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the TimeStamp Response implementation is outside the OpenSSL FIPS module\nboundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0 and 1.1.1 are vulnerable to this issue.\n\nOpenSSL 1.0.2 is not affected by this issue.",
           "Severity": "LOW",
@@ -9195,7 +9201,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:93adb3b839f4d2859ffc4cb60fb816b4d1425207c054a6945d10bb279212f093",
+          "Fingerprint": "sha256:be32ed1c3b272f351ac9bd53f976f446cf394a8f111cd0f1d20a9d2a53c5479d",
           "Title": "openssl: Out-of-bounds read in HTTP client no_proxy handling",
           "Description": "Issue summary: An application using the OpenSSL HTTP client API functions may\ntrigger an out-of-bounds read if the 'no_proxy' environment variable is set and\nthe host portion of the authority component of the HTTP URL is an IPv6 address.\n\nImpact summary: An out-of-bounds read can trigger a crash which leads to\nDenial of Service for an application.\n\nThe OpenSSL HTTP client API functions can be used directly by applications\nbut they are also used by the OCSP client functions and CMP (Certificate\nManagement Protocol) client implementation in OpenSSL. However the URLs used\nby these implementations are unlikely to be controlled by an attacker.\n\nIn this vulnerable code the out of bounds read can only trigger a crash.\nFurthermore the vulnerability requires an attacker-controlled URL to be\npassed from an application to the OpenSSL function and the user has to have\na 'no_proxy' environment variable set. For the aforementioned reasons the\nissue was assessed as Low severity.\n\nThe vulnerable code was introduced in the following patch releases:\n3.0.16, 3.1.8, 3.2.4, 3.3.3, 3.4.0 and 3.5.0.\n\nThe FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected by this\nissue, as the HTTP client implementation is outside the OpenSSL FIPS module\nboundary.",
           "Severity": "LOW",
@@ -9263,7 +9269,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:eaf8160455a05a6d5c54098109fbf66b8152d14ef8f8c36269b5a0c15a2823e6",
+          "Fingerprint": "sha256:0557aa5298fe2bdc42047978454905237ee5a3582ba245e83080064ad4d2d612",
           "Title": "openssl: OpenSSL: Denial of Service due to type confusion in PKCS#12 file processing",
           "Description": "Issue summary: An invalid or NULL pointer dereference can happen in\nan application processing a malformed PKCS#12 file.\n\nImpact summary: An application processing a malformed PKCS#12 file can be\ncaused to dereference an invalid or NULL pointer on memory read, resulting\nin a Denial of Service.\n\nA type confusion vulnerability exists in PKCS#12 parsing code where\nan ASN1_TYPE union member is accessed without first validating the type,\ncausing an invalid pointer read.\n\nThe location is constrained to a 1-byte address space, meaning any\nattempted pointer manipulation can only target addresses between 0x00 and 0xFF.\nThis range corresponds to the zero page, which is unmapped on most modern\noperating systems and will reliably result in a crash, leading only to a\nDenial of Service. Exploiting this issue also requires a user or application\nto process a maliciously crafted PKCS#12 file. It is uncommon to accept\nuntrusted PKCS#12 files in applications as they are usually used to store\nprivate keys which are trusted by definition. For these reasons, the issue\nwas assessed as Low severity.\n\nThe FIPS modules in 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the PKCS12 implementation is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0 and 1.1.1 are vulnerable to this issue.\n\nOpenSSL 1.0.2 is not affected by this issue.",
           "Severity": "LOW",
@@ -9372,7 +9378,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:dadc6a319410f231c4f8588ec35f4a08c025502cacab38aeaeb9d0b4121f52d6",
+          "Fingerprint": "sha256:e35586e2160fcf553eba5289f7ae06232d98b1aef7d6cf80601ab103c5f68317",
           "Title": "openssl: OpenSSL: Denial of Service via type confusion in PKCS#7 signature verification",
           "Description": "Issue summary: A type confusion vulnerability exists in the signature\nverification of signed PKCS#7 data where an ASN1_TYPE union member is\naccessed without first validating the type, causing an invalid or NULL\npointer dereference when processing malformed PKCS#7 data.\n\nImpact summary: An application performing signature verification of PKCS#7\ndata or calling directly the PKCS7_digest_from_attributes() function can be\ncaused to dereference an invalid or NULL pointer when reading, resulting in\na Denial of Service.\n\nThe function PKCS7_digest_from_attributes() accesses the message digest attribute\nvalue without validating its type. When the type is not V_ASN1_OCTET_STRING,\nthis results in accessing invalid memory through the ASN1_TYPE union, causing\na crash.\n\nExploiting this vulnerability requires an attacker to provide a malformed\nsigned PKCS#7 to an application that verifies it. The impact of the\nexploit is just a Denial of Service, the PKCS7 API is legacy and applications\nshould be using the CMS API instead. For these reasons the issue was\nassessed as Low severity.\n\nThe FIPS modules in 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the PKCS#7 parsing implementation is outside the OpenSSL FIPS module\nboundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.",
           "Severity": "LOW",
@@ -9482,7 +9488,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:e11d64e0a56a43f543df12c1881a0a2784eac86153c6be655a3bdfef23f7af04",
+          "Fingerprint": "sha256:58e6cfe2c82ab9d7e85363feb161dc00b7c358eac9a4ffd232a4c7692390c8ad",
           "Title": "musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write ...",
           "Description": "musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write vulnerability when an attacker can trigger iconv conversion of untrusted EUC-KR text to UTF-8.",
           "Severity": "HIGH",
@@ -9534,7 +9540,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:a3b7131ea33de48cd64c9dae3bfa0b31100fcae142633103ec686d0e82d98755",
+          "Fingerprint": "sha256:8fdf1cfedec066cf0deda548b36abb26a347debd416ba3cd56b15212ba1091c0",
           "Title": "musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write ...",
           "Description": "musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write vulnerability when an attacker can trigger iconv conversion of untrusted EUC-KR text to UTF-8.",
           "Severity": "HIGH",
@@ -9586,7 +9592,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:35a1273470319de788171dff151335ffaa2cc45fedb5667516d0cace0dfc29a6",
+          "Fingerprint": "sha256:3b23ef55349f68ce1fb9158d8b3f4b71e46263aeae5ea3bb2b0994fb1bfffcaf",
           "Title": "busybox: use-after-free in awk",
           "Description": "A use-after-free vulnerability was discovered in xasprintf function in xfuncs_printf.c:344 in BusyBox v.1.36.1.",
           "Severity": "MEDIUM",
@@ -9643,7 +9649,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:0c9b4c456c7b0f6728483a67adaac1bca445b034134102d8783b5bbf1f106feb",
+          "Fingerprint": "sha256:3a7a3b9a044b50484016b7b82244ee8b75c74fe57dcdfd76f31db16bd8d2c7e3",
           "Title": "busybox: use-after-free",
           "Description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
           "Severity": "MEDIUM",
@@ -9702,7 +9708,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:1af70198c38ea0436027357eaf5df220f5b5a4be2a2c9def3b569bbbf6c6eb3e",
+          "Fingerprint": "sha256:22219771668329660dbe60dd0ab4c71452ac4fedd7b1819c26817a41feadda19",
           "Title": "busybox: use-after-free",
           "Description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
           "Severity": "MEDIUM",
@@ -9761,7 +9767,7 @@
             "Name": "Alpine Secdb",
             "URL": "https://secdb.alpinelinux.org/"
           },
-          "Fingerprint": "sha256:484757f7d2f084d4aae1c540aad0ae18259539416f806f5e3922545f0aa3b2df",
+          "Fingerprint": "sha256:82f6d5fce21b3128ceaee37bd9557f75b9afa07e2a1804a29e975b6c4840d59d",
           "Title": "busybox: A heap-buffer-overflow",
           "Description": "A heap-buffer-overflow was discovered in BusyBox v.1.36.1 in the next_token function at awk.c:1159.",
           "Severity": "MEDIUM",
