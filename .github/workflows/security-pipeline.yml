@@ -22,11 +22,7 @@ jobs:
         run: docker --version
 
       - name: Install Trivy
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y wget
-          wget https://github.com/aquasecurity/trivy/releases/latest/download/trivy_0.65.0_Linux-64bit.deb
-          sudo dpkg -i trivy_0.65.0_Linux-64bit.deb
+        uses: aquasecurity/setup-trivy@v0.2.2
 
       - name: Verify Trivy
         run: trivy --version
@@ -43,8 +39,8 @@ jobs:
         run: ./scripts/scan.sh
 
       - name: Upload Reports
-        uses: actions/upload-artifact@v4
         if: always()
+        uses: actions/upload-artifact@v4
         with:
           name: trivy-reports
           path: reports/
