@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.72.0"
   },
-  "ReportID": "019f3cb5-4f25-7b79-b46f-9d16ef589b13",
-  "CreatedAt": "2026-07-07T18:42:23.077755+05:30",
+  "ReportID": "019f4232-cae7-7bcb-87fa-876d08e6376e",
+  "CreatedAt": "2026-07-08T20:17:32.839775+05:30",
   "ArtifactID": "sha256:e55ed675c9017dee87505511e38f485f0a51a1e522637ed8141afc5f88a9bc0f",
   "ArtifactName": "nginx:latest",
   "ArtifactType": "container_image",
@@ -10914,6 +10914,34 @@
           }
         },
         {
+          "VulnerabilityID": "CVE-2026-53615",
+          "PkgID": "bsdutils@1:2.41-5",
+          "PkgName": "bsdutils",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/bsdutils@2.41-5?arch=arm64\u0026distro=debian-13.5\u0026epoch=1",
+            "UID": "94e268d496da180"
+          },
+          "InstalledVersion": "1:2.41-5",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
+            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:2368e8d5ef83edb1d3d85e5286d567689df2174e36137777af1e008cbb4283e1",
+          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
+          "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2026-53615:\n\tInteger Overflow or Wraparound in libblkid/src/partitions/dos.c\n",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "amazon": 3
+          }
+        },
+        {
           "VulnerabilityID": "CVE-2026-13595",
           "PkgID": "bsdutils@1:2.41-5",
           "PkgName": "bsdutils",
@@ -10927,6 +10955,7 @@
             "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
             "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-13595",
           "DataSource": {
             "ID": "debian",
@@ -10941,9 +10970,14 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "nvd": 2,
             "redhat": 2
           },
           "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
+              "V3Score": 5.3
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
               "V3Score": 6.8
@@ -10958,7 +10992,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-13595"
           ],
           "PublishedDate": "2026-06-29T09:16:28.303Z",
-          "LastModifiedDate": "2026-06-30T03:17:14.55Z"
+          "LastModifiedDate": "2026-07-08T03:37:21.637Z"
         },
         {
           "VulnerabilityID": "CVE-2026-27456",
@@ -11196,7 +11230,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/8/ALSA-2026-1852.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -11276,30 +11310,6 @@
           },
           "Fingerprint": "sha256:94e207384dd496f1567ae1c05085cd3b1207c8ff9c18162f72e234758dff7632",
           "Title": "[Local Privilege Escalation via LIBMOUNT_FORCE_MOUNT2 Environment Variable - nosuid/noexec Bypass in SUID mount(8)]",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-53615",
-          "PkgID": "bsdutils@1:2.41-5",
-          "PkgName": "bsdutils",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/bsdutils@2.41-5?arch=arm64\u0026distro=debian-13.5\u0026epoch=1",
-            "UID": "94e268d496da180"
-          },
-          "InstalledVersion": "1:2.41-5",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
-            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:2368e8d5ef83edb1d3d85e5286d567689df2174e36137777af1e008cbb4283e1",
-          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
           "Severity": "UNKNOWN"
         },
         {
@@ -11415,7 +11425,7 @@
             "https://cgit.git.savannah.gnu.org/cgit/coreutils.git/tree/NEWS?id=8c9602e3a145e9596dc1a63c6ed67865814b6633#n14",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-5278",
             "https://debbugs.gnu.org/cgi/bugreport.cgi?bug=78507",
-            "https://errata.almalinux.org/10/ALSA-2026-33124.html",
+            "https://errata.almalinux.org/9/ALSA-2026-28911.html",
             "https://errata.rockylinux.org/RLSA-2026:28911",
             "https://linux.oracle.com/cve/CVE-2025-5278.html",
             "https://linux.oracle.com/errata/ELSA-2026-28911.html",
@@ -11450,6 +11460,9 @@
           "Title": "curl: curl: SSH host verification bypass when using schemeless URLs with SFTP/SCP",
           "Description": "When a user invokes curl using a schemeless URL combined with\n`--proto-default` sftp (or scp), a disconnect occurs between the tool layer\nand libcurl. The tool layer incorrectly infers the URL scheme, which\nerroneously bypasses the initialization of critical SSH security options like\nCURLOPT_SSH_HOST_PUBLIC_KEY_SHA256 and CURLOPT_SSH_KNOWNHOSTS. Conversely, the\nlibcurl runtime successfully honors CURLOPT_DEFAULT_PROTOCOL and establishes\nthe connection via SFTP/SCP as specified. Because the tool layer skipped the\nsecurity configuration, these SSH host verification options are silently\nomitted, causing curl to connect to an unverified SSH remote host without\nthrowing an error.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-295"
+          ],
           "VendorSeverity": {
             "redhat": 3,
             "ubuntu": 1
@@ -11470,7 +11483,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-12064"
           ],
           "PublishedDate": "2026-07-03T07:16:24.217Z",
-          "LastModifiedDate": "2026-07-06T19:16:55.27Z"
+          "LastModifiedDate": "2026-07-07T19:43:11.187Z"
         },
         {
           "VulnerabilityID": "CVE-2026-5773",
@@ -11611,6 +11624,9 @@
           "Title": "curl: curl: Insecure connection establishment due to TLS configuration mismatch",
           "Description": "A vulnerability exists where a new transfer that uses STARTTLS to upgrade the\nconnection might reuse an existing live connection even though the TLS\nconfiguration mismatches so it should not.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-295"
+          ],
           "VendorSeverity": {
             "redhat": 3,
             "ubuntu": 1
@@ -11632,7 +11648,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-8286"
           ],
           "PublishedDate": "2026-07-03T07:16:24.453Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T19:42:11.24Z"
         },
         {
           "VulnerabilityID": "CVE-2026-8927",
@@ -11658,6 +11674,9 @@
           "Title": "libcurl: libcurl: Information disclosure due to uncleared proxy authentication state",
           "Description": "When reusing a libcurl handle for sequential transfers driven by\nenvironment-variable proxy configuration, libcurl fails to clear the proxy\nauthentication state between requests. Specifically, if the initial transfer\nauthenticates against `proxyA` using Digest auth, a subsequent transfer routed\nthrough `proxyB` erroneously leaks the `Proxy-Authorization:` header intended\nsolely for `proxyA`.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-294"
+          ],
           "VendorSeverity": {
             "redhat": 3,
             "ubuntu": 2
@@ -11679,7 +11698,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-8927"
           ],
           "PublishedDate": "2026-07-03T07:16:25.123Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T23:21:03.53Z"
         },
         {
           "VulnerabilityID": "CVE-2026-8932",
@@ -11723,7 +11742,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-8932"
           ],
           "PublishedDate": "2026-07-03T07:16:25.363Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T23:18:32.137Z"
         },
         {
           "VulnerabilityID": "CVE-2026-9079",
@@ -11749,6 +11768,9 @@
           "Title": "libcurl: libcurl: Information disclosure due to failure to clear proxy authentication credentials",
           "Description": "libcurl had a flaw that when instructed to clear proxy authentication\ncredentials which made it not do so, leaving the old credentials around to get\nused for subsequent transfers that should not know nor use them.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-522"
+          ],
           "VendorSeverity": {
             "redhat": 3,
             "ubuntu": 2
@@ -11770,7 +11792,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-9079"
           ],
           "PublishedDate": "2026-07-03T07:16:25.62Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T15:05:55.933Z"
         },
         {
           "VulnerabilityID": "CVE-2026-9080",
@@ -11796,6 +11818,9 @@
           "Title": "libcurl: libcurl: Use-after-free via curl_easy_pause() in CURLMOPT_SOCKETFUNCTION callback",
           "Description": "Calling `curl_easy_pause()` within the event-based `CURLMOPT_SOCKETFUNCTION`\ncallback triggers a use-after-free vulnerability, where libcurl attempts to\nstore a flag using a dangling struct pointer immediately after that pointer's\nmemory has been freed.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
           "VendorSeverity": {
             "redhat": 3,
             "ubuntu": 1
@@ -11817,7 +11842,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-9080"
           ],
           "PublishedDate": "2026-07-03T07:16:25.713Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T15:05:26.53Z"
         },
         {
           "VulnerabilityID": "CVE-2026-9545",
@@ -11864,7 +11889,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-9545"
           ],
           "PublishedDate": "2026-07-03T07:16:25.807Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T15:03:56.92Z"
         },
         {
           "VulnerabilityID": "CVE-2026-9547",
@@ -11911,44 +11936,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-9547"
           ],
           "PublishedDate": "2026-07-03T07:16:25.99Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-11856",
-          "PkgID": "curl@8.14.1-2+deb13u3",
-          "PkgName": "curl",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/curl@8.14.1-2%2Bdeb13u3?arch=arm64\u0026distro=debian-13.5",
-            "UID": "7edfc30215009c3e"
-          },
-          "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-11856",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:481301483ef961b119156a48254a689b38c91582dc48e33e604ccff93aabf4e3",
-          "Title": "Successfully using libcurl to do a transfer to a specific HTTP origin  ...",
-          "Description": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`.",
-          "Severity": "MEDIUM",
-          "VendorSeverity": {
-            "ubuntu": 2
-          },
-          "References": [
-            "https://curl.se/L7HzKXisfJ/CVE-2026-11856.md",
-            "https://curl.se/docs/CVE-2026-11856.html",
-            "https://curl.se/docs/CVE-2026-11856.json",
-            "https://hackerone.com/reports/3793260",
-            "https://www.cve.org/CVERecord?id=CVE-2026-11856"
-          ],
-          "PublishedDate": "2026-07-03T07:16:23.973Z",
-          "LastModifiedDate": "2026-07-06T19:16:54.983Z"
+          "LastModifiedDate": "2026-07-07T14:52:29.503Z"
         },
         {
           "VulnerabilityID": "CVE-2026-1965",
@@ -12452,6 +12440,53 @@
           "LastModifiedDate": "2026-06-17T11:01:57.7Z"
         },
         {
+          "VulnerabilityID": "CVE-2026-8924",
+          "PkgID": "curl@8.14.1-2+deb13u3",
+          "PkgName": "curl",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/curl@8.14.1-2%2Bdeb13u3?arch=arm64\u0026distro=debian-13.5",
+            "UID": "7edfc30215009c3e"
+          },
+          "InstalledVersion": "8.14.1-2+deb13u3",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-8924",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:a5bd64361adf9780c52ed755ca8b919bd782eacb7c1f6c280f282c1ea962d5fd",
+          "Title": "curl: curl: Cookie injection via malicious HTTP server using super cookies",
+          "Description": "A flaw in curl’s cookie parsing logic allows a malicious HTTP server to set\n'super cookies' that bypass the Public Suffix List check. This enables an\nattacker-controlled origin to inject cookies that curl subsequently scopes and\ntransmits to unrelated third-party domains.",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "redhat": 2,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-8924",
+            "https://curl.se/L7HzKXisfJ/CVE-2026-8924.md",
+            "https://curl.se/docs/CVE-2026-8924.html",
+            "https://curl.se/docs/CVE-2026-8924.json",
+            "https://hackerone.com/reports/3733905",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-8924",
+            "https://ubuntu.com/security/notices/USN-8487-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-8924"
+          ],
+          "PublishedDate": "2026-07-03T07:16:24.793Z",
+          "LastModifiedDate": "2026-07-07T23:06:00.797Z"
+        },
+        {
           "VulnerabilityID": "CVE-2026-8926",
           "PkgID": "curl@8.14.1-2+deb13u3",
           "PkgName": "curl",
@@ -12475,6 +12510,9 @@
           "Title": "curl: curl: Information disclosure via incorrect .netrc password lookup",
           "Description": "When asking curl to use a `.netrc` file to find credentials and at the same\ntime specifying a URL with a username(without a password), like\n`https://user@example.com/`, curl could wrongly get and use the password for\n*another* user set in the `.netrc` file for that host if such a one exists and\nthere is no match for the specified user.",
           "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-522"
+          ],
           "VendorSeverity": {
             "redhat": 2,
             "ubuntu": 1
@@ -12496,7 +12534,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-8926"
           ],
           "PublishedDate": "2026-07-03T07:16:25.037Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T23:02:54.49Z"
         },
         {
           "VulnerabilityID": "CVE-2025-10966",
@@ -12879,6 +12917,9 @@
           "Title": "A use-after-free vulnerability exists in libcurl when an application c ...",
           "Description": "A use-after-free vulnerability exists in libcurl when an application\nconfigures an HTTP/2 stream-dependency tree via `CURLOPT_STREAM_DEPENDS` or\n`CURLOPT_STREAM_DEPENDS_E`, subsequently invokes `curl_easy_reset()`, and\nfinally terminates the handle with `curl_easy_cleanup()`. During this final\ncleanup phase, libcurl attempts to access and modify an internal structure\nthat was already freed during the reset operation.",
           "Severity": "LOW",
+          "CweIDs": [
+            "CWE-416"
+          ],
           "VendorSeverity": {
             "ubuntu": 1
           },
@@ -12890,7 +12931,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-10536"
           ],
           "PublishedDate": "2026-07-03T07:16:23.563Z",
-          "LastModifiedDate": "2026-07-06T19:16:54.473Z"
+          "LastModifiedDate": "2026-07-07T18:02:03.89Z"
         },
         {
           "VulnerabilityID": "CVE-2026-8458",
@@ -12928,10 +12969,10 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-8458"
           ],
           "PublishedDate": "2026-07-03T07:16:24.63Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T23:12:17.003Z"
         },
         {
-          "VulnerabilityID": "CVE-2026-8924",
+          "VulnerabilityID": "CVE-2026-11856",
           "PkgID": "curl@8.14.1-2+deb13u3",
           "PkgName": "curl",
           "PkgIdentifier": {
@@ -12944,29 +12985,26 @@
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
           },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-8924",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-11856",
           "DataSource": {
             "ID": "debian",
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:a5bd64361adf9780c52ed755ca8b919bd782eacb7c1f6c280f282c1ea962d5fd",
-          "Title": "A flaw in curl\\u2019s cookie parsing logic allows a malicious HTTP ser ...",
-          "Description": "A flaw in curl’s cookie parsing logic allows a malicious HTTP server to set\n'super cookies' that bypass the Public Suffix List check. This enables an\nattacker-controlled origin to inject cookies that curl subsequently scopes and\ntransmits to unrelated third-party domains.",
-          "Severity": "LOW",
-          "VendorSeverity": {
-            "ubuntu": 1
-          },
-          "References": [
-            "https://curl.se/L7HzKXisfJ/CVE-2026-8924.md",
-            "https://curl.se/docs/CVE-2026-8924.html",
-            "https://curl.se/docs/CVE-2026-8924.json",
-            "https://hackerone.com/reports/3733905",
-            "https://ubuntu.com/security/notices/USN-8487-1",
-            "https://www.cve.org/CVERecord?id=CVE-2026-8924"
+          "Fingerprint": "sha256:481301483ef961b119156a48254a689b38c91582dc48e33e604ccff93aabf4e3",
+          "Title": "Successfully using libcurl to do a transfer to a specific HTTP origin  ...",
+          "Description": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`.",
+          "Severity": "UNKNOWN",
+          "CweIDs": [
+            "CWE-294"
           ],
-          "PublishedDate": "2026-07-03T07:16:24.793Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "References": [
+            "https://curl.se/docs/CVE-2026-11856.html",
+            "https://curl.se/docs/CVE-2026-11856.json",
+            "https://hackerone.com/reports/3793260"
+          ],
+          "PublishedDate": "2026-07-03T07:16:23.973Z",
+          "LastModifiedDate": "2026-07-07T19:43:55.6Z"
         },
         {
           "VulnerabilityID": "CVE-2026-41992",
@@ -13196,6 +13234,7 @@
             "CWE-122"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "redhat": 3
           },
           "CVSS": {
@@ -13215,7 +13254,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-56208"
           ],
           "PublishedDate": "2026-06-19T17:16:30.297Z",
-          "LastModifiedDate": "2026-07-07T00:16:34.517Z"
+          "LastModifiedDate": "2026-07-08T09:16:30.17Z"
         },
         {
           "VulnerabilityID": "CVE-2026-56209",
@@ -13264,7 +13303,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-56209"
           ],
           "PublishedDate": "2026-06-19T17:16:30.427Z",
-          "LastModifiedDate": "2026-07-06T23:16:56.813Z"
+          "LastModifiedDate": "2026-07-08T09:16:30.523Z"
         },
         {
           "VulnerabilityID": "CVE-2026-56210",
@@ -13294,6 +13333,7 @@
             "CWE-125"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "redhat": 3
           },
           "CVSS": {
@@ -13313,7 +13353,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-56210"
           ],
           "PublishedDate": "2026-06-19T17:16:30.557Z",
-          "LastModifiedDate": "2026-07-06T23:16:57.193Z"
+          "LastModifiedDate": "2026-07-08T09:16:30.873Z"
         },
         {
           "VulnerabilityID": "CVE-2026-56211",
@@ -13343,6 +13383,7 @@
             "CWE-787"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "redhat": 3
           },
           "CVSS": {
@@ -13362,7 +13403,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-56211"
           ],
           "PublishedDate": "2026-06-19T17:16:30.68Z",
-          "LastModifiedDate": "2026-07-06T23:16:57.58Z"
+          "LastModifiedDate": "2026-07-08T09:16:31.22Z"
         },
         {
           "VulnerabilityID": "CVE-2011-3374",
@@ -13468,6 +13509,34 @@
           "LastModifiedDate": "2026-07-03T13:17:29.05Z"
         },
         {
+          "VulnerabilityID": "CVE-2026-53615",
+          "PkgID": "libblkid1@2.41-5",
+          "PkgName": "libblkid1",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libblkid1@2.41-5?arch=arm64\u0026distro=debian-13.5",
+            "UID": "a6db2dda07a49c3e"
+          },
+          "InstalledVersion": "2.41-5",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
+            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:3833470bba8411162c52a75f71a4cef6c4d58cd6258ab0c89a2d9d59b3ca8a3b",
+          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
+          "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2026-53615:\n\tInteger Overflow or Wraparound in libblkid/src/partitions/dos.c\n",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "amazon": 3
+          }
+        },
+        {
           "VulnerabilityID": "CVE-2026-13595",
           "PkgID": "libblkid1@2.41-5",
           "PkgName": "libblkid1",
@@ -13481,6 +13550,7 @@
             "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
             "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-13595",
           "DataSource": {
             "ID": "debian",
@@ -13495,9 +13565,14 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "nvd": 2,
             "redhat": 2
           },
           "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
+              "V3Score": 5.3
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
               "V3Score": 6.8
@@ -13512,7 +13587,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-13595"
           ],
           "PublishedDate": "2026-06-29T09:16:28.303Z",
-          "LastModifiedDate": "2026-06-30T03:17:14.55Z"
+          "LastModifiedDate": "2026-07-08T03:37:21.637Z"
         },
         {
           "VulnerabilityID": "CVE-2026-27456",
@@ -13750,7 +13825,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/8/ALSA-2026-1852.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -13830,30 +13905,6 @@
           },
           "Fingerprint": "sha256:dd60626e6c3242e3b42161c1c51361b4399d386f66c7ac1dbdef50804a6e2673",
           "Title": "[Local Privilege Escalation via LIBMOUNT_FORCE_MOUNT2 Environment Variable - nosuid/noexec Bypass in SUID mount(8)]",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-53615",
-          "PkgID": "libblkid1@2.41-5",
-          "PkgName": "libblkid1",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libblkid1@2.41-5?arch=arm64\u0026distro=debian-13.5",
-            "UID": "a6db2dda07a49c3e"
-          },
-          "InstalledVersion": "2.41-5",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
-            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:3833470bba8411162c52a75f71a4cef6c4d58cd6258ab0c89a2d9d59b3ca8a3b",
-          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
           "Severity": "UNKNOWN"
         },
         {
@@ -13995,12 +14046,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:33126",
+            "https://access.redhat.com/errata/RHSA-2026:33226",
             "https://access.redhat.com/security/cve/CVE-2026-5450",
             "https://bugzilla.redhat.com/2459853",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2459853",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5450",
-            "https://errata.almalinux.org/8/ALSA-2026-33126.html",
+            "https://errata.almalinux.org/9/ALSA-2026-33226.html",
             "https://errata.rockylinux.org/RLSA-2026:33226",
             "https://inbox.sourceware.org/libc-announce/b11f0003-6ec1-4bd6-b9de-9e38a4efeca3@redhat.com/T/#u",
             "https://linux.oracle.com/cve/CVE-2026-5450.html",
@@ -14595,12 +14646,12 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2026:33126",
+            "https://access.redhat.com/errata/RHSA-2026:33226",
             "https://access.redhat.com/security/cve/CVE-2026-5450",
             "https://bugzilla.redhat.com/2459853",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2459853",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5450",
-            "https://errata.almalinux.org/8/ALSA-2026-33126.html",
+            "https://errata.almalinux.org/9/ALSA-2026-33226.html",
             "https://errata.rockylinux.org/RLSA-2026:33226",
             "https://inbox.sourceware.org/libc-announce/b11f0003-6ec1-4bd6-b9de-9e38a4efeca3@redhat.com/T/#u",
             "https://linux.oracle.com/cve/CVE-2026-5450.html",
@@ -15128,6 +15179,9 @@
           "Title": "curl: curl: SSH host verification bypass when using schemeless URLs with SFTP/SCP",
           "Description": "When a user invokes curl using a schemeless URL combined with\n`--proto-default` sftp (or scp), a disconnect occurs between the tool layer\nand libcurl. The tool layer incorrectly infers the URL scheme, which\nerroneously bypasses the initialization of critical SSH security options like\nCURLOPT_SSH_HOST_PUBLIC_KEY_SHA256 and CURLOPT_SSH_KNOWNHOSTS. Conversely, the\nlibcurl runtime successfully honors CURLOPT_DEFAULT_PROTOCOL and establishes\nthe connection via SFTP/SCP as specified. Because the tool layer skipped the\nsecurity configuration, these SSH host verification options are silently\nomitted, causing curl to connect to an unverified SSH remote host without\nthrowing an error.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-295"
+          ],
           "VendorSeverity": {
             "redhat": 3,
             "ubuntu": 1
@@ -15148,7 +15202,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-12064"
           ],
           "PublishedDate": "2026-07-03T07:16:24.217Z",
-          "LastModifiedDate": "2026-07-06T19:16:55.27Z"
+          "LastModifiedDate": "2026-07-07T19:43:11.187Z"
         },
         {
           "VulnerabilityID": "CVE-2026-5773",
@@ -15289,6 +15343,9 @@
           "Title": "curl: curl: Insecure connection establishment due to TLS configuration mismatch",
           "Description": "A vulnerability exists where a new transfer that uses STARTTLS to upgrade the\nconnection might reuse an existing live connection even though the TLS\nconfiguration mismatches so it should not.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-295"
+          ],
           "VendorSeverity": {
             "redhat": 3,
             "ubuntu": 1
@@ -15310,7 +15367,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-8286"
           ],
           "PublishedDate": "2026-07-03T07:16:24.453Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T19:42:11.24Z"
         },
         {
           "VulnerabilityID": "CVE-2026-8927",
@@ -15336,6 +15393,9 @@
           "Title": "libcurl: libcurl: Information disclosure due to uncleared proxy authentication state",
           "Description": "When reusing a libcurl handle for sequential transfers driven by\nenvironment-variable proxy configuration, libcurl fails to clear the proxy\nauthentication state between requests. Specifically, if the initial transfer\nauthenticates against `proxyA` using Digest auth, a subsequent transfer routed\nthrough `proxyB` erroneously leaks the `Proxy-Authorization:` header intended\nsolely for `proxyA`.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-294"
+          ],
           "VendorSeverity": {
             "redhat": 3,
             "ubuntu": 2
@@ -15357,7 +15417,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-8927"
           ],
           "PublishedDate": "2026-07-03T07:16:25.123Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T23:21:03.53Z"
         },
         {
           "VulnerabilityID": "CVE-2026-8932",
@@ -15401,7 +15461,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-8932"
           ],
           "PublishedDate": "2026-07-03T07:16:25.363Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T23:18:32.137Z"
         },
         {
           "VulnerabilityID": "CVE-2026-9079",
@@ -15427,6 +15487,9 @@
           "Title": "libcurl: libcurl: Information disclosure due to failure to clear proxy authentication credentials",
           "Description": "libcurl had a flaw that when instructed to clear proxy authentication\ncredentials which made it not do so, leaving the old credentials around to get\nused for subsequent transfers that should not know nor use them.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-522"
+          ],
           "VendorSeverity": {
             "redhat": 3,
             "ubuntu": 2
@@ -15448,7 +15511,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-9079"
           ],
           "PublishedDate": "2026-07-03T07:16:25.62Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T15:05:55.933Z"
         },
         {
           "VulnerabilityID": "CVE-2026-9080",
@@ -15474,6 +15537,9 @@
           "Title": "libcurl: libcurl: Use-after-free via curl_easy_pause() in CURLMOPT_SOCKETFUNCTION callback",
           "Description": "Calling `curl_easy_pause()` within the event-based `CURLMOPT_SOCKETFUNCTION`\ncallback triggers a use-after-free vulnerability, where libcurl attempts to\nstore a flag using a dangling struct pointer immediately after that pointer's\nmemory has been freed.",
           "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
           "VendorSeverity": {
             "redhat": 3,
             "ubuntu": 1
@@ -15495,7 +15561,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-9080"
           ],
           "PublishedDate": "2026-07-03T07:16:25.713Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T15:05:26.53Z"
         },
         {
           "VulnerabilityID": "CVE-2026-9545",
@@ -15542,7 +15608,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-9545"
           ],
           "PublishedDate": "2026-07-03T07:16:25.807Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T15:03:56.92Z"
         },
         {
           "VulnerabilityID": "CVE-2026-9547",
@@ -15589,44 +15655,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-9547"
           ],
           "PublishedDate": "2026-07-03T07:16:25.99Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-11856",
-          "PkgID": "libcurl4t64@8.14.1-2+deb13u3",
-          "PkgName": "libcurl4t64",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libcurl4t64@8.14.1-2%2Bdeb13u3?arch=arm64\u0026distro=debian-13.5",
-            "UID": "b0bfd76393e74777"
-          },
-          "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-11856",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:13ad7dd0270a81883b15459b7f570f079c6a6ca9deb00d20726c1c24fa6f6cf9",
-          "Title": "Successfully using libcurl to do a transfer to a specific HTTP origin  ...",
-          "Description": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`.",
-          "Severity": "MEDIUM",
-          "VendorSeverity": {
-            "ubuntu": 2
-          },
-          "References": [
-            "https://curl.se/L7HzKXisfJ/CVE-2026-11856.md",
-            "https://curl.se/docs/CVE-2026-11856.html",
-            "https://curl.se/docs/CVE-2026-11856.json",
-            "https://hackerone.com/reports/3793260",
-            "https://www.cve.org/CVERecord?id=CVE-2026-11856"
-          ],
-          "PublishedDate": "2026-07-03T07:16:23.973Z",
-          "LastModifiedDate": "2026-07-06T19:16:54.983Z"
+          "LastModifiedDate": "2026-07-07T14:52:29.503Z"
         },
         {
           "VulnerabilityID": "CVE-2026-1965",
@@ -16130,6 +16159,53 @@
           "LastModifiedDate": "2026-06-17T11:01:57.7Z"
         },
         {
+          "VulnerabilityID": "CVE-2026-8924",
+          "PkgID": "libcurl4t64@8.14.1-2+deb13u3",
+          "PkgName": "libcurl4t64",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libcurl4t64@8.14.1-2%2Bdeb13u3?arch=arm64\u0026distro=debian-13.5",
+            "UID": "b0bfd76393e74777"
+          },
+          "InstalledVersion": "8.14.1-2+deb13u3",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-8924",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:a53891a306125d890caf304cb1e9f7963bcc618a8a7187837bfbac7788b423ef",
+          "Title": "curl: curl: Cookie injection via malicious HTTP server using super cookies",
+          "Description": "A flaw in curl’s cookie parsing logic allows a malicious HTTP server to set\n'super cookies' that bypass the Public Suffix List check. This enables an\nattacker-controlled origin to inject cookies that curl subsequently scopes and\ntransmits to unrelated third-party domains.",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "redhat": 2,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-8924",
+            "https://curl.se/L7HzKXisfJ/CVE-2026-8924.md",
+            "https://curl.se/docs/CVE-2026-8924.html",
+            "https://curl.se/docs/CVE-2026-8924.json",
+            "https://hackerone.com/reports/3733905",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-8924",
+            "https://ubuntu.com/security/notices/USN-8487-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-8924"
+          ],
+          "PublishedDate": "2026-07-03T07:16:24.793Z",
+          "LastModifiedDate": "2026-07-07T23:06:00.797Z"
+        },
+        {
           "VulnerabilityID": "CVE-2026-8926",
           "PkgID": "libcurl4t64@8.14.1-2+deb13u3",
           "PkgName": "libcurl4t64",
@@ -16153,6 +16229,9 @@
           "Title": "curl: curl: Information disclosure via incorrect .netrc password lookup",
           "Description": "When asking curl to use a `.netrc` file to find credentials and at the same\ntime specifying a URL with a username(without a password), like\n`https://user@example.com/`, curl could wrongly get and use the password for\n*another* user set in the `.netrc` file for that host if such a one exists and\nthere is no match for the specified user.",
           "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-522"
+          ],
           "VendorSeverity": {
             "redhat": 2,
             "ubuntu": 1
@@ -16174,7 +16253,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-8926"
           ],
           "PublishedDate": "2026-07-03T07:16:25.037Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T23:02:54.49Z"
         },
         {
           "VulnerabilityID": "CVE-2025-10966",
@@ -16557,6 +16636,9 @@
           "Title": "A use-after-free vulnerability exists in libcurl when an application c ...",
           "Description": "A use-after-free vulnerability exists in libcurl when an application\nconfigures an HTTP/2 stream-dependency tree via `CURLOPT_STREAM_DEPENDS` or\n`CURLOPT_STREAM_DEPENDS_E`, subsequently invokes `curl_easy_reset()`, and\nfinally terminates the handle with `curl_easy_cleanup()`. During this final\ncleanup phase, libcurl attempts to access and modify an internal structure\nthat was already freed during the reset operation.",
           "Severity": "LOW",
+          "CweIDs": [
+            "CWE-416"
+          ],
           "VendorSeverity": {
             "ubuntu": 1
           },
@@ -16568,7 +16650,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-10536"
           ],
           "PublishedDate": "2026-07-03T07:16:23.563Z",
-          "LastModifiedDate": "2026-07-06T19:16:54.473Z"
+          "LastModifiedDate": "2026-07-07T18:02:03.89Z"
         },
         {
           "VulnerabilityID": "CVE-2026-8458",
@@ -16606,10 +16688,10 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-8458"
           ],
           "PublishedDate": "2026-07-03T07:16:24.63Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "LastModifiedDate": "2026-07-07T23:12:17.003Z"
         },
         {
-          "VulnerabilityID": "CVE-2026-8924",
+          "VulnerabilityID": "CVE-2026-11856",
           "PkgID": "libcurl4t64@8.14.1-2+deb13u3",
           "PkgName": "libcurl4t64",
           "PkgIdentifier": {
@@ -16622,29 +16704,26 @@
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
           },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-8924",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-11856",
           "DataSource": {
             "ID": "debian",
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:a53891a306125d890caf304cb1e9f7963bcc618a8a7187837bfbac7788b423ef",
-          "Title": "A flaw in curl\\u2019s cookie parsing logic allows a malicious HTTP ser ...",
-          "Description": "A flaw in curl’s cookie parsing logic allows a malicious HTTP server to set\n'super cookies' that bypass the Public Suffix List check. This enables an\nattacker-controlled origin to inject cookies that curl subsequently scopes and\ntransmits to unrelated third-party domains.",
-          "Severity": "LOW",
-          "VendorSeverity": {
-            "ubuntu": 1
-          },
-          "References": [
-            "https://curl.se/L7HzKXisfJ/CVE-2026-8924.md",
-            "https://curl.se/docs/CVE-2026-8924.html",
-            "https://curl.se/docs/CVE-2026-8924.json",
-            "https://hackerone.com/reports/3733905",
-            "https://ubuntu.com/security/notices/USN-8487-1",
-            "https://www.cve.org/CVERecord?id=CVE-2026-8924"
+          "Fingerprint": "sha256:13ad7dd0270a81883b15459b7f570f079c6a6ca9deb00d20726c1c24fa6f6cf9",
+          "Title": "Successfully using libcurl to do a transfer to a specific HTTP origin  ...",
+          "Description": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`.",
+          "Severity": "UNKNOWN",
+          "CweIDs": [
+            "CWE-294"
           ],
-          "PublishedDate": "2026-07-03T07:16:24.793Z",
-          "LastModifiedDate": "2026-07-06T18:20:47.007Z"
+          "References": [
+            "https://curl.se/docs/CVE-2026-11856.html",
+            "https://curl.se/docs/CVE-2026-11856.json",
+            "https://hackerone.com/reports/3793260"
+          ],
+          "PublishedDate": "2026-07-03T07:16:23.973Z",
+          "LastModifiedDate": "2026-07-07T19:43:55.6Z"
         },
         {
           "VulnerabilityID": "CVE-2026-33164",
@@ -16698,6 +16777,117 @@
           ],
           "PublishedDate": "2026-03-20T21:17:16.233Z",
           "LastModifiedDate": "2026-06-17T10:37:03.61Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-49295",
+          "PkgID": "libde265-0@1.0.15-1+b3",
+          "PkgName": "libde265-0",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libde265-0@1.0.15-1%2Bb3?arch=arm64\u0026distro=debian-13.5",
+            "UID": "ac9096c02cbe4075"
+          },
+          "InstalledVersion": "1.0.15-1+b3",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-49295",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:ea0cf0c5bd9c37894d2bf6459e1b38eaf0f79539903e38180f7533c8ff091e4a",
+          "Title": "libde265 is an open source implementation of the h.265 video codec. Pr ...",
+          "Description": "libde265 is an open source implementation of the h.265 video codec. Prior to version 1.0.20, a crafted H.265 bitstream can cause an out-of-bounds array write in `decoder_context::process_reference_picture_set()` (`libde265/decctx.cc:1376`). The root cause is a missing aggregate bound check on predicted short-term reference picture set entries. Individual list sizes are validated, but the combined count after predicted RPS construction can exceed the 16-entry `PocStFoll` array, writing at index 16. Version 1.0.20 patches the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-787"
+          ],
+          "VendorSeverity": {
+            "amazon": 3
+          },
+          "References": [
+            "https://github.com/strukturag/libde265/commit/691f3a3c55b3d32478c4a49895dee061a282652b",
+            "https://github.com/strukturag/libde265/security/advisories/GHSA-g2rg-wj66-w594"
+          ],
+          "PublishedDate": "2026-06-19T21:17:01.59Z",
+          "LastModifiedDate": "2026-06-26T19:17:19.26Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-49337",
+          "PkgID": "libde265-0@1.0.15-1+b3",
+          "PkgName": "libde265-0",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libde265-0@1.0.15-1%2Bb3?arch=arm64\u0026distro=debian-13.5",
+            "UID": "ac9096c02cbe4075"
+          },
+          "InstalledVersion": "1.0.15-1+b3",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-49337",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:2cad48614d4f812e08578030b92a2d116eec20a033f1bf9bab00153459ce73b1",
+          "Title": "libde265 is an open source implementation of the h.265 video codec. Pr ...",
+          "Description": "libde265 is an open source implementation of the h.265 video codec. Prior to version 1.0.20, a crafted sequence of H.265 NAL units causes `decoder_context::read_slice_NAL()` (`libde265/decctx.cc:481`) to attach slice headers to a finished picture object\nthat has no active image unit, resulting in attacker-controlled unbounded heap growth. The retained headers are never freed until the picture is released, which may not happen during continuous streaming. Version 1.0.20 patches the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-770"
+          ],
+          "VendorSeverity": {
+            "amazon": 3
+          },
+          "References": [
+            "https://github.com/strukturag/libde265/commit/683cb9fa603e35840642f98765ab95cdb71cadf9",
+            "https://github.com/strukturag/libde265/security/advisories/GHSA-g5hj-rf9f-7vxm"
+          ],
+          "PublishedDate": "2026-06-19T21:17:01.72Z",
+          "LastModifiedDate": "2026-06-23T15:44:39.343Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-49346",
+          "PkgID": "libde265-0@1.0.15-1+b3",
+          "PkgName": "libde265-0",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libde265-0@1.0.15-1%2Bb3?arch=arm64\u0026distro=debian-13.5",
+            "UID": "ac9096c02cbe4075"
+          },
+          "InstalledVersion": "1.0.15-1+b3",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-49346",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:a58fb548159e88a616765c29731a83f7e9f8583f0169a3157b060b86ea4a904d",
+          "Title": "libde265 is an open source implementation of the h.265 video codec. Pr ...",
+          "Description": "libde265 is an open source implementation of the h.265 video codec. Prior to version 1.1.0, a crafted H.265 bitstream with large SPS dimensions and 16-bit bit depth causes a signed integer overflow in `de265_image_get_buffer()` (`libde265/image.cc:128`). The overflow wraps the plane allocation size to a small value (~1 KB), but the subsequent `fill_image()` call computes the real size using `size_t`, writing ~4 GB into the undersized heap buffer. Version 1.1.0 patches the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "VendorSeverity": {
+            "amazon": 3
+          },
+          "References": [
+            "https://github.com/strukturag/libde265/commit/8a1b5cf212f78e1c77cb46eb5d56e492a9336eb8",
+            "https://github.com/strukturag/libde265/security/advisories/GHSA-vv8h-932h-7r86"
+          ],
+          "PublishedDate": "2026-06-19T21:17:01.847Z",
+          "LastModifiedDate": "2026-06-26T19:17:38.463Z"
         },
         {
           "VulnerabilityID": "CVE-2024-38949",
@@ -16915,108 +17105,6 @@
           "Severity": "UNKNOWN"
         },
         {
-          "VulnerabilityID": "CVE-2026-49295",
-          "PkgID": "libde265-0@1.0.15-1+b3",
-          "PkgName": "libde265-0",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libde265-0@1.0.15-1%2Bb3?arch=arm64\u0026distro=debian-13.5",
-            "UID": "ac9096c02cbe4075"
-          },
-          "InstalledVersion": "1.0.15-1+b3",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-49295",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:ea0cf0c5bd9c37894d2bf6459e1b38eaf0f79539903e38180f7533c8ff091e4a",
-          "Title": "libde265 is an open source implementation of the h.265 video codec. Pr ...",
-          "Description": "libde265 is an open source implementation of the h.265 video codec. Prior to version 1.0.20, a crafted H.265 bitstream can cause an out-of-bounds array write in `decoder_context::process_reference_picture_set()` (`libde265/decctx.cc:1376`). The root cause is a missing aggregate bound check on predicted short-term reference picture set entries. Individual list sizes are validated, but the combined count after predicted RPS construction can exceed the 16-entry `PocStFoll` array, writing at index 16. Version 1.0.20 patches the issue.",
-          "Severity": "UNKNOWN",
-          "CweIDs": [
-            "CWE-787"
-          ],
-          "References": [
-            "https://github.com/strukturag/libde265/commit/691f3a3c55b3d32478c4a49895dee061a282652b",
-            "https://github.com/strukturag/libde265/security/advisories/GHSA-g2rg-wj66-w594"
-          ],
-          "PublishedDate": "2026-06-19T21:17:01.59Z",
-          "LastModifiedDate": "2026-06-26T19:17:19.26Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-49337",
-          "PkgID": "libde265-0@1.0.15-1+b3",
-          "PkgName": "libde265-0",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libde265-0@1.0.15-1%2Bb3?arch=arm64\u0026distro=debian-13.5",
-            "UID": "ac9096c02cbe4075"
-          },
-          "InstalledVersion": "1.0.15-1+b3",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-49337",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:2cad48614d4f812e08578030b92a2d116eec20a033f1bf9bab00153459ce73b1",
-          "Title": "libde265 is an open source implementation of the h.265 video codec. Pr ...",
-          "Description": "libde265 is an open source implementation of the h.265 video codec. Prior to version 1.0.20, a crafted sequence of H.265 NAL units causes `decoder_context::read_slice_NAL()` (`libde265/decctx.cc:481`) to attach slice headers to a finished picture object\nthat has no active image unit, resulting in attacker-controlled unbounded heap growth. The retained headers are never freed until the picture is released, which may not happen during continuous streaming. Version 1.0.20 patches the issue.",
-          "Severity": "UNKNOWN",
-          "CweIDs": [
-            "CWE-770"
-          ],
-          "References": [
-            "https://github.com/strukturag/libde265/commit/683cb9fa603e35840642f98765ab95cdb71cadf9",
-            "https://github.com/strukturag/libde265/security/advisories/GHSA-g5hj-rf9f-7vxm"
-          ],
-          "PublishedDate": "2026-06-19T21:17:01.72Z",
-          "LastModifiedDate": "2026-06-23T15:44:39.343Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-49346",
-          "PkgID": "libde265-0@1.0.15-1+b3",
-          "PkgName": "libde265-0",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libde265-0@1.0.15-1%2Bb3?arch=arm64\u0026distro=debian-13.5",
-            "UID": "ac9096c02cbe4075"
-          },
-          "InstalledVersion": "1.0.15-1+b3",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-49346",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:a58fb548159e88a616765c29731a83f7e9f8583f0169a3157b060b86ea4a904d",
-          "Title": "libde265 is an open source implementation of the h.265 video codec. Pr ...",
-          "Description": "libde265 is an open source implementation of the h.265 video codec. Prior to version 1.1.0, a crafted H.265 bitstream with large SPS dimensions and 16-bit bit depth causes a signed integer overflow in `de265_image_get_buffer()` (`libde265/image.cc:128`). The overflow wraps the plane allocation size to a small value (~1 KB), but the subsequent `fill_image()` call computes the real size using `size_t`, writing ~4 GB into the undersized heap buffer. Version 1.1.0 patches the issue.",
-          "Severity": "UNKNOWN",
-          "CweIDs": [
-            "CWE-190"
-          ],
-          "References": [
-            "https://github.com/strukturag/libde265/commit/8a1b5cf212f78e1c77cb46eb5d56e492a9336eb8",
-            "https://github.com/strukturag/libde265/security/advisories/GHSA-vv8h-932h-7r86"
-          ],
-          "PublishedDate": "2026-06-19T21:17:01.847Z",
-          "LastModifiedDate": "2026-06-26T19:17:38.463Z"
-        },
-        {
           "VulnerabilityID": "CVE-2026-54240",
           "PkgID": "libde265-0@1.0.15-1+b3",
           "PkgName": "libde265-0",
@@ -17111,14 +17199,25 @@
             "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-59375",
             "http://www.openwall.com/lists/oss-security/2025/09/16/2",
             "http://www.openwall.com/lists/oss-security/2026/05/01/5",
-            "https://access.redhat.com/errata/RHSA-2026:3407",
+            "https://access.redhat.com/errata/RHSA-2026:19177",
             "https://access.redhat.com/security/cve/CVE-2025-59375",
             "https://bugzilla.redhat.com/2395108",
+            "https://bugzilla.redhat.com/2408891",
+            "https://bugzilla.redhat.com/2418084",
+            "https://bugzilla.redhat.com/2431366",
+            "https://bugzilla.redhat.com/2431374",
+            "https://bugzilla.redhat.com/2444691",
+            "https://bugzilla.redhat.com/2448168",
+            "https://bugzilla.redhat.com/2448181",
+            "https://bugzilla.redhat.com/2449649",
+            "https://bugzilla.redhat.com/2457409",
+            "https://bugzilla.redhat.com/2457932",
+            "https://bugzilla.redhat.com/2458049",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2395108",
             "https://cert-portal.siemens.com/productcert/html/ssa-082556.html",
             "https://cert-portal.siemens.com/productcert/html/ssa-089022.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-59375",
-            "https://errata.almalinux.org/8/ALSA-2026-3407.html",
+            "https://errata.almalinux.org/9/ALSA-2026-19177.html",
             "https://errata.rockylinux.org/RLSA-2025:22175",
             "https://github.com/bottlerocket-os/bottlerocket-core-kit/blob/develop/advisories/10.5.0/BRSA-ja1ptrrpkcey.toml",
             "https://github.com/libexpat/libexpat/blob/676a4c531ec768732fac215da9730b5f50fbd2bf/expat/Changes#L45-L74",
@@ -17257,7 +17356,7 @@
             "https://bugzilla.redhat.com/2468575",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2468575",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-45186",
-            "https://errata.almalinux.org/8/ALSA-2026-22721.html",
+            "https://errata.almalinux.org/9/ALSA-2026-23230.html",
             "https://errata.rockylinux.org/RLSA-2026:23230",
             "https://github.com/libexpat/libexpat/pull/1216",
             "https://linux.oracle.com/cve/CVE-2026-45186.html",
@@ -17268,6 +17367,114 @@
           ],
           "PublishedDate": "2026-05-10T07:16:07.883Z",
           "LastModifiedDate": "2026-06-30T03:20:02.997Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-56131",
+          "PkgID": "libexpat1@2.7.1-2",
+          "PkgName": "libexpat1",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libexpat1@2.7.1-2?arch=arm64\u0026distro=debian-13.5",
+            "UID": "a01e2ab0f3a6c74d"
+          },
+          "InstalledVersion": "2.7.1-2",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-56131",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:6c830a9bb985e364fd5530791e5e353e06ba34521c9c58bb7b85f4e542c48033",
+          "Title": "libexpat before 2.8.2 lacks handler call depth tracking for calls to X ...",
+          "Description": "libexpat before 2.8.2 lacks handler call depth tracking for calls to XML_ResumeParser from within handlers in cases of a policy violation. Thus, a use-after-free can occur (similar to the CVE-2026-50219 situation).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "VendorSeverity": {
+            "amazon": 3
+          },
+          "References": [
+            "https://github.com/libexpat/libexpat/pull/1267"
+          ],
+          "PublishedDate": "2026-06-19T06:17:10.107Z",
+          "LastModifiedDate": "2026-06-23T20:15:48.007Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-56407",
+          "PkgID": "libexpat1@2.7.1-2",
+          "PkgName": "libexpat1",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libexpat1@2.7.1-2?arch=arm64\u0026distro=debian-13.5",
+            "UID": "a01e2ab0f3a6c74d"
+          },
+          "InstalledVersion": "2.7.1-2",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-56407",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:4820e7947e7993d4203c5a2dd47cbc29de0c0fed9b2750d175867a4a02c65b5e",
+          "Title": "libexpat before 2.8.2 has an integer overflow in doProlog that is rela ...",
+          "Description": "libexpat before 2.8.2 has an integer overflow in doProlog that is related to storeEntityValue and entity textLen.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "VendorSeverity": {
+            "amazon": 3
+          },
+          "References": [
+            "https://github.com/libexpat/libexpat/pull/1262"
+          ],
+          "PublishedDate": "2026-06-21T16:16:27.987Z",
+          "LastModifiedDate": "2026-06-23T16:28:29.983Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-56408",
+          "PkgID": "libexpat1@2.7.1-2",
+          "PkgName": "libexpat1",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libexpat1@2.7.1-2?arch=arm64\u0026distro=debian-13.5",
+            "UID": "a01e2ab0f3a6c74d"
+          },
+          "InstalledVersion": "2.7.1-2",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-56408",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:c9e8291466c511169930dacdbbcb55e8fb7a174f83f01325f0d4bebfe2f97375",
+          "Title": "libexpat before 2.8.2 has an integer overflow in copyString.",
+          "Description": "libexpat before 2.8.2 has an integer overflow in copyString.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "VendorSeverity": {
+            "amazon": 3
+          },
+          "References": [
+            "https://github.com/libexpat/libexpat/commit/16e2efd867ea8567ffa012210b52ef5918e20817"
+          ],
+          "PublishedDate": "2026-06-21T16:16:28.11Z",
+          "LastModifiedDate": "2026-06-23T16:27:26.523Z"
         },
         {
           "VulnerabilityID": "CVE-2025-66382",
@@ -17520,6 +17727,7 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "nvd": 2,
             "redhat": 2
           },
@@ -17571,6 +17779,7 @@
             "CWE-821"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "nvd": 2,
             "redhat": 2
           },
@@ -17622,6 +17831,7 @@
             "CWE-190"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "nvd": 2,
             "redhat": 2
           },
@@ -17673,6 +17883,7 @@
             "CWE-190"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "nvd": 2
           },
           "CVSS": {
@@ -17716,6 +17927,7 @@
             "CWE-190"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "nvd": 2,
             "redhat": 2
           },
@@ -17766,6 +17978,7 @@
             "CWE-190"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -17902,6 +18115,7 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "nvd": 2,
             "redhat": 2
           },
@@ -18035,105 +18249,6 @@
           "LastModifiedDate": "2026-06-17T10:46:08.237Z"
         },
         {
-          "VulnerabilityID": "CVE-2026-56131",
-          "PkgID": "libexpat1@2.7.1-2",
-          "PkgName": "libexpat1",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libexpat1@2.7.1-2?arch=arm64\u0026distro=debian-13.5",
-            "UID": "a01e2ab0f3a6c74d"
-          },
-          "InstalledVersion": "2.7.1-2",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-56131",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:6c830a9bb985e364fd5530791e5e353e06ba34521c9c58bb7b85f4e542c48033",
-          "Title": "libexpat before 2.8.2 lacks handler call depth tracking for calls to X ...",
-          "Description": "libexpat before 2.8.2 lacks handler call depth tracking for calls to XML_ResumeParser from within handlers in cases of a policy violation. Thus, a use-after-free can occur (similar to the CVE-2026-50219 situation).",
-          "Severity": "UNKNOWN",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "References": [
-            "https://github.com/libexpat/libexpat/pull/1267"
-          ],
-          "PublishedDate": "2026-06-19T06:17:10.107Z",
-          "LastModifiedDate": "2026-06-23T20:15:48.007Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-56407",
-          "PkgID": "libexpat1@2.7.1-2",
-          "PkgName": "libexpat1",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libexpat1@2.7.1-2?arch=arm64\u0026distro=debian-13.5",
-            "UID": "a01e2ab0f3a6c74d"
-          },
-          "InstalledVersion": "2.7.1-2",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-56407",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:4820e7947e7993d4203c5a2dd47cbc29de0c0fed9b2750d175867a4a02c65b5e",
-          "Title": "libexpat before 2.8.2 has an integer overflow in doProlog that is rela ...",
-          "Description": "libexpat before 2.8.2 has an integer overflow in doProlog that is related to storeEntityValue and entity textLen.",
-          "Severity": "UNKNOWN",
-          "CweIDs": [
-            "CWE-190"
-          ],
-          "References": [
-            "https://github.com/libexpat/libexpat/pull/1262"
-          ],
-          "PublishedDate": "2026-06-21T16:16:27.987Z",
-          "LastModifiedDate": "2026-06-23T16:28:29.983Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-56408",
-          "PkgID": "libexpat1@2.7.1-2",
-          "PkgName": "libexpat1",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libexpat1@2.7.1-2?arch=arm64\u0026distro=debian-13.5",
-            "UID": "a01e2ab0f3a6c74d"
-          },
-          "InstalledVersion": "2.7.1-2",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-56408",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:c9e8291466c511169930dacdbbcb55e8fb7a174f83f01325f0d4bebfe2f97375",
-          "Title": "libexpat before 2.8.2 has an integer overflow in copyString.",
-          "Description": "libexpat before 2.8.2 has an integer overflow in copyString.",
-          "Severity": "UNKNOWN",
-          "CweIDs": [
-            "CWE-190"
-          ],
-          "References": [
-            "https://github.com/libexpat/libexpat/commit/16e2efd867ea8567ffa012210b52ef5918e20817"
-          ],
-          "PublishedDate": "2026-06-21T16:16:28.11Z",
-          "LastModifiedDate": "2026-06-23T16:27:26.523Z"
-        },
-        {
           "VulnerabilityID": "CVE-2026-56409",
           "PkgID": "libexpat1@2.7.1-2",
           "PkgName": "libexpat1",
@@ -18165,6 +18280,39 @@
           ],
           "PublishedDate": "2026-06-21T16:16:28.23Z",
           "LastModifiedDate": "2026-06-23T16:21:55.607Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-50811",
+          "PkgID": "libfreetype6@2.13.3+dfsg-1+deb13u1",
+          "PkgName": "libfreetype6",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libfreetype6@2.13.3%2Bdfsg-1%2Bdeb13u1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "aa63cb9ceb51a19d"
+          },
+          "InstalledVersion": "2.13.3+dfsg-1+deb13u1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-50811",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:119032637a2afba7b57a62623de98eca46162553408ce7e43622adc37087f1eb",
+          "Title": "An out-of-bounds read vulnerability exists in FreeType 2.14.3 and vers ...",
+          "Description": "An out-of-bounds read vulnerability exists in FreeType 2.14.3 and versions before commit 5a280ecde6f324de0d226261036e736e0cb49a71 in src/truetype/ttgxvar.c, in the TT_Get_Var_Design implementation used by FT_Get_Var_Design_Coordinates",
+          "Severity": "UNKNOWN",
+          "References": [
+            "https://gist.github.com/junius-sec/6dd0fb25b643f89914083a38e5e57ace",
+            "https://github.com/freetype/freetype/commit/5a280ecde6f324de0d226261036e736e0cb49a71",
+            "https://gitlab.freedesktop.org/freetype/freetype/-/commit/5a280ecde6f324de0d226261036e736e0cb49a71",
+            "https://gitlab.freedesktop.org/freetype/freetype/-/issues/1436"
+          ],
+          "PublishedDate": "2026-07-07T23:16:55.017Z",
+          "LastModifiedDate": "2026-07-07T23:16:55.017Z"
         },
         {
           "VulnerabilityID": "CVE-2018-6829",
@@ -18520,7 +18668,7 @@
             "CWE-401"
           ],
           "VendorSeverity": {
-            "alma": 1,
+            "alma": 2,
             "amazon": 2,
             "azure": 2,
             "cbl-mariner": 2,
@@ -18538,15 +18686,16 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:3268",
+            "https://access.redhat.com/errata/RHSA-2024:9331",
             "https://access.redhat.com/security/cve/CVE-2024-26458",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
+            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
+            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md",
             "https://linux.oracle.com/cve/CVE-2024-26458.html",
@@ -18589,7 +18738,7 @@
             "CWE-770"
           ],
           "VendorSeverity": {
-            "alma": 1,
+            "alma": 2,
             "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
@@ -18607,15 +18756,16 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:3268",
+            "https://access.redhat.com/errata/RHSA-2024:9331",
             "https://access.redhat.com/security/cve/CVE-2024-26461",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
+            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
+            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
             "https://linux.oracle.com/cve/CVE-2024-26461.html",
@@ -19177,6 +19327,7 @@
           "Description": "[Unknown description]",
           "Severity": "MEDIUM",
           "VendorSeverity": {
+            "amazon": 3,
             "ubuntu": 2
           },
           "References": [
@@ -19184,6 +19335,161 @@
             "https://project-zero.issues.chromium.org/issues/507396184",
             "https://ubuntu.com/security/notices/USN-8479-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-47178"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-47247",
+          "PkgID": "libheif-plugin-dav1d@1.19.8-1",
+          "PkgName": "libheif-plugin-dav1d",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "2a79487c6ea39915"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47247",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:e70ee563449bd1c2a7dc6add5e2c3df4b74d0c54c765a11a8527c261318eb4e3",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-2vh6-whr3-cmq3",
+            "https://www.cve.org/CVERecord?id=CVE-2026-47247"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-47254",
+          "PkgID": "libheif-plugin-dav1d@1.19.8-1",
+          "PkgName": "libheif-plugin-dav1d",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "2a79487c6ea39915"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47254",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:f4d8e2e9af8a79b9690136927e0be866028754e273ca251846b0a9667019cdc4",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-wqjg-4x9g-6cvg",
+            "https://www.cve.org/CVERecord?id=CVE-2026-47254"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-47709",
+          "PkgID": "libheif-plugin-dav1d@1.19.8-1",
+          "PkgName": "libheif-plugin-dav1d",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "2a79487c6ea39915"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47709",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:634890cdcaba2a6b5f5357690d1bfe89abb8684c6ac8e836e19efd84e19aa046",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-4h72-vqgp-9376",
+            "https://www.cve.org/CVERecord?id=CVE-2026-47709"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-47714",
+          "PkgID": "libheif-plugin-dav1d@1.19.8-1",
+          "PkgName": "libheif-plugin-dav1d",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "2a79487c6ea39915"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47714",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:c73c9480ca17dd0be0071cc7cb08d7519fb5e2b65ec73bf0208a3572106e609b",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-h4wm-6wwf-qvhx",
+            "https://www.cve.org/CVERecord?id=CVE-2026-47714"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-48029",
+          "PkgID": "libheif-plugin-dav1d@1.19.8-1",
+          "PkgName": "libheif-plugin-dav1d",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "2a79487c6ea39915"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-48029",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:ee8cfa73e18b8b2185b8b3e4804ecadfe6a95a88395238aa796091572ffe06cf",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-6x5f-qchq-cxqv",
+            "https://www.cve.org/CVERecord?id=CVE-2026-48029"
           ]
         },
         {
@@ -19214,6 +19520,7 @@
             "CWE-125"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "redhat": 2,
             "ubuntu": 2
           },
@@ -19232,6 +19539,37 @@
           ],
           "PublishedDate": "2026-06-19T18:16:19.353Z",
           "LastModifiedDate": "2026-06-26T12:33:18.31Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-50142",
+          "PkgID": "libheif-plugin-dav1d@1.19.8-1",
+          "PkgName": "libheif-plugin-dav1d",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "2a79487c6ea39915"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-50142",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:2cba75bdc6308c4eafe52289b0106e210e52f428203bf9a109724c49294c5d80",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-jvmp-j3cw-84mh",
+            "https://www.cve.org/CVERecord?id=CVE-2026-50142"
+          ]
         },
         {
           "VulnerabilityID": "CVE-2026-3949",
@@ -19290,29 +19628,6 @@
           "LastModifiedDate": "2026-06-17T10:44:29.823Z"
         },
         {
-          "VulnerabilityID": "CVE-2026-47247",
-          "PkgID": "libheif-plugin-dav1d@1.19.8-1",
-          "PkgName": "libheif-plugin-dav1d",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "2a79487c6ea39915"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47247",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:e70ee563449bd1c2a7dc6add5e2c3df4b74d0c54c765a11a8527c261318eb4e3",
-          "Severity": "UNKNOWN"
-        },
-        {
           "VulnerabilityID": "CVE-2026-47251",
           "PkgID": "libheif-plugin-dav1d@1.19.8-1",
           "PkgName": "libheif-plugin-dav1d",
@@ -19333,121 +19648,6 @@
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
           "Fingerprint": "sha256:52e7272e51c1711a94c2d38be4c121ae291d038ac20f190b09c9a664dfcdb317",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-47254",
-          "PkgID": "libheif-plugin-dav1d@1.19.8-1",
-          "PkgName": "libheif-plugin-dav1d",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "2a79487c6ea39915"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47254",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:f4d8e2e9af8a79b9690136927e0be866028754e273ca251846b0a9667019cdc4",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-47709",
-          "PkgID": "libheif-plugin-dav1d@1.19.8-1",
-          "PkgName": "libheif-plugin-dav1d",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "2a79487c6ea39915"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47709",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:634890cdcaba2a6b5f5357690d1bfe89abb8684c6ac8e836e19efd84e19aa046",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-47714",
-          "PkgID": "libheif-plugin-dav1d@1.19.8-1",
-          "PkgName": "libheif-plugin-dav1d",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "2a79487c6ea39915"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47714",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:c73c9480ca17dd0be0071cc7cb08d7519fb5e2b65ec73bf0208a3572106e609b",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-48029",
-          "PkgID": "libheif-plugin-dav1d@1.19.8-1",
-          "PkgName": "libheif-plugin-dav1d",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "2a79487c6ea39915"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-48029",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:ee8cfa73e18b8b2185b8b3e4804ecadfe6a95a88395238aa796091572ffe06cf",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-50142",
-          "PkgID": "libheif-plugin-dav1d@1.19.8-1",
-          "PkgName": "libheif-plugin-dav1d",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "2a79487c6ea39915"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-50142",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:2cba75bdc6308c4eafe52289b0106e210e52f428203bf9a109724c49294c5d80",
           "Severity": "UNKNOWN"
         },
         {
@@ -19949,6 +20149,7 @@
           "Description": "[Unknown description]",
           "Severity": "MEDIUM",
           "VendorSeverity": {
+            "amazon": 3,
             "ubuntu": 2
           },
           "References": [
@@ -19956,6 +20157,161 @@
             "https://project-zero.issues.chromium.org/issues/507396184",
             "https://ubuntu.com/security/notices/USN-8479-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-47178"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-47247",
+          "PkgID": "libheif-plugin-libde265@1.19.8-1",
+          "PkgName": "libheif-plugin-libde265",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "e95d33408252c156"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47247",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:31195b0516ffceeb27c7e761c49547bf2a81dfb9446410220c5fede1dc6ce34c",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-2vh6-whr3-cmq3",
+            "https://www.cve.org/CVERecord?id=CVE-2026-47247"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-47254",
+          "PkgID": "libheif-plugin-libde265@1.19.8-1",
+          "PkgName": "libheif-plugin-libde265",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "e95d33408252c156"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47254",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:05c52f8e12e4af09b2c65db459a991cf9ac0cf082cf5a494814b3ed725cc6aba",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-wqjg-4x9g-6cvg",
+            "https://www.cve.org/CVERecord?id=CVE-2026-47254"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-47709",
+          "PkgID": "libheif-plugin-libde265@1.19.8-1",
+          "PkgName": "libheif-plugin-libde265",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "e95d33408252c156"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47709",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:3180e22acbb831b923325c23af4b274d5acaa97643abca8fd372daf8a312ccc0",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-4h72-vqgp-9376",
+            "https://www.cve.org/CVERecord?id=CVE-2026-47709"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-47714",
+          "PkgID": "libheif-plugin-libde265@1.19.8-1",
+          "PkgName": "libheif-plugin-libde265",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "e95d33408252c156"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47714",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:d5dca5646a01c2378a1e39026717bde096df0ffd2638c3ccdae83b45390c907f",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-h4wm-6wwf-qvhx",
+            "https://www.cve.org/CVERecord?id=CVE-2026-47714"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-48029",
+          "PkgID": "libheif-plugin-libde265@1.19.8-1",
+          "PkgName": "libheif-plugin-libde265",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "e95d33408252c156"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-48029",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:e4e8ebefad1f4b53c8d71b7f5d420c5acb5e6443533a9a7ace043519f0bd2252",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-6x5f-qchq-cxqv",
+            "https://www.cve.org/CVERecord?id=CVE-2026-48029"
           ]
         },
         {
@@ -19986,6 +20342,7 @@
             "CWE-125"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "redhat": 2,
             "ubuntu": 2
           },
@@ -20004,6 +20361,37 @@
           ],
           "PublishedDate": "2026-06-19T18:16:19.353Z",
           "LastModifiedDate": "2026-06-26T12:33:18.31Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-50142",
+          "PkgID": "libheif-plugin-libde265@1.19.8-1",
+          "PkgName": "libheif-plugin-libde265",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "e95d33408252c156"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-50142",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:9ba83462f98f37aaf73c5f3866c833909b0375796b9f1367d8260d7694b45338",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-jvmp-j3cw-84mh",
+            "https://www.cve.org/CVERecord?id=CVE-2026-50142"
+          ]
         },
         {
           "VulnerabilityID": "CVE-2026-3949",
@@ -20062,29 +20450,6 @@
           "LastModifiedDate": "2026-06-17T10:44:29.823Z"
         },
         {
-          "VulnerabilityID": "CVE-2026-47247",
-          "PkgID": "libheif-plugin-libde265@1.19.8-1",
-          "PkgName": "libheif-plugin-libde265",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "e95d33408252c156"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47247",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:31195b0516ffceeb27c7e761c49547bf2a81dfb9446410220c5fede1dc6ce34c",
-          "Severity": "UNKNOWN"
-        },
-        {
           "VulnerabilityID": "CVE-2026-47251",
           "PkgID": "libheif-plugin-libde265@1.19.8-1",
           "PkgName": "libheif-plugin-libde265",
@@ -20105,121 +20470,6 @@
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
           "Fingerprint": "sha256:9e93836ba3f9778f6d0420355d3fb9e26846bbc2e01c9abe9a64a8cd5f2ec420",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-47254",
-          "PkgID": "libheif-plugin-libde265@1.19.8-1",
-          "PkgName": "libheif-plugin-libde265",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "e95d33408252c156"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47254",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:05c52f8e12e4af09b2c65db459a991cf9ac0cf082cf5a494814b3ed725cc6aba",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-47709",
-          "PkgID": "libheif-plugin-libde265@1.19.8-1",
-          "PkgName": "libheif-plugin-libde265",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "e95d33408252c156"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47709",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:3180e22acbb831b923325c23af4b274d5acaa97643abca8fd372daf8a312ccc0",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-47714",
-          "PkgID": "libheif-plugin-libde265@1.19.8-1",
-          "PkgName": "libheif-plugin-libde265",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "e95d33408252c156"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47714",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:d5dca5646a01c2378a1e39026717bde096df0ffd2638c3ccdae83b45390c907f",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-48029",
-          "PkgID": "libheif-plugin-libde265@1.19.8-1",
-          "PkgName": "libheif-plugin-libde265",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "e95d33408252c156"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-48029",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:e4e8ebefad1f4b53c8d71b7f5d420c5acb5e6443533a9a7ace043519f0bd2252",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-50142",
-          "PkgID": "libheif-plugin-libde265@1.19.8-1",
-          "PkgName": "libheif-plugin-libde265",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "e95d33408252c156"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-50142",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:9ba83462f98f37aaf73c5f3866c833909b0375796b9f1367d8260d7694b45338",
           "Severity": "UNKNOWN"
         },
         {
@@ -20721,6 +20971,7 @@
           "Description": "[Unknown description]",
           "Severity": "MEDIUM",
           "VendorSeverity": {
+            "amazon": 3,
             "ubuntu": 2
           },
           "References": [
@@ -20728,6 +20979,161 @@
             "https://project-zero.issues.chromium.org/issues/507396184",
             "https://ubuntu.com/security/notices/USN-8479-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-47178"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-47247",
+          "PkgID": "libheif1@1.19.8-1",
+          "PkgName": "libheif1",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif1@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "39e7f1bf2dcc4fe9"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47247",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:8a3ab5067033bba2e010b48c7df316e1006bdf7baa5d132ffc03508c33a1e27a",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-2vh6-whr3-cmq3",
+            "https://www.cve.org/CVERecord?id=CVE-2026-47247"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-47254",
+          "PkgID": "libheif1@1.19.8-1",
+          "PkgName": "libheif1",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif1@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "39e7f1bf2dcc4fe9"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47254",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:e30e3a56d4873a1973cd33d44019bd3e53e3cfe6a394ae2cbe93bc864ab9a68c",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-wqjg-4x9g-6cvg",
+            "https://www.cve.org/CVERecord?id=CVE-2026-47254"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-47709",
+          "PkgID": "libheif1@1.19.8-1",
+          "PkgName": "libheif1",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif1@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "39e7f1bf2dcc4fe9"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47709",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:0412f71174b456e704993fa13a9c6122008eb7558c36b0368feb58c3c608d89b",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-4h72-vqgp-9376",
+            "https://www.cve.org/CVERecord?id=CVE-2026-47709"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-47714",
+          "PkgID": "libheif1@1.19.8-1",
+          "PkgName": "libheif1",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif1@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "39e7f1bf2dcc4fe9"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47714",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:3b4ee0ea78ed7595d4ca5211f4a464d419c694dc3866f7ec38e8deb1f1a06e72",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-h4wm-6wwf-qvhx",
+            "https://www.cve.org/CVERecord?id=CVE-2026-47714"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2026-48029",
+          "PkgID": "libheif1@1.19.8-1",
+          "PkgName": "libheif1",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif1@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "39e7f1bf2dcc4fe9"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-48029",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:6f215553eafb1f251d1177fe4b0e5d864d6ee5030629d886db65d2c5f63305e1",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-6x5f-qchq-cxqv",
+            "https://www.cve.org/CVERecord?id=CVE-2026-48029"
           ]
         },
         {
@@ -20758,6 +21164,7 @@
             "CWE-125"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "redhat": 2,
             "ubuntu": 2
           },
@@ -20776,6 +21183,37 @@
           ],
           "PublishedDate": "2026-06-19T18:16:19.353Z",
           "LastModifiedDate": "2026-06-26T12:33:18.31Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-50142",
+          "PkgID": "libheif1@1.19.8-1",
+          "PkgName": "libheif1",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libheif1@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
+            "UID": "39e7f1bf2dcc4fe9"
+          },
+          "InstalledVersion": "1.19.8-1",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-50142",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:35237818d78d9331cbf4bdb3443fbf7a93beec911b598e4d3dc9abf174032a23",
+          "Description": "[Unknown description]",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ubuntu": 2
+          },
+          "References": [
+            "https://github.com/strukturag/libheif/security/advisories/GHSA-jvmp-j3cw-84mh",
+            "https://www.cve.org/CVERecord?id=CVE-2026-50142"
+          ]
         },
         {
           "VulnerabilityID": "CVE-2026-3949",
@@ -20834,29 +21272,6 @@
           "LastModifiedDate": "2026-06-17T10:44:29.823Z"
         },
         {
-          "VulnerabilityID": "CVE-2026-47247",
-          "PkgID": "libheif1@1.19.8-1",
-          "PkgName": "libheif1",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif1@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "39e7f1bf2dcc4fe9"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47247",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:8a3ab5067033bba2e010b48c7df316e1006bdf7baa5d132ffc03508c33a1e27a",
-          "Severity": "UNKNOWN"
-        },
-        {
           "VulnerabilityID": "CVE-2026-47251",
           "PkgID": "libheif1@1.19.8-1",
           "PkgName": "libheif1",
@@ -20877,121 +21292,6 @@
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
           "Fingerprint": "sha256:449ccad397efd3b96fbf165aa0a775017159d875c6ceb16a0b8ee5d35656c594",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-47254",
-          "PkgID": "libheif1@1.19.8-1",
-          "PkgName": "libheif1",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif1@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "39e7f1bf2dcc4fe9"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47254",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:e30e3a56d4873a1973cd33d44019bd3e53e3cfe6a394ae2cbe93bc864ab9a68c",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-47709",
-          "PkgID": "libheif1@1.19.8-1",
-          "PkgName": "libheif1",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif1@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "39e7f1bf2dcc4fe9"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47709",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:0412f71174b456e704993fa13a9c6122008eb7558c36b0368feb58c3c608d89b",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-47714",
-          "PkgID": "libheif1@1.19.8-1",
-          "PkgName": "libheif1",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif1@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "39e7f1bf2dcc4fe9"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-47714",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:3b4ee0ea78ed7595d4ca5211f4a464d419c694dc3866f7ec38e8deb1f1a06e72",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-48029",
-          "PkgID": "libheif1@1.19.8-1",
-          "PkgName": "libheif1",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif1@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "39e7f1bf2dcc4fe9"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-48029",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:6f215553eafb1f251d1177fe4b0e5d864d6ee5030629d886db65d2c5f63305e1",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-50142",
-          "PkgID": "libheif1@1.19.8-1",
-          "PkgName": "libheif1",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libheif1@1.19.8-1?arch=arm64\u0026distro=debian-13.5",
-            "UID": "39e7f1bf2dcc4fe9"
-          },
-          "InstalledVersion": "1.19.8-1",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-50142",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:35237818d78d9331cbf4bdb3443fbf7a93beec911b598e4d3dc9abf174032a23",
           "Severity": "UNKNOWN"
         },
         {
@@ -21137,7 +21437,7 @@
             "CWE-401"
           ],
           "VendorSeverity": {
-            "alma": 1,
+            "alma": 2,
             "amazon": 2,
             "azure": 2,
             "cbl-mariner": 2,
@@ -21155,15 +21455,16 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:3268",
+            "https://access.redhat.com/errata/RHSA-2024:9331",
             "https://access.redhat.com/security/cve/CVE-2024-26458",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
+            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
+            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md",
             "https://linux.oracle.com/cve/CVE-2024-26458.html",
@@ -21206,7 +21507,7 @@
             "CWE-770"
           ],
           "VendorSeverity": {
-            "alma": 1,
+            "alma": 2,
             "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
@@ -21224,15 +21525,16 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:3268",
+            "https://access.redhat.com/errata/RHSA-2024:9331",
             "https://access.redhat.com/security/cve/CVE-2024-26461",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
+            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
+            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
             "https://linux.oracle.com/cve/CVE-2024-26461.html",
@@ -21379,7 +21681,7 @@
             "CWE-401"
           ],
           "VendorSeverity": {
-            "alma": 1,
+            "alma": 2,
             "amazon": 2,
             "azure": 2,
             "cbl-mariner": 2,
@@ -21397,15 +21699,16 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:3268",
+            "https://access.redhat.com/errata/RHSA-2024:9331",
             "https://access.redhat.com/security/cve/CVE-2024-26458",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
+            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
+            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md",
             "https://linux.oracle.com/cve/CVE-2024-26458.html",
@@ -21448,7 +21751,7 @@
             "CWE-770"
           ],
           "VendorSeverity": {
-            "alma": 1,
+            "alma": 2,
             "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
@@ -21466,15 +21769,16 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:3268",
+            "https://access.redhat.com/errata/RHSA-2024:9331",
             "https://access.redhat.com/security/cve/CVE-2024-26461",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
+            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
+            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
             "https://linux.oracle.com/cve/CVE-2024-26461.html",
@@ -21621,7 +21925,7 @@
             "CWE-401"
           ],
           "VendorSeverity": {
-            "alma": 1,
+            "alma": 2,
             "amazon": 2,
             "azure": 2,
             "cbl-mariner": 2,
@@ -21639,15 +21943,16 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:3268",
+            "https://access.redhat.com/errata/RHSA-2024:9331",
             "https://access.redhat.com/security/cve/CVE-2024-26458",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
+            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
+            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md",
             "https://linux.oracle.com/cve/CVE-2024-26458.html",
@@ -21690,7 +21995,7 @@
             "CWE-770"
           ],
           "VendorSeverity": {
-            "alma": 1,
+            "alma": 2,
             "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
@@ -21708,15 +22013,16 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:3268",
+            "https://access.redhat.com/errata/RHSA-2024:9331",
             "https://access.redhat.com/security/cve/CVE-2024-26461",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
+            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
+            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
             "https://linux.oracle.com/cve/CVE-2024-26461.html",
@@ -21780,6 +22086,34 @@
           "LastModifiedDate": "2026-06-17T10:14:30.383Z"
         },
         {
+          "VulnerabilityID": "CVE-2026-53615",
+          "PkgID": "liblastlog2-2@2.41-5",
+          "PkgName": "liblastlog2-2",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/liblastlog2-2@2.41-5?arch=arm64\u0026distro=debian-13.5",
+            "UID": "22309d5616968425"
+          },
+          "InstalledVersion": "2.41-5",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
+            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:5cb9a5db0ae2d30df4850880c5e07ac858d4055cab0dbb0dab6daca2be54337c",
+          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
+          "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2026-53615:\n\tInteger Overflow or Wraparound in libblkid/src/partitions/dos.c\n",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "amazon": 3
+          }
+        },
+        {
           "VulnerabilityID": "CVE-2026-13595",
           "PkgID": "liblastlog2-2@2.41-5",
           "PkgName": "liblastlog2-2",
@@ -21793,6 +22127,7 @@
             "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
             "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-13595",
           "DataSource": {
             "ID": "debian",
@@ -21807,9 +22142,14 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "nvd": 2,
             "redhat": 2
           },
           "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
+              "V3Score": 5.3
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
               "V3Score": 6.8
@@ -21824,7 +22164,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-13595"
           ],
           "PublishedDate": "2026-06-29T09:16:28.303Z",
-          "LastModifiedDate": "2026-06-30T03:17:14.55Z"
+          "LastModifiedDate": "2026-07-08T03:37:21.637Z"
         },
         {
           "VulnerabilityID": "CVE-2026-27456",
@@ -22062,7 +22402,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/8/ALSA-2026-1852.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -22142,30 +22482,6 @@
           },
           "Fingerprint": "sha256:25f7d64129a915fe8c0ff308a0fc325b0c62e1715cfbc5192e9c6a0ebc100d99",
           "Title": "[Local Privilege Escalation via LIBMOUNT_FORCE_MOUNT2 Environment Variable - nosuid/noexec Bypass in SUID mount(8)]",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-53615",
-          "PkgID": "liblastlog2-2@2.41-5",
-          "PkgName": "liblastlog2-2",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/liblastlog2-2@2.41-5?arch=arm64\u0026distro=debian-13.5",
-            "UID": "22309d5616968425"
-          },
-          "InstalledVersion": "2.41-5",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
-            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:5cb9a5db0ae2d30df4850880c5e07ac858d4055cab0dbb0dab6daca2be54337c",
-          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
           "Severity": "UNKNOWN"
         },
         {
@@ -22518,6 +22834,34 @@
           "LastModifiedDate": "2026-06-17T10:39:32.747Z"
         },
         {
+          "VulnerabilityID": "CVE-2026-53615",
+          "PkgID": "libmount1@2.41-5",
+          "PkgName": "libmount1",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libmount1@2.41-5?arch=arm64\u0026distro=debian-13.5",
+            "UID": "edbd65a914e51b9a"
+          },
+          "InstalledVersion": "2.41-5",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
+            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:9090e22f591a1112df973043e3af755d071e857f21f0cf034ca52bba6e1b830b",
+          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
+          "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2026-53615:\n\tInteger Overflow or Wraparound in libblkid/src/partitions/dos.c\n",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "amazon": 3
+          }
+        },
+        {
           "VulnerabilityID": "CVE-2026-13595",
           "PkgID": "libmount1@2.41-5",
           "PkgName": "libmount1",
@@ -22531,6 +22875,7 @@
             "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
             "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-13595",
           "DataSource": {
             "ID": "debian",
@@ -22545,9 +22890,14 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "nvd": 2,
             "redhat": 2
           },
           "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
+              "V3Score": 5.3
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
               "V3Score": 6.8
@@ -22562,7 +22912,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-13595"
           ],
           "PublishedDate": "2026-06-29T09:16:28.303Z",
-          "LastModifiedDate": "2026-06-30T03:17:14.55Z"
+          "LastModifiedDate": "2026-07-08T03:37:21.637Z"
         },
         {
           "VulnerabilityID": "CVE-2026-27456",
@@ -22800,7 +23150,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/8/ALSA-2026-1852.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -22880,30 +23230,6 @@
           },
           "Fingerprint": "sha256:2f8ea4d52a7b3347047ca6b6a1480aa0a6ce4cecb0a80a4fad1b690eaf807b45",
           "Title": "[Local Privilege Escalation via LIBMOUNT_FORCE_MOUNT2 Environment Variable - nosuid/noexec Bypass in SUID mount(8)]",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-53615",
-          "PkgID": "libmount1@2.41-5",
-          "PkgName": "libmount1",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libmount1@2.41-5?arch=arm64\u0026distro=debian-13.5",
-            "UID": "edbd65a914e51b9a"
-          },
-          "InstalledVersion": "2.41-5",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
-            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:9090e22f591a1112df973043e3af755d071e857f21f0cf034ca52bba6e1b830b",
-          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
           "Severity": "UNKNOWN"
         },
         {
@@ -22990,7 +23316,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-13757"
           ],
           "PublishedDate": "2026-06-29T19:16:40.907Z",
-          "LastModifiedDate": "2026-07-01T15:16:30.19Z"
+          "LastModifiedDate": "2026-07-08T03:34:36.15Z"
         },
         {
           "VulnerabilityID": "CVE-2026-54411",
@@ -23296,6 +23622,34 @@
           "LastModifiedDate": "2026-06-17T10:44:03.563Z"
         },
         {
+          "VulnerabilityID": "CVE-2026-53615",
+          "PkgID": "libsmartcols1@2.41-5",
+          "PkgName": "libsmartcols1",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libsmartcols1@2.41-5?arch=arm64\u0026distro=debian-13.5",
+            "UID": "1c2df6837b99221b"
+          },
+          "InstalledVersion": "2.41-5",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
+            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:f1c2706cabf853d89fa8511b0b6643115d0f21cd76ece02571dc605555fe87b6",
+          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
+          "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2026-53615:\n\tInteger Overflow or Wraparound in libblkid/src/partitions/dos.c\n",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "amazon": 3
+          }
+        },
+        {
           "VulnerabilityID": "CVE-2026-13595",
           "PkgID": "libsmartcols1@2.41-5",
           "PkgName": "libsmartcols1",
@@ -23309,6 +23663,7 @@
             "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
             "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-13595",
           "DataSource": {
             "ID": "debian",
@@ -23323,9 +23678,14 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "nvd": 2,
             "redhat": 2
           },
           "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
+              "V3Score": 5.3
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
               "V3Score": 6.8
@@ -23340,7 +23700,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-13595"
           ],
           "PublishedDate": "2026-06-29T09:16:28.303Z",
-          "LastModifiedDate": "2026-06-30T03:17:14.55Z"
+          "LastModifiedDate": "2026-07-08T03:37:21.637Z"
         },
         {
           "VulnerabilityID": "CVE-2026-27456",
@@ -23578,7 +23938,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/8/ALSA-2026-1852.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -23661,30 +24021,6 @@
           "Severity": "UNKNOWN"
         },
         {
-          "VulnerabilityID": "CVE-2026-53615",
-          "PkgID": "libsmartcols1@2.41-5",
-          "PkgName": "libsmartcols1",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libsmartcols1@2.41-5?arch=arm64\u0026distro=debian-13.5",
-            "UID": "1c2df6837b99221b"
-          },
-          "InstalledVersion": "2.41-5",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
-            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:f1c2706cabf853d89fa8511b0b6643115d0f21cd76ece02571dc605555fe87b6",
-          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
-          "Severity": "UNKNOWN"
-        },
-        {
           "VulnerabilityID": "CVE-2026-11822",
           "PkgID": "libsqlite3-0@3.46.1-7+deb13u1",
           "PkgName": "libsqlite3-0",
@@ -23712,6 +24048,7 @@
             "CWE-122"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "azure": 3,
             "bitnami": 3,
             "photon": 3,
@@ -23763,6 +24100,7 @@
             "CWE-122"
           ],
           "VendorSeverity": {
+            "amazon": 3,
             "azure": 3,
             "bitnami": 3,
             "photon": 3,
@@ -24448,12 +24786,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2026/01/08/5",
-            "https://access.redhat.com/errata/RHSA-2026:28235",
+            "https://access.redhat.com/errata/RHSA-2026:28253",
             "https://access.redhat.com/security/cve/CVE-2025-13151",
             "https://bugzilla.redhat.com/2427698",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2427698",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-13151",
-            "https://errata.almalinux.org/10/ALSA-2026-28235.html",
+            "https://errata.almalinux.org/9/ALSA-2026-28253.html",
             "https://errata.rockylinux.org/RLSA-2026:28253",
             "https://gitlab.com/gnutls/libtasn1",
             "https://gitlab.com/gnutls/libtasn1/-/merge_requests/121",
@@ -24934,14 +25272,15 @@
           },
           "References": [
             "http://www.libtiff.org/",
-            "https://access.redhat.com/errata/RHSA-2025:20034",
+            "https://access.redhat.com/errata/RHSA-2025:20956",
             "https://access.redhat.com/security/cve/CVE-2025-8176",
             "https://bugzilla.redhat.com/2383598",
+            "https://bugzilla.redhat.com/2392784",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2383598",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2392784",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-8176",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-9900",
-            "https://errata.almalinux.org/8/ALSA-2025-20034.html",
+            "https://errata.almalinux.org/9/ALSA-2025-20956.html",
             "https://errata.rockylinux.org/RLSA-2025:20956",
             "https://gitlab.com/libtiff/libtiff/-/commit/fe10872e53efba9cc36c66ac4ab3b41a839d5172",
             "https://gitlab.com/libtiff/libtiff/-/issues/707",
@@ -25499,6 +25838,34 @@
           "LastModifiedDate": "2026-06-17T10:44:53.31Z"
         },
         {
+          "VulnerabilityID": "CVE-2026-53615",
+          "PkgID": "libuuid1@2.41-5",
+          "PkgName": "libuuid1",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libuuid1@2.41-5?arch=arm64\u0026distro=debian-13.5",
+            "UID": "4f56fb91313e3755"
+          },
+          "InstalledVersion": "2.41-5",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
+            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:bcf259040f24b4991930529093c793181aecedac26988d7377d588708396d866",
+          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
+          "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2026-53615:\n\tInteger Overflow or Wraparound in libblkid/src/partitions/dos.c\n",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "amazon": 3
+          }
+        },
+        {
           "VulnerabilityID": "CVE-2026-13595",
           "PkgID": "libuuid1@2.41-5",
           "PkgName": "libuuid1",
@@ -25512,6 +25879,7 @@
             "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
             "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-13595",
           "DataSource": {
             "ID": "debian",
@@ -25526,9 +25894,14 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "nvd": 2,
             "redhat": 2
           },
           "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
+              "V3Score": 5.3
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
               "V3Score": 6.8
@@ -25543,7 +25916,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-13595"
           ],
           "PublishedDate": "2026-06-29T09:16:28.303Z",
-          "LastModifiedDate": "2026-06-30T03:17:14.55Z"
+          "LastModifiedDate": "2026-07-08T03:37:21.637Z"
         },
         {
           "VulnerabilityID": "CVE-2026-27456",
@@ -25781,7 +26154,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/8/ALSA-2026-1852.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -25861,30 +26234,6 @@
           },
           "Fingerprint": "sha256:d70d8c8604a8efb395a3c2d9516ec155530c19b804f57c8866685cb927925e4d",
           "Title": "[Local Privilege Escalation via LIBMOUNT_FORCE_MOUNT2 Environment Variable - nosuid/noexec Bypass in SUID mount(8)]",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-53615",
-          "PkgID": "libuuid1@2.41-5",
-          "PkgName": "libuuid1",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libuuid1@2.41-5?arch=arm64\u0026distro=debian-13.5",
-            "UID": "4f56fb91313e3755"
-          },
-          "InstalledVersion": "2.41-5",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
-            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:bcf259040f24b4991930529093c793181aecedac26988d7377d588708396d866",
-          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
           "Severity": "UNKNOWN"
         },
         {
@@ -25969,6 +26318,7 @@
             "CWE-611"
           ],
           "VendorSeverity": {
+            "amazon": 2,
             "redhat": 2,
             "ubuntu": 2
           },
@@ -26375,7 +26725,7 @@
             "https://bugzilla.redhat.com/2397838",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2397838",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-10911",
-            "https://errata.almalinux.org/8/ALSA-2026-26355.html",
+            "https://errata.almalinux.org/9/ALSA-2026-28243.html",
             "https://errata.rockylinux.org/RLSA-2026:28243",
             "https://gitlab.gnome.org/GNOME/libxslt/-/issues/144",
             "https://gitlab.gnome.org/GNOME/libxslt/-/merge_requests/77",
@@ -26495,6 +26845,34 @@
           "LastModifiedDate": "2026-06-30T07:16:30.78Z"
         },
         {
+          "VulnerabilityID": "CVE-2026-53615",
+          "PkgID": "login@1:4.16.0-2+really2.41-5",
+          "PkgName": "login",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/login@4.16.0-2%2Breally2.41-5?arch=arm64\u0026distro=debian-13.5\u0026epoch=1",
+            "UID": "c10aa9dd27113351"
+          },
+          "InstalledVersion": "1:4.16.0-2+really2.41-5",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
+            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:de141a94b5f1e8a710805b054dcf60b97b17db106ae6693065747173ae5a106c",
+          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
+          "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2026-53615:\n\tInteger Overflow or Wraparound in libblkid/src/partitions/dos.c\n",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "amazon": 3
+          }
+        },
+        {
           "VulnerabilityID": "CVE-2026-13595",
           "PkgID": "login@1:4.16.0-2+really2.41-5",
           "PkgName": "login",
@@ -26508,6 +26886,7 @@
             "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
             "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-13595",
           "DataSource": {
             "ID": "debian",
@@ -26522,9 +26901,14 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "nvd": 2,
             "redhat": 2
           },
           "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
+              "V3Score": 5.3
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
               "V3Score": 6.8
@@ -26539,7 +26923,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-13595"
           ],
           "PublishedDate": "2026-06-29T09:16:28.303Z",
-          "LastModifiedDate": "2026-06-30T03:17:14.55Z"
+          "LastModifiedDate": "2026-07-08T03:37:21.637Z"
         },
         {
           "VulnerabilityID": "CVE-2026-27456",
@@ -26777,7 +27161,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/8/ALSA-2026-1852.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -26857,30 +27241,6 @@
           },
           "Fingerprint": "sha256:afd1633b3932c18697f72a9ad8f70a0b33b7cecf49bacca2a2b7cb421391450a",
           "Title": "[Local Privilege Escalation via LIBMOUNT_FORCE_MOUNT2 Environment Variable - nosuid/noexec Bypass in SUID mount(8)]",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-53615",
-          "PkgID": "login@1:4.16.0-2+really2.41-5",
-          "PkgName": "login",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/login@4.16.0-2%2Breally2.41-5?arch=arm64\u0026distro=debian-13.5\u0026epoch=1",
-            "UID": "c10aa9dd27113351"
-          },
-          "InstalledVersion": "1:4.16.0-2+really2.41-5",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
-            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:de141a94b5f1e8a710805b054dcf60b97b17db106ae6693065747173ae5a106c",
-          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
           "Severity": "UNKNOWN"
         },
         {
@@ -27021,6 +27381,34 @@
           }
         },
         {
+          "VulnerabilityID": "CVE-2026-53615",
+          "PkgID": "mount@2.41-5",
+          "PkgName": "mount",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/mount@2.41-5?arch=arm64\u0026distro=debian-13.5",
+            "UID": "b5d8c7f244f632c9"
+          },
+          "InstalledVersion": "2.41-5",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
+            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:f6567d9ba56d49d2f79f091540c1f7dbcea45994429f37c56c25a3f12d451f57",
+          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
+          "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2026-53615:\n\tInteger Overflow or Wraparound in libblkid/src/partitions/dos.c\n",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "amazon": 3
+          }
+        },
+        {
           "VulnerabilityID": "CVE-2026-13595",
           "PkgID": "mount@2.41-5",
           "PkgName": "mount",
@@ -27034,6 +27422,7 @@
             "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
             "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-13595",
           "DataSource": {
             "ID": "debian",
@@ -27048,9 +27437,14 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "nvd": 2,
             "redhat": 2
           },
           "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
+              "V3Score": 5.3
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
               "V3Score": 6.8
@@ -27065,7 +27459,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-13595"
           ],
           "PublishedDate": "2026-06-29T09:16:28.303Z",
-          "LastModifiedDate": "2026-06-30T03:17:14.55Z"
+          "LastModifiedDate": "2026-07-08T03:37:21.637Z"
         },
         {
           "VulnerabilityID": "CVE-2026-27456",
@@ -27303,7 +27697,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/8/ALSA-2026-1852.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -27383,30 +27777,6 @@
           },
           "Fingerprint": "sha256:ebbc7f2ca8f9a4b6f0f73f77b1b4307d5ef16d086d3e929a4f89f466cb265be6",
           "Title": "[Local Privilege Escalation via LIBMOUNT_FORCE_MOUNT2 Environment Variable - nosuid/noexec Bypass in SUID mount(8)]",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-53615",
-          "PkgID": "mount@2.41-5",
-          "PkgName": "mount",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/mount@2.41-5?arch=arm64\u0026distro=debian-13.5",
-            "UID": "b5d8c7f244f632c9"
-          },
-          "InstalledVersion": "2.41-5",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
-            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:f6567d9ba56d49d2f79f091540c1f7dbcea45994429f37c56c25a3f12d451f57",
-          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
           "Severity": "UNKNOWN"
         },
         {
@@ -27878,7 +28248,7 @@
             "https://bugzilla.redhat.com/2481314",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2481314",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42496",
-            "https://errata.almalinux.org/8/ALSA-2026-30852.html",
+            "https://errata.almalinux.org/9/ALSA-2026-30856.html",
             "https://errata.rockylinux.org/RLSA-2026:30856",
             "https://github.com/jib/archive-tar-new/commit/17c873492a05eddc0de18c1485e0b2cccd5a9158.patch",
             "https://linux.oracle.com/cve/CVE-2026-42496.html",
@@ -28068,7 +28438,7 @@
             "https://bugzilla.redhat.com/2481767",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2481767",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-48962",
-            "https://errata.almalinux.org/8/ALSA-2026-30858.html",
+            "https://errata.almalinux.org/9/ALSA-2026-30859.html",
             "https://errata.rockylinux.org/RLSA-2026:30859",
             "https://github.com/pmqs/IO-Compress/commit/f2db247bf90d4cc7ee2710be384946081f3b4610.patch",
             "https://linux.oracle.com/cve/CVE-2026-48962.html",
@@ -28427,6 +28797,44 @@
           "LastModifiedDate": "2025-08-04T19:04:38.29Z"
         },
         {
+          "VulnerabilityID": "CVE-2026-7017",
+          "PkgID": "perl-base@5.40.1-6",
+          "PkgName": "perl-base",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/perl-base@5.40.1-6?arch=arm64\u0026distro=debian-13.5",
+            "UID": "b9c070033835aadb"
+          },
+          "InstalledVersion": "5.40.1-6",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
+            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-7017",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:6783fffb437460ba00dde43588cd52b7846b2f7e36744d8145da0b02c6624812",
+          "Title": "HTTP::Tiny versions before 0.095 for Perl forward credential headers t ...",
+          "Description": "HTTP::Tiny versions before 0.095 for Perl forward credential headers to cross-origin redirect targets.\n\nWhen the server returns a 3xx redirect, `_maybe_redirect` follows the `Location:` header and `_prepare_headers_and_cb` re-merges the caller's `headers` argument into the new request, without checking whether the redirect target shares an origin with the original URL. Caller-supplied `Authorization`, `Cookie` and `Proxy-Authorization` headers are therefore re-sent to whatever host the redirect names, across scheme, host or port boundaries, and including `https` to `http` downgrades that expose them in plaintext on the wire.\n\nThe HTTP::Tiny POD note that \"Authorization headers will not be included in a redirected request\" applied only to the URL-userinfo Basic-auth path, not to headers passed explicitly by the caller.",
+          "Severity": "UNKNOWN",
+          "CweIDs": [
+            "CWE-522"
+          ],
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2026/07/07/13",
+            "https://github.com/Perl-Toolchain-Gang/HTTP-Tiny/commit/84984ef3930ddd4afcf5eb83b40d3cee200739c3.patch",
+            "https://github.com/Perl-Toolchain-Gang/HTTP-Tiny/commit/8f32ca89e21c3ad0422adc698fa6ad17a193f55f.patch",
+            "https://github.com/Perl-Toolchain-Gang/HTTP-Tiny/commit/e7a03aedf2395158f2b0d3bad2df943349227bb3.patch",
+            "https://github.com/Perl-Toolchain-Gang/HTTP-Tiny/pull/36",
+            "https://metacpan.org/release/HAARG/HTTP-Tiny-0.095-TRIAL/changes"
+          ],
+          "PublishedDate": "2026-07-07T19:16:55.53Z",
+          "LastModifiedDate": "2026-07-07T21:17:29.48Z"
+        },
+        {
           "VulnerabilityID": "TEMP-0517018-A83CE6",
           "PkgID": "sysvinit-utils@3.14-4",
           "PkgName": "sysvinit-utils",
@@ -28589,6 +28997,34 @@
           }
         },
         {
+          "VulnerabilityID": "CVE-2026-53615",
+          "PkgID": "util-linux@2.41-5",
+          "PkgName": "util-linux",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/util-linux@2.41-5?arch=arm64\u0026distro=debian-13.5",
+            "UID": "e14fbd5975825c96"
+          },
+          "InstalledVersion": "2.41-5",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
+            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:c51998b3685ea332fae7fc4b655b75af75b9c365538b28e229de3cf8a951d915",
+          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
+          "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2026-53615:\n\tInteger Overflow or Wraparound in libblkid/src/partitions/dos.c\n",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "amazon": 3
+          }
+        },
+        {
           "VulnerabilityID": "CVE-2026-13595",
           "PkgID": "util-linux@2.41-5",
           "PkgName": "util-linux",
@@ -28602,6 +29038,7 @@
             "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
             "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
           },
+          "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-13595",
           "DataSource": {
             "ID": "debian",
@@ -28616,9 +29053,14 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "nvd": 2,
             "redhat": 2
           },
           "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H",
+              "V3Score": 5.3
+            },
             "redhat": {
               "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
               "V3Score": 6.8
@@ -28633,7 +29075,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2026-13595"
           ],
           "PublishedDate": "2026-06-29T09:16:28.303Z",
-          "LastModifiedDate": "2026-06-30T03:17:14.55Z"
+          "LastModifiedDate": "2026-07-08T03:37:21.637Z"
         },
         {
           "VulnerabilityID": "CVE-2026-27456",
@@ -28871,7 +29313,7 @@
             "https://bugzilla.redhat.com/2419369",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2419369",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-14104",
-            "https://errata.almalinux.org/8/ALSA-2026-1852.html",
+            "https://errata.almalinux.org/9/ALSA-2026-1913.html",
             "https://errata.rockylinux.org/RLSA-2026:1913",
             "https://linux.oracle.com/cve/CVE-2025-14104.html",
             "https://linux.oracle.com/errata/ELSA-2026-1913.html",
@@ -28951,30 +29393,6 @@
           },
           "Fingerprint": "sha256:a45438142d2b71db08ba8af274ed85396bdf113d69c5d784f49c0c90290d4a84",
           "Title": "[Local Privilege Escalation via LIBMOUNT_FORCE_MOUNT2 Environment Variable - nosuid/noexec Bypass in SUID mount(8)]",
-          "Severity": "UNKNOWN"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-53615",
-          "PkgID": "util-linux@2.41-5",
-          "PkgName": "util-linux",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/util-linux@2.41-5?arch=arm64\u0026distro=debian-13.5",
-            "UID": "e14fbd5975825c96"
-          },
-          "InstalledVersion": "2.41-5",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
-            "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-53615",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:c51998b3685ea332fae7fc4b655b75af75b9c365538b28e229de3cf8a951d915",
-          "Title": "[Integer Overflow or Wraparound in libblkid/src/partitions/dos.c]",
           "Severity": "UNKNOWN"
         },
         {
