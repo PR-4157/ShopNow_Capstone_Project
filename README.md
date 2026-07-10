@@ -1,353 +1,352 @@
+# Container Image Vulnerability Scanner with Reporting – Sprint 2
 
-# 🛒 ShopNow E-Commerce - Kubernetes Learning Project
+## Overview
 
-ShopNow is a **Kubernetes learning project** built around a full-stack MERN e-commerce application:
-- **Customer App** (React frontend)  
-- **Admin Dashboard** (React admin panel)  
-- **Backend API** (Express + MongoDB)  
+Sprint 2 extends the Sprint 1 implementation by automating Docker image vulnerability scanning using CI/CD pipelines.
 
-This project teaches **Kubernetes** from container basics to production-ready deployments with Dockerfiles, Kubernetes manifests, Helm, GitOps and CICD using Jenkins.
+Instead of manually building Docker images and scanning them with Trivy, the process is automated using GitHub Actions and Jenkins.
 
-## 🎯 Learning Objectives
-- Write Dockerfiles for containerising the application
-- Master Kubernetes fundamentals through hands-on practice
-- Understand and implement HELM Chart for application deployment on kubernetes
-- Implement GitOps workflows using ArgoCD
-- Implement CICD pipelines using Jenkins
+Whenever code is pushed to the repository, the pipeline:
+
+- Builds Docker images
+- Scans images using Trivy
+- Generates vulnerability reports
+- Fails the pipeline if HIGH or CRITICAL vulnerabilities are detected
 
 ---
 
-## 📁 Project Structure
+# Sprint 2 Objectives
 
-```
-shopNow/
-├── backend/               # Node.js API server
-├── frontend/              # React customer app
-├── admin/                 # React admin dashboard
-├── kubernetes
-│   ├── k8s-manifests/     # Raw Kubernetes YAML files
-│   ├── helm/              # Helm charts for package management
-│   │   └── charts/        # Individual charts
-│   ├── argocd/            # GitOps deployment configs
-│   └── pre-req/           # Cluster prerequisites
-├── jenkins/               # Pipeline definitions (CI & CD)       
-├── docs/                  # learning resources and guides
-└── scripts/               # Automation and utility scripts
+- Automate Docker image builds
+- Automate Trivy image scanning
+- Configure environment-based scanning
+- Integrate with GitHub Actions
+- Integrate with Jenkins
+- Define build pass/fail rules
+- Generate security reports automatically
+
+---
+
+# CI/CD Workflow
+
+```text
+Developer Pushes Code
+        │
+        ▼
+GitHub Actions / Jenkins
+        │
+        ▼
+Checkout Repository
+        │
+        ▼
+Build Docker Images
+        │
+        ▼
+Run Trivy Scan
+        │
+        ▼
+Generate JSON Reports
+        │
+        ▼
+HIGH / CRITICAL Vulnerabilities?
+       │
+ ┌─────┴─────┐
+ │           │
+ ▼           ▼
+Fail       Pass
+Pipeline   Pipeline
 ```
 
 ---
 
-## 🚀 Learning Journey
-
-### Container & Kubernetes Basics
-1. **Start Here**: [docs/K8S-CONCEPTS.md](docs/K8S-CONCEPTS.md) - Core concepts explained
-2. **Raw Kubernetes Manifests**: `kubernetes/k8s-manifests/`
-
-### Package Management & Automation  
-3. **Helm Charts**: `kubernetes/helm/`
-4. **CI/CD Pipelines**: `jenkins/`
-
-### GitOps & Production Readiness
-5. **ArgoCD GitOps**: `kubernetes/argocd/`
-
-
-## Getting Started
-
-## 🛠 Prerequisites & Setup
-
-#### 1. Setup Tools**: [docs/TOOLS-SETUP-GUIDE.md](docs/TOOLS-SETUP-GUIDE.md)
-
-#### 2. AWS ECR Registry Setup 
-```bash
-# Setup AWS credentials first
-aws configure
-# Enter your AWS Access Key ID, Secret Access Key, region (us-east-1), and output format (json)
-
-# Or use environment variables
-export AWS_ACCESS_KEY_ID=your-access-key
-export AWS_SECRET_ACCESS_KEY=your-secret-key
-export AWS_DEFAULT_REGION=us-east-1
-
-# If above credentials are already set, run below command to verify
-aws sts get-caller-identity
-
-# Create ECR repositories either via the aws cli as mentioned below or via console (Has to be done once to create the ECR repo, skip this step when you are rebuilding the docker images):
-
-like:
-
-aws ecr create-repository --repository-name <your-username>-shopnow/frontend --region <region>
-aws ecr create-repository --repository-name <your-username>-shopnow/backend --region <region>
-aws ecr create-repository --repository-name <your-username>-shopnow/admin --region <region>
-
-# Get login token (run this command everytime as the docker credentials are persisted only on the terminal)
-aws ecr get-login-password --region <region> | docker login --username AWS --password-stdin <account-id>.dkr.ecr.<region>.amazonaws.com
-```
-
-
-#### 3. Update Configurations in below mentioned files
-
-
-## 🔧 Personalization Required
-
-**For Multi-User Kubernetes Clusters**: To avoid conflicts when multiple learners use the same cluster, each user must personalize their deployment with unique identifiers.
-
-**IMPORTANT**: This project contains hardcoded references that you must update with your own values:
-
-3.1. Replace "aryan" with your username in these locations:
-
-  **Ingress Paths** (in both Kubernetes manifests and Helm charts):
-   - `kubernetes/k8s-manifests/ingress/ingress-shopnow.yaml`
-     - Change `/aryan` to `/<your-username>`
-     - Change `/aryan-admin` to `/<your-username>-admin`
-   
-   - `kubernetes/helm/charts/frontend/values.yaml`
-     - Change `path: /aryan` to `path: /<your-username>`
-   
-   - `kubernetes/helm/charts/admin/values.yaml`
-     - Change `path: /aryan-admin` to `path: /<your-username>-admin`
-
-
-  **Nginx ConfigMaps**
-   - All references with 'aryan' to <your-username> in following files:
-   - `kubernetes/k8s-manifests/frontend/cm-nginx.yaml`   
-   - `kubernetes/k8s-manifests/admin/cm-nginx.yaml`
-
-
-  **Helm Chart Nginx Configurations**:
-   - All references with 'aryan' in the 'nginx.config' section to <your-username> in following files:
-   - `kubernetes/helm/charts/frontend/values.yaml` 
-   - `kubernetes/helm/charts/admin/values.yaml`
-
-  **Dockerfiles** (Build Arguments):
-   - `frontend/Dockerfile`
-     - Change `ARG USER_NAME=aryan` to `ARG USER_NAME=<your-username>`
-   
-   - `admin/Dockerfile`
-     - Change `ARG USER_NAME=aryan` to `ARG USER_NAME=<your-username>`
-
-  **Build Script** (optional):
-   - `scripts/build-and-push.sh`
-     - Update the example usage comments that reference "aryan"
-
-3.2. **ECR Repository Names** - Update to your username:
-   - All `kubernetes/k8s-manifests/*/deployment.yaml` files
-   - All `kubernetes/helm/charts/*/values.yaml` files
-   - All `jenkins\Jenkinsfile.*.*` files
-   - Change `shopnow/frontend` to `<your-username>-shopnow/frontend`
-   - Change `shopnow/backend` to `<your-username>-shopnow/backend`
-   - Change `shopnow/admin` to `<your-username>-shopnow/admin`
-
-3.3. **Update Namespace** on these locations:
-  - `kubernetes/k8s-manifests/namespace/namespace.yaml` - Change namespace name
-  - All files in `kubernetes/k8s-manifests/*/` - Update namespace references
-  - `kubernetes/argocd/apps/*.yaml` - Update destination namespace
-  - All kubectl commands in this README - Replace `shopnow-demo` with your namespace
-
-3.4. **Update ArgoCD Repository URL**:
-  - In `kubernetes/argocd/umbrella-application.yaml` and all `kubernetes/argocd/apps/*.yaml` files:
-  - Change `repoURL: 'https://github.com/aryanm12/shopNow'` 
-  - To `repoURL: 'https://github.com/<your-github-username>/<your-repo-name>'`
-
-
-
-#### 4. Kubernetes Cluster Access (Make sure to have a running Kubernetes cluster, here is an example to connect with EKS)
-```bash
-# For EKS cluster
-aws eks update-kubeconfig --region <region> --name <your-cluster-name>
-
-# Verify access
-kubectl cluster-info
-kubectl get nodes
-```
-
-Note: All the below mentioned kubectl commands assume that you are working with "shopnow-demo" namespace, update the namespace as per yours where ever you find "shopnow-demo".
-
-#### 5. Docker Registry Secret (Only required for private ECR registry)
-**Note**: Skip this step if using public Docker Hub images or public ECR repositories.
-
-```bash
-# Create registry secret for private ECR image pulls
-kubectl create ns shopnow-demo
-kubectl create secret docker-registry ecr-secret --docker-server=<account-id>.dkr.ecr.us-east-1.amazonaws.com --docker-username=AWS --docker-password=$(aws ecr get-login-password --region us-east-1) --namespace=shopnow-demo
-```
-
-#### 6. Install Pre-requisites in the Kubernetes Environment (Has to be done once per Kubernetes Cluster)
-```bash
-# Install metrics server (required for resource monitoring and HPA)
-kubectl apply -f kubernetes/pre-req/metrics-server.yaml
-
-# Install ingress-nginx controller (for external access)
-# For EKS, other cloud provider will have different file
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.12.0-beta.0/deploy/static/provider/aws/deploy.yaml
-
-# For local development (minikube/kind/Docker Desktop)
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.1/deploy/static/provider/kind/deploy.yaml
-
-# Verify installations
-kubectl get pods -n kube-system
-kubectl get pods -n ingress-nginx
-kubectl top nodes  # Should work after metrics server is running
-kubectl top pods  # Should work after metrics server is running
-
-# To enable Persistent Storage
-
-# First install the EBS CSI driver as an EKS Addon
-
--> In the EKS Console, open your cluster → go to Add-ons → click Get more add-ons → select Amazon EBS CSI driver → click Next.
--> On the configuration page, Under Pod identity association, choose Create a new IAM role, and the console will auto-attach the AmazonEBSCSIDriverPolicy.
--> Confirm and click Create. The add-on installs, the IAM role is associated with the SA via Pod Identity, and the driver starts running.
--> Verify under Add-ons tab that the EBS CSI driver is active and under Pod identity associations tab you see the SA <-> IAM role mapping.
-
-# Install storage class for persistent volumes
-kubectl apply -f kubernetes/pre-req/storageclass-gp3.yaml
-
-# Verify storage class installation
-kubectl get storageclass
-
-
-```
-
-
-## ⚡ Build and Deploy the micro-services
-
-### 1. Build the docker images and push it to the ECR registry created above
-
-```bash
-scripts/build-and-push.sh <account-id>.dkr.ecr.<region>.amazonaws.com/<registry-name> <tag-name-number> <your-username> 
-
-# Example for user 'aryan' with tag 'latest' and ECR registry '975050024946.dkr.ecr.ap-southeast-1.amazonaws.com/shopnow':
-./scripts/build-and-push.sh 975050024946.dkr.ecr.ap-southeast-1.amazonaws.com/shopnow latest aryan
-
-
-```
-
-### 2. Choose Your Deployment Method
-
-**Option A: Raw Kubernetes Manifests**
-```bash
-kubectl apply -f kubernetes/k8s-manifests/namespace/
-kubectl apply -f kubernetes/k8s-manifests/database/
-kubectl apply -f kubernetes/k8s-manifests/backend/
-kubectl apply -f kubernetes/k8s-manifests/frontend/
-kubectl apply -f kubernetes/k8s-manifests/admin/
-kubectl apply -f kubernetes/k8s-manifests/ingress/
-kubectl apply -f kubernetes/k8s-manifests/daemonsets-example/
-```
-
-**Option B: Helm Charts**
-
-```bash
-helm upgrade --install mongo kubernetes/helm/charts/mongo -n shopnow-demo --create-namespace
-helm upgrade --install backend kubernetes/helm/charts/backend -n shopnow-demo
-helm upgrade --install frontend kubernetes/helm/charts/frontend -n shopnow-demo
-helm upgrade --install admin kubernetes/helm/charts/admin -n shopnow-demo
-```
-
-**Option C: ArgoCD GitOps**
-```bash
-# Install ArgoCD first
-kubectl create namespace argocd
-kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
-
-# Create target namespace
-kubectl create namespace shopnow-demo
-
-# Deploy applications
-kubectl apply -f kubernetes/argocd/umbrella-application.yaml
-
-# Check all ArgoCD application status:
-kubectl get applications -n argocd
-
-```
-
-### 3. Create users in MongoDB after the mongodb pods are healthy
-
-```bash
-
-# check the status of the mongo-0 pods 
-kubectl get pods -n shopnow-demo
-
-# if mongo-0 pod is healthy, then run following command to create a user for the backend to connect
-# user credentials should be same as mentioned in the backend secrets-db.yaml file
-# First exex into the pods
-kubectl -n shopnow-demo exec -it mongo-0 -- mongosh
-
-# Run below commands
-use admin;
-db.createUser({
-  user: 'shopuser',
-  pwd: 'ShopNowPass123',
-  roles: [
-    { role: 'readWrite', db: 'shopnow' },
-    { role: 'dbAdmin', db: 'shopnow' }
-  ]
-});
-
-exit
-
-# Restart backend deployment
-kubectl rollout restart deploy backend -n shopnow-demo
-```
-
-### 3. Check the resources deployed
-
-```bash
-# Check Pods
-kubectl get pods -n shopnow-demo
-
-# Check Deployment
-kubectl get deploy -n shopnow-demo
-
-# Check Services
-kubectl get svc -n shopnow-demo
-
-# Check daemonsets
-kubectl get daemonsets -n shopnow-demo
-
-# Check statefulsets
-kubectl get statefulsets -n shopnow-demo
-
-# Check HPA
-kubectl get hpa -n shopnow-demo
-
-# Check all of the above at once
-kubectl get all -n shopnow-demo
-
-# Check configmaps
-kubectl get cm -n shopnow-demo
-
-# Check secrets
-kubectl get secrets -n shopnow-demo
-
-# Check ingress
-kubectl get ing -n shopnow-demo
-
-# Sequence to debug in case of any issue with the pods
-kubectl get pods -n shopnow-demo
-kubectl describe pod backend-746cc99cd-cqrgf -n shopnow-demo # Assuming that pod backend-746cc99cd-cqrgf has an error
-kubectl logs backend-746cc99cd-cqrgf -n shopnow-demo --previous # If no details are found in the above command or if details like liveness probe failed are coming
-
-```
-
+# Technologies Used
+
+| Tool | Purpose |
+|------|---------|
+| Docker | Build container images |
+| Trivy | Vulnerability scanner |
+| GitHub Actions | CI/CD automation |
+| Jenkins | CI/CD pipeline |
+| Bash | Automation scripts |
+| JSON | Scan reports |
+| Git | Version control |
 
 ---
 
-## 🌐 Access the Apps
+# Project Structure
 
-* **Customer App** → [http://<load-balancer-ip-or-dns>/<your-username>](http://<load-balancer-ip-or-dns>/<your-username>)
-* **Admin Dashboard** → [http://<load-balancer-ip-or-dns>/<your-username>-admin](http://<load-balancer-ip-or-dns>/<your-username>-admin)
+```text
+container-vulnerability-scanner/
+│
+├── shopNow/
+│   ├── backend/
+│   ├── frontend/
+│   ├── admin/
+│
+├── scripts/
+│   ├── build.sh
+│   └── scan.sh
+│
+├── reports/
+│   ├── backend-report.json
+│   ├── frontend-report.json
+│   ├── admin-report.json
+│   ├── nginx-report.json
+│   ├── python-report.json
+│   └── ubuntu-report.json
+│
+├── .github/
+│   └── workflows/
+│       └── security-pipeline.yml
+│
+├── Jenkinsfile
+├── .env
+└── README.md
+```
+<img width="1512" height="801" alt="Screenshot 2026-07-08 at 6 54 27 PM" src="https://github.com/user-attachments/assets/1bb7386a-a7d8-42f4-9a48-7e5385b22021" />
 
 ---
 
-## Additional Notes
+# Environment Configuration
 
-**Check the Application Architecture details**: [docs/APPLICATION-ARCHITECTURE.md](docs/APPLICATION-ARCHITECTURE.md)
-**Check the Troubleshooting Guide**: [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)
+Create a `.env` file in the project root.
+
+```text
+# Trivy Scan Configuration
+SEVERITY=HIGH,CRITICAL
+TRIVY_FORMAT=json
+REPORTS_DIR=reports
+
+# Docker Image Names
+BACKEND_IMAGE=shopnow-backend:v1
+FRONTEND_IMAGE=shopnow-frontend:v1
+ADMIN_IMAGE=shopnow-admin:v1
+```
+<img width="1512" height="309" alt="Screenshot 2026-07-07 at 7 16 27 PM" src="https://github.com/user-attachments/assets/3c9d2ed0-d748-4140-b257-d06f24ca1a19" />
+VS Code:
+<img width="1756" height="690" alt="image" src="https://github.com/user-attachments/assets/e46c0eec-63e0-44fe-9c8b-52c4aba2cbeb" />
+
 ---
 
-## 👨‍💻 Author
+# Automated Docker Build
 
-## K Mohan Krishna
+Run:
+
+```bash
+chmod +x scripts/build.sh
+./scripts/build.sh
+```
+The script builds all ShopNow Docker images:
+- Backend
+- Frontend
+- Admin
+<img width="1512" height="573" alt="B - 1" src="https://github.com/user-attachments/assets/680160db-c8da-484e-96ac-0ca730ea4e43" />
+<img width="1512" height="478" alt="B - 2" src="https://github.com/user-attachments/assets/5b7c9e0e-644f-40c9-b201-a946f368a151" />
+<img width="1512" height="526" alt="B - 3" src="https://github.com/user-attachments/assets/701cfa52-d78a-435a-9e82-36183b113e46" />
+VS Code:
+<img width="876" height="588" alt="B " src="https://github.com/user-attachments/assets/27462c80-e56d-4927-9885-fb64ece28b19" />
 
 ---
 
+# Automated Trivy Scan
+
+Run:
+
+```bash
+chmod +x scripts/scan.sh
+./scripts/scan.sh
+```
+The script:
+- Loads configuration from `.env`
+- Scans all Docker images
+- Generates JSON reports
+- Uses the configured severity threshold
+<img width="1512" height="781" alt="S - 1" src="https://github.com/user-attachments/assets/a78a8861-81f1-43ac-b099-f8f31e659a51" />
+<img width="1512" height="911" alt="S - 2" src="https://github.com/user-attachments/assets/9cf2e36b-b387-4acf-abef-925c63f57fca" />
+<img width="1512" height="909" alt="S - 3" src="https://github.com/user-attachments/assets/0c6f2564-e6a6-478a-b456-fbde9ca524b6" />
+<img width="1512" height="911" alt="S - 4" src="https://github.com/user-attachments/assets/acb84915-0d5a-4d8f-bb08-3c7931e288f0" />
+<img width="1512" height="897" alt="S - 5" src="https://github.com/user-attachments/assets/bedd782f-e42a-4194-a74c-6b7cf7ba4f92" />
+<img width="1512" height="910" alt="S - 6" src="https://github.com/user-attachments/assets/ab1f2e74-6e4b-4c6d-bb39-b3d6757f9fd4" />
+<img width="1512" height="896" alt="S - 7" src="https://github.com/user-attachments/assets/179e4abd-e9a8-4dc3-b191-dad4486d9a31" />
+<img width="1512" height="897" alt="S - 8" src="https://github.com/user-attachments/assets/77a25a6a-4a85-45cc-aed3-bb000a85d643" />
+<img width="1512" height="913" alt="S - 9" src="https://github.com/user-attachments/assets/5cb92818-8ff7-4e90-a540-7597ec9c1f08" />
+<img width="1512" height="911" alt="S - 10" src="https://github.com/user-attachments/assets/67161098-f604-4977-aaa8-c84403236482" />
+<img width="1512" height="897" alt="S - 11" src="https://github.com/user-attachments/assets/0775a878-b7af-4bff-ae7b-7d0500d87fa7" />
+<img width="1512" height="525" alt="S - 12" src="https://github.com/user-attachments/assets/ea177c0a-bdd7-463e-828f-d0c9d4fa00d1" />
+<img width="1512" height="891" alt="S - 13" src="https://github.com/user-attachments/assets/a96514f8-bf51-4e8e-be7f-79c97067fee9" />
+<img width="1511" height="724" alt="S - 14" src="https://github.com/user-attachments/assets/231c51ae-f9e5-4b3d-8bb0-70500bbcaaa7" />
+<img width="1507" height="432" alt="S - 15" src="https://github.com/user-attachments/assets/33b40122-d9f1-47ec-ad43-7986125855e1" />
+VS Code:
+<img width="874" height="526" alt="Screenshot 2026-07-09 at 9 01 16 PM" src="https://github.com/user-attachments/assets/381ed935-0321-4b59-a9fd-ce27f36fc5ac" />
+<img width="873" height="602" alt="Screenshot 2026-07-09 at 9 01 06 PM" src="https://github.com/user-attachments/assets/86de46a4-30cb-47bf-9fcc-8c7575613069" />
+
+---
+
+# Generated Reports
+
+```text
+reports/
+├── backend-report.json
+├── frontend-report.json
+├── admin-report.json
+├── nginx-report.json
+├── python-report.json
+└── ubuntu-report.json
+```
+<img width="1512" height="197" alt="Screenshot 2026-07-09 at 9 12 52 PM" src="https://github.com/user-attachments/assets/d9278b0b-2862-4cf4-8180-90c2fd5a4659" />
+
+---
+
+# GitHub Actions Pipeline
+
+The GitHub Actions workflow is located at:
+
+```text
+.github/workflows/security-pipeline.yml
+```
+<img width="1512" height="857" alt="SP - 1" src="https://github.com/user-attachments/assets/348f0e0a-62d8-47ec-8ee9-8b5fae8cfd61" />
+
+Pipeline stages:
+
+1. Checkout repository
+2. Set up Docker
+3. Install Trivy
+4. Build Docker images
+5. Scan images
+6. Upload reports
+7. Pass or fail the workflow
+
+The workflow runs automatically on every push to the configured branch.
+
+---
+
+# Jenkins Pipeline
+
+The Jenkins pipeline is defined in:
+
+```text
+Jenkinsfile
+```
+<img width="3024" height="480" alt="image" src="https://github.com/user-attachments/assets/39d52a36-9864-49eb-b4b7-821c436cf7d6" />
+
+Pipeline stages:
+
+```text
+Checkout Code
+      │
+      ▼
+Build Images
+      │
+      ▼
+Trivy Scan
+      │
+      ▼
+Archive Reports
+      │
+      ▼
+Pass / Fail
+```
+
+---
+
+# Pass / Fail Criteria
+
+The pipeline blocks insecure images.
+
+| Severity | Pipeline Result |
+|----------|-----------------|
+| LOW | Pass |
+| MEDIUM | Pass |
+| HIGH | Fail |
+| CRITICAL | Fail |
+
+This is enforced using Trivy's exit code functionality.
+
+---
+
+# Testing
+
+The automation was validated using the following images:
+
+| Image | Purpose |
+|------|---------|
+| ShopNow Backend | Application scan |
+| ShopNow Frontend | Application scan |
+| ShopNow Admin | Application scan |
+| nginx | Sample image |
+| python | Sample image |
+| ubuntu | Sample image |
+
+---
+
+# Sprint 2 Deliverables
+
+| Deliverable | Status |
+|-------------|--------|
+| Docker build automation | ✅ |
+| Trivy scan automation | ✅ |
+| Environment configuration | ✅ |
+| GitHub Actions integration | ✅ |
+| Jenkins integration | ✅ |
+| Pass/Fail rules | ✅ |
+| Automated JSON reports | ✅ |
+
+---
+
+# Screenshots
+
+Suggested screenshots:
+
+```text
+screenshots/
+├── github-actions-success.png
+├── github-actions-failed.png
+├── jenkins-pipeline.png
+├── trivy-scan.png
+├── docker-images.png
+└── reports-folder.png
+```
+
+Example:
+
+```markdown
+## GitHub Actions
+
+![GitHub Actions](screenshots/github-actions-success.png)
+
+## Jenkins Pipeline
+
+![Jenkins](screenshots/jenkins-pipeline.png)
+
+## Trivy Scan
+
+![Trivy Scan](screenshots/trivy-scan.png)
+```
+
+---
+
+# Future Enhancements
+
+Planned improvements for the next sprint include:
+
+- HTML vulnerability reports
+- Slack or Microsoft Teams notifications
+- Dashboard for vulnerability history
+- Docker Scout integration
+- SonarQube integration
+- GitLeaks secret scanning
+- Multi-branch pipeline support
+
+---
+
+# Author
+
+**Rahulkumar Prajapati**
+
+DevSecOps Capstone Project
+
+---
+
+# License
+
+This project is intended for educational purposes as part of a DevSecOps Capstone Project.
