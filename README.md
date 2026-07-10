@@ -123,7 +123,8 @@ FRONTEND_IMAGE=shopnow-frontend:v1
 ADMIN_IMAGE=shopnow-admin:v1
 ```
 <img width="1512" height="309" alt="Screenshot 2026-07-07 at 7 16 27 PM" src="https://github.com/user-attachments/assets/3c9d2ed0-d748-4140-b257-d06f24ca1a19" />
-VS Code:
+VS Code: 
+
 <img width="1756" height="690" alt="image" src="https://github.com/user-attachments/assets/e46c0eec-63e0-44fe-9c8b-52c4aba2cbeb" />
 
 ---
@@ -144,6 +145,7 @@ The script builds all ShopNow Docker images:
 <img width="1512" height="478" alt="B - 2" src="https://github.com/user-attachments/assets/5b7c9e0e-644f-40c9-b201-a946f368a151" />
 <img width="1512" height="526" alt="B - 3" src="https://github.com/user-attachments/assets/701cfa52-d78a-435a-9e82-36183b113e46" />
 VS Code:
+
 <img width="876" height="588" alt="B " src="https://github.com/user-attachments/assets/27462c80-e56d-4927-9885-fb64ece28b19" />
 
 ---
@@ -177,6 +179,7 @@ The script:
 <img width="1511" height="724" alt="S - 14" src="https://github.com/user-attachments/assets/231c51ae-f9e5-4b3d-8bb0-70500bbcaaa7" />
 <img width="1507" height="432" alt="S - 15" src="https://github.com/user-attachments/assets/33b40122-d9f1-47ec-ad43-7986125855e1" />
 VS Code:
+
 <img width="874" height="526" alt="Screenshot 2026-07-09 at 9 01 16 PM" src="https://github.com/user-attachments/assets/381ed935-0321-4b59-a9fd-ce27f36fc5ac" />
 <img width="873" height="602" alt="Screenshot 2026-07-09 at 9 01 06 PM" src="https://github.com/user-attachments/assets/86de46a4-30cb-47bf-9fcc-8c7575613069" />
 
@@ -205,6 +208,9 @@ The GitHub Actions workflow is located at:
 .github/workflows/security-pipeline.yml
 ```
 <img width="1512" height="857" alt="SP - 1" src="https://github.com/user-attachments/assets/348f0e0a-62d8-47ec-8ee9-8b5fae8cfd61" />
+<img width="1235" height="97" alt="Screenshot 2026-07-10 at 7 58 09 PM" src="https://github.com/user-attachments/assets/577b9a9d-abd3-42ba-86cd-1c3eeca91aa3" />
+<img width="1161" height="579" alt="Screenshot 2026-07-10 at 8 13 19 PM" src="https://github.com/user-attachments/assets/f7edd0c9-b16a-4a7d-810f-f6535b21f22f" />
+<img width="1159" height="377" alt="Screenshot 2026-07-10 at 8 13 24 PM" src="https://github.com/user-attachments/assets/d6acb3dd-b945-4b8e-869a-71254528b629" />
 
 Pipeline stages:
 
@@ -228,6 +234,7 @@ The Jenkins pipeline is defined in:
 Jenkinsfile
 ```
 <img width="3024" height="480" alt="image" src="https://github.com/user-attachments/assets/39d52a36-9864-49eb-b4b7-821c436cf7d6" />
+<img width="1465" height="914" alt="J" src="https://github.com/user-attachments/assets/d4a70826-0430-4745-be67-1f2b72a7a5d6" />
 
 Pipeline stages:
 
@@ -311,17 +318,6 @@ Example:
 
 ```markdown
 ## GitHub Actions
-
-![GitHub Actions](screenshots/github-actions-success.png)
-
-## Jenkins Pipeline
-
-![Jenkins](screenshots/jenkins-pipeline.png)
-
-## Trivy Scan
-
-![Trivy Scan](screenshots/trivy-scan.png)
-```
 
 ---
 
