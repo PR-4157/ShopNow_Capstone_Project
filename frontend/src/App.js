@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, ShoppingCart, User, Plus, Minus, Star, Filter, Menu, X, Download } from 'lucide-react';
+import { Search, ShoppingCart, User, Plus, Minus, Star, Menu, X, Download } from 'lucide-react';
 
 const ShopNowApp = () => {
   const [products, setProducts] = useState([]);
@@ -445,7 +445,7 @@ const ShopNowApp = () => {
                   <div className="flex items-center">
                     {[...Array(5)].map((_, i) => (
                       <Star
-                        key={i}
+                        key={`star-${i}`}
                         className={`h-4 w-4 ${
                           i < Math.floor(product.rating)
                             ? 'text-yellow-400 fill-current'

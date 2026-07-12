@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Package, Clock, CheckCircle, XCircle, Eye, Edit, Trash2 } from 'lucide-react';
+import { Search, Package, Clock, CheckCircle, XCircle, Eye } from 'lucide-react';
 
 const AdminDashboard = () => {
   const [orders, setOrders] = useState([]);
@@ -496,7 +496,7 @@ const AdminDashboard = () => {
                   <h3 className="text-lg font-medium mb-3">Items</h3>
                   <div className="space-y-3">
                     {selectedOrder.items.map((item, index) => (
-                      <div key={index} className="flex justify-between items-center p-3 bg-gray-50 rounded">
+                      <div key={item._id} className="flex justify-between items-center p-3 bg-gray-50 rounded">
                         <div>
                           <p className="font-medium">{item.name}</p>
                           <p className="text-sm text-gray-600">Quantity: {item.quantity}</p>
