@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.72.0"
   },
-  "ReportID": "019f4232-cae7-7bcb-87fa-876d08e6376e",
-  "CreatedAt": "2026-07-08T20:17:32.839775+05:30",
+  "ReportID": "019f56f5-a6d6-7850-8b58-9b6347667ff4",
+  "CreatedAt": "2026-07-12T21:02:47.446547+05:30",
   "ArtifactID": "sha256:e55ed675c9017dee87505511e38f485f0a51a1e522637ed8141afc5f88a9bc0f",
   "ArtifactName": "nginx:latest",
   "ArtifactType": "container_image",
@@ -10970,6 +10970,7 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "nvd": 2,
             "redhat": 2
           },
@@ -11399,7 +11400,7 @@
             "amazon": 2,
             "debian": 1,
             "oracle-oval": 2,
-            "photon": 2,
+            "photon": 3,
             "redhat": 2,
             "rocky": 2
           },
@@ -11480,6 +11481,7 @@
             "https://curl.se/docs/CVE-2026-12064.json",
             "https://hackerone.com/reports/3797526",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-12064",
+            "https://ubuntu.com/security/notices/USN-8525-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-12064"
           ],
           "PublishedDate": "2026-07-03T07:16:24.217Z",
@@ -11494,7 +11496,8 @@
             "UID": "7edfc30215009c3e"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -11537,6 +11540,7 @@
             "https://hackerone.com/reports/3650689",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-5773",
             "https://ubuntu.com/security/notices/USN-8227-1",
+            "https://ubuntu.com/security/notices/USN-8525-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-5773"
           ],
           "PublishedDate": "2026-05-13T13:01:56.307Z",
@@ -11551,7 +11555,8 @@
             "UID": "7edfc30215009c3e"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -11939,7 +11944,7 @@
           "LastModifiedDate": "2026-07-07T14:52:29.503Z"
         },
         {
-          "VulnerabilityID": "CVE-2026-1965",
+          "VulnerabilityID": "CVE-2026-10536",
           "PkgID": "curl@8.14.1-2+deb13u3",
           "PkgName": "curl",
           "PkgIdentifier": {
@@ -11948,6 +11953,104 @@
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
           "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-10536",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:a4218dc23fdb8edcff1e6fd1d3f8b05f7d594c29d17d0ce0d010315575f7b2b3",
+          "Title": "libcurl: libcurl: Use-after-free vulnerability leading to Denial of Service",
+          "Description": "A use-after-free vulnerability exists in libcurl when an application\nconfigures an HTTP/2 stream-dependency tree via `CURLOPT_STREAM_DEPENDS` or\n`CURLOPT_STREAM_DEPENDS_E`, subsequently invokes `curl_easy_reset()`, and\nfinally terminates the handle with `curl_easy_cleanup()`. During this final\ncleanup phase, libcurl attempts to access and modify an internal structure\nthat was already freed during the reset operation.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "VendorSeverity": {
+            "redhat": 2,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 4.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-10536",
+            "https://curl.se/L7HzKXisfJ/CVE-2026-10536.md",
+            "https://curl.se/docs/CVE-2026-10536.html",
+            "https://curl.se/docs/CVE-2026-10536.json",
+            "https://hackerone.com/reports/3751697",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-10536",
+            "https://ubuntu.com/security/notices/USN-8525-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-10536"
+          ],
+          "PublishedDate": "2026-07-03T07:16:23.563Z",
+          "LastModifiedDate": "2026-07-07T18:02:03.89Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-11856",
+          "PkgID": "curl@8.14.1-2+deb13u3",
+          "PkgName": "curl",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/curl@8.14.1-2%2Bdeb13u3?arch=arm64\u0026distro=debian-13.5",
+            "UID": "7edfc30215009c3e"
+          },
+          "InstalledVersion": "8.14.1-2+deb13u3",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-11856",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:481301483ef961b119156a48254a689b38c91582dc48e33e604ccff93aabf4e3",
+          "Title": "curl: curl: Information disclosure via incorrect Digest authentication header reuse",
+          "Description": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-294"
+          ],
+          "VendorSeverity": {
+            "redhat": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-11856",
+            "https://curl.se/docs/CVE-2026-11856.html",
+            "https://curl.se/docs/CVE-2026-11856.json",
+            "https://hackerone.com/reports/3793260",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-11856",
+            "https://www.cve.org/CVERecord?id=CVE-2026-11856"
+          ],
+          "PublishedDate": "2026-07-03T07:16:23.973Z",
+          "LastModifiedDate": "2026-07-07T19:43:55.6Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-1965",
+          "PkgID": "curl@8.14.1-2+deb13u3",
+          "PkgName": "curl",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/curl@8.14.1-2%2Bdeb13u3?arch=arm64\u0026distro=debian-13.5",
+            "UID": "7edfc30215009c3e"
+          },
+          "InstalledVersion": "8.14.1-2+deb13u3",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -12003,7 +12106,8 @@
             "UID": "7edfc30215009c3e"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -12062,7 +12166,8 @@
             "UID": "7edfc30215009c3e"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -12122,7 +12227,8 @@
             "UID": "7edfc30215009c3e"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -12180,7 +12286,8 @@
             "UID": "7edfc30215009c3e"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -12233,7 +12340,8 @@
             "UID": "7edfc30215009c3e"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -12276,6 +12384,7 @@
             "https://hackerone.com/reports/3642555",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-5545",
             "https://ubuntu.com/security/notices/USN-8227-1",
+            "https://ubuntu.com/security/notices/USN-8525-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-5545"
           ],
           "PublishedDate": "2026-05-13T13:01:56.19Z",
@@ -12290,7 +12399,8 @@
             "UID": "7edfc30215009c3e"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -12342,7 +12452,8 @@
             "UID": "7edfc30215009c3e"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -12390,7 +12501,8 @@
             "UID": "7edfc30215009c3e"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -12434,6 +12546,7 @@
             "https://hackerone.com/reports/3697719",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-7168",
             "https://ubuntu.com/security/notices/USN-8227-1",
+            "https://ubuntu.com/security/notices/USN-8525-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-7168"
           ],
           "PublishedDate": "2026-05-13T13:01:57.2Z",
@@ -12663,7 +12776,8 @@
             "UID": "7edfc30215009c3e"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -12723,7 +12837,8 @@
             "UID": "7edfc30215009c3e"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -12894,46 +13009,6 @@
           "LastModifiedDate": "2026-06-17T08:37:24.543Z"
         },
         {
-          "VulnerabilityID": "CVE-2026-10536",
-          "PkgID": "curl@8.14.1-2+deb13u3",
-          "PkgName": "curl",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/curl@8.14.1-2%2Bdeb13u3?arch=arm64\u0026distro=debian-13.5",
-            "UID": "7edfc30215009c3e"
-          },
-          "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-10536",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:a4218dc23fdb8edcff1e6fd1d3f8b05f7d594c29d17d0ce0d010315575f7b2b3",
-          "Title": "A use-after-free vulnerability exists in libcurl when an application c ...",
-          "Description": "A use-after-free vulnerability exists in libcurl when an application\nconfigures an HTTP/2 stream-dependency tree via `CURLOPT_STREAM_DEPENDS` or\n`CURLOPT_STREAM_DEPENDS_E`, subsequently invokes `curl_easy_reset()`, and\nfinally terminates the handle with `curl_easy_cleanup()`. During this final\ncleanup phase, libcurl attempts to access and modify an internal structure\nthat was already freed during the reset operation.",
-          "Severity": "LOW",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "VendorSeverity": {
-            "ubuntu": 1
-          },
-          "References": [
-            "https://curl.se/L7HzKXisfJ/CVE-2026-10536.md",
-            "https://curl.se/docs/CVE-2026-10536.html",
-            "https://curl.se/docs/CVE-2026-10536.json",
-            "https://hackerone.com/reports/3751697",
-            "https://www.cve.org/CVERecord?id=CVE-2026-10536"
-          ],
-          "PublishedDate": "2026-07-03T07:16:23.563Z",
-          "LastModifiedDate": "2026-07-07T18:02:03.89Z"
-        },
-        {
           "VulnerabilityID": "CVE-2026-8458",
           "PkgID": "curl@8.14.1-2+deb13u3",
           "PkgName": "curl",
@@ -12972,41 +13047,6 @@
           "LastModifiedDate": "2026-07-07T23:12:17.003Z"
         },
         {
-          "VulnerabilityID": "CVE-2026-11856",
-          "PkgID": "curl@8.14.1-2+deb13u3",
-          "PkgName": "curl",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/curl@8.14.1-2%2Bdeb13u3?arch=arm64\u0026distro=debian-13.5",
-            "UID": "7edfc30215009c3e"
-          },
-          "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-11856",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:481301483ef961b119156a48254a689b38c91582dc48e33e604ccff93aabf4e3",
-          "Title": "Successfully using libcurl to do a transfer to a specific HTTP origin  ...",
-          "Description": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`.",
-          "Severity": "UNKNOWN",
-          "CweIDs": [
-            "CWE-294"
-          ],
-          "References": [
-            "https://curl.se/docs/CVE-2026-11856.html",
-            "https://curl.se/docs/CVE-2026-11856.json",
-            "https://hackerone.com/reports/3793260"
-          ],
-          "PublishedDate": "2026-07-03T07:16:23.973Z",
-          "LastModifiedDate": "2026-07-07T19:43:55.6Z"
-        },
-        {
           "VulnerabilityID": "CVE-2026-41992",
           "PkgID": "gzip@1.13-1",
           "PkgName": "gzip",
@@ -13035,6 +13075,7 @@
             "CWE-126"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "nvd": 3,
             "ubuntu": 2
           },
@@ -13047,6 +13088,7 @@
           "References": [
             "https://cert.pl/en/posts/2026/04/CVE-2026-41991/",
             "https://cgit.git.savannah.gnu.org/cgit/gzip.git/commit/?id=63dbf6b3b9e6e781df1a6a64e609b10e23969681",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-41992",
             "https://ubuntu.com/security/notices/USN-8512-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-41992",
             "https://www.gnu.org/software/gzip/"
@@ -13565,6 +13607,7 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "nvd": 2,
             "redhat": 2
           },
@@ -13935,6 +13978,7 @@
             "CWE-787"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -15199,6 +15243,7 @@
             "https://curl.se/docs/CVE-2026-12064.json",
             "https://hackerone.com/reports/3797526",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-12064",
+            "https://ubuntu.com/security/notices/USN-8525-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-12064"
           ],
           "PublishedDate": "2026-07-03T07:16:24.217Z",
@@ -15213,7 +15258,8 @@
             "UID": "b0bfd76393e74777"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -15256,6 +15302,7 @@
             "https://hackerone.com/reports/3650689",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-5773",
             "https://ubuntu.com/security/notices/USN-8227-1",
+            "https://ubuntu.com/security/notices/USN-8525-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-5773"
           ],
           "PublishedDate": "2026-05-13T13:01:56.307Z",
@@ -15270,7 +15317,8 @@
             "UID": "b0bfd76393e74777"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -15658,7 +15706,7 @@
           "LastModifiedDate": "2026-07-07T14:52:29.503Z"
         },
         {
-          "VulnerabilityID": "CVE-2026-1965",
+          "VulnerabilityID": "CVE-2026-10536",
           "PkgID": "libcurl4t64@8.14.1-2+deb13u3",
           "PkgName": "libcurl4t64",
           "PkgIdentifier": {
@@ -15667,6 +15715,104 @@
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
           "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-10536",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:51832661ed5258f93774e6bb3722464b80a0bf01c6a376cd615a4e86df0aa53f",
+          "Title": "libcurl: libcurl: Use-after-free vulnerability leading to Denial of Service",
+          "Description": "A use-after-free vulnerability exists in libcurl when an application\nconfigures an HTTP/2 stream-dependency tree via `CURLOPT_STREAM_DEPENDS` or\n`CURLOPT_STREAM_DEPENDS_E`, subsequently invokes `curl_easy_reset()`, and\nfinally terminates the handle with `curl_easy_cleanup()`. During this final\ncleanup phase, libcurl attempts to access and modify an internal structure\nthat was already freed during the reset operation.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "VendorSeverity": {
+            "redhat": 2,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 4.7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-10536",
+            "https://curl.se/L7HzKXisfJ/CVE-2026-10536.md",
+            "https://curl.se/docs/CVE-2026-10536.html",
+            "https://curl.se/docs/CVE-2026-10536.json",
+            "https://hackerone.com/reports/3751697",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-10536",
+            "https://ubuntu.com/security/notices/USN-8525-1",
+            "https://www.cve.org/CVERecord?id=CVE-2026-10536"
+          ],
+          "PublishedDate": "2026-07-03T07:16:23.563Z",
+          "LastModifiedDate": "2026-07-07T18:02:03.89Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-11856",
+          "PkgID": "libcurl4t64@8.14.1-2+deb13u3",
+          "PkgName": "libcurl4t64",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libcurl4t64@8.14.1-2%2Bdeb13u3?arch=arm64\u0026distro=debian-13.5",
+            "UID": "b0bfd76393e74777"
+          },
+          "InstalledVersion": "8.14.1-2+deb13u3",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-11856",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:13ad7dd0270a81883b15459b7f570f079c6a6ca9deb00d20726c1c24fa6f6cf9",
+          "Title": "curl: curl: Information disclosure via incorrect Digest authentication header reuse",
+          "Description": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-294"
+          ],
+          "VendorSeverity": {
+            "redhat": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-11856",
+            "https://curl.se/docs/CVE-2026-11856.html",
+            "https://curl.se/docs/CVE-2026-11856.json",
+            "https://hackerone.com/reports/3793260",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-11856",
+            "https://www.cve.org/CVERecord?id=CVE-2026-11856"
+          ],
+          "PublishedDate": "2026-07-03T07:16:23.973Z",
+          "LastModifiedDate": "2026-07-07T19:43:55.6Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-1965",
+          "PkgID": "libcurl4t64@8.14.1-2+deb13u3",
+          "PkgName": "libcurl4t64",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libcurl4t64@8.14.1-2%2Bdeb13u3?arch=arm64\u0026distro=debian-13.5",
+            "UID": "b0bfd76393e74777"
+          },
+          "InstalledVersion": "8.14.1-2+deb13u3",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -15722,7 +15868,8 @@
             "UID": "b0bfd76393e74777"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -15781,7 +15928,8 @@
             "UID": "b0bfd76393e74777"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -15841,7 +15989,8 @@
             "UID": "b0bfd76393e74777"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -15899,7 +16048,8 @@
             "UID": "b0bfd76393e74777"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -15952,7 +16102,8 @@
             "UID": "b0bfd76393e74777"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -15995,6 +16146,7 @@
             "https://hackerone.com/reports/3642555",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-5545",
             "https://ubuntu.com/security/notices/USN-8227-1",
+            "https://ubuntu.com/security/notices/USN-8525-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-5545"
           ],
           "PublishedDate": "2026-05-13T13:01:56.19Z",
@@ -16009,7 +16161,8 @@
             "UID": "b0bfd76393e74777"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -16061,7 +16214,8 @@
             "UID": "b0bfd76393e74777"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -16109,7 +16263,8 @@
             "UID": "b0bfd76393e74777"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -16153,6 +16308,7 @@
             "https://hackerone.com/reports/3697719",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-7168",
             "https://ubuntu.com/security/notices/USN-8227-1",
+            "https://ubuntu.com/security/notices/USN-8525-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-7168"
           ],
           "PublishedDate": "2026-05-13T13:01:57.2Z",
@@ -16382,7 +16538,8 @@
             "UID": "b0bfd76393e74777"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -16442,7 +16599,8 @@
             "UID": "b0bfd76393e74777"
           },
           "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
+          "FixedVersion": "8.14.1-2+deb13u4",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -16613,46 +16771,6 @@
           "LastModifiedDate": "2026-06-17T08:37:24.543Z"
         },
         {
-          "VulnerabilityID": "CVE-2026-10536",
-          "PkgID": "libcurl4t64@8.14.1-2+deb13u3",
-          "PkgName": "libcurl4t64",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libcurl4t64@8.14.1-2%2Bdeb13u3?arch=arm64\u0026distro=debian-13.5",
-            "UID": "b0bfd76393e74777"
-          },
-          "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-10536",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:51832661ed5258f93774e6bb3722464b80a0bf01c6a376cd615a4e86df0aa53f",
-          "Title": "A use-after-free vulnerability exists in libcurl when an application c ...",
-          "Description": "A use-after-free vulnerability exists in libcurl when an application\nconfigures an HTTP/2 stream-dependency tree via `CURLOPT_STREAM_DEPENDS` or\n`CURLOPT_STREAM_DEPENDS_E`, subsequently invokes `curl_easy_reset()`, and\nfinally terminates the handle with `curl_easy_cleanup()`. During this final\ncleanup phase, libcurl attempts to access and modify an internal structure\nthat was already freed during the reset operation.",
-          "Severity": "LOW",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "VendorSeverity": {
-            "ubuntu": 1
-          },
-          "References": [
-            "https://curl.se/L7HzKXisfJ/CVE-2026-10536.md",
-            "https://curl.se/docs/CVE-2026-10536.html",
-            "https://curl.se/docs/CVE-2026-10536.json",
-            "https://hackerone.com/reports/3751697",
-            "https://www.cve.org/CVERecord?id=CVE-2026-10536"
-          ],
-          "PublishedDate": "2026-07-03T07:16:23.563Z",
-          "LastModifiedDate": "2026-07-07T18:02:03.89Z"
-        },
-        {
           "VulnerabilityID": "CVE-2026-8458",
           "PkgID": "libcurl4t64@8.14.1-2+deb13u3",
           "PkgName": "libcurl4t64",
@@ -16689,41 +16807,6 @@
           ],
           "PublishedDate": "2026-07-03T07:16:24.63Z",
           "LastModifiedDate": "2026-07-07T23:12:17.003Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-11856",
-          "PkgID": "libcurl4t64@8.14.1-2+deb13u3",
-          "PkgName": "libcurl4t64",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libcurl4t64@8.14.1-2%2Bdeb13u3?arch=arm64\u0026distro=debian-13.5",
-            "UID": "b0bfd76393e74777"
-          },
-          "InstalledVersion": "8.14.1-2+deb13u3",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-11856",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:13ad7dd0270a81883b15459b7f570f079c6a6ca9deb00d20726c1c24fa6f6cf9",
-          "Title": "Successfully using libcurl to do a transfer to a specific HTTP origin  ...",
-          "Description": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`.",
-          "Severity": "UNKNOWN",
-          "CweIDs": [
-            "CWE-294"
-          ],
-          "References": [
-            "https://curl.se/docs/CVE-2026-11856.html",
-            "https://curl.se/docs/CVE-2026-11856.json",
-            "https://hackerone.com/reports/3793260"
-          ],
-          "PublishedDate": "2026-07-03T07:16:23.973Z",
-          "LastModifiedDate": "2026-07-07T19:43:55.6Z"
         },
         {
           "VulnerabilityID": "CVE-2026-33164",
@@ -17328,6 +17411,7 @@
           "VendorSeverity": {
             "alma": 3,
             "amazon": 3,
+            "azure": 1,
             "nvd": 3,
             "oracle-oval": 3,
             "photon": 3,
@@ -17396,10 +17480,12 @@
             "CWE-416"
           ],
           "VendorSeverity": {
-            "amazon": 3
+            "amazon": 3,
+            "azure": 2
           },
           "References": [
-            "https://github.com/libexpat/libexpat/pull/1267"
+            "https://github.com/libexpat/libexpat/pull/1267",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-56131"
           ],
           "PublishedDate": "2026-06-19T06:17:10.107Z",
           "LastModifiedDate": "2026-06-23T20:15:48.007Z"
@@ -17432,10 +17518,12 @@
             "CWE-190"
           ],
           "VendorSeverity": {
-            "amazon": 3
+            "amazon": 3,
+            "azure": 2
           },
           "References": [
-            "https://github.com/libexpat/libexpat/pull/1262"
+            "https://github.com/libexpat/libexpat/pull/1262",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-56407"
           ],
           "PublishedDate": "2026-06-21T16:16:27.987Z",
           "LastModifiedDate": "2026-06-23T16:28:29.983Z"
@@ -17468,10 +17556,12 @@
             "CWE-190"
           ],
           "VendorSeverity": {
-            "amazon": 3
+            "amazon": 3,
+            "azure": 2
           },
           "References": [
-            "https://github.com/libexpat/libexpat/commit/16e2efd867ea8567ffa012210b52ef5918e20817"
+            "https://github.com/libexpat/libexpat/commit/16e2efd867ea8567ffa012210b52ef5918e20817",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-56408"
           ],
           "PublishedDate": "2026-06-21T16:16:28.11Z",
           "LastModifiedDate": "2026-06-23T16:27:26.523Z"
@@ -17505,6 +17595,7 @@
             "CWE-407"
           ],
           "VendorSeverity": {
+            "azure": 1,
             "nvd": 2,
             "redhat": 1,
             "ubuntu": 2
@@ -17728,6 +17819,7 @@
           ],
           "VendorSeverity": {
             "amazon": 3,
+            "azure": 1,
             "nvd": 2,
             "redhat": 2
           },
@@ -17780,6 +17872,7 @@
           ],
           "VendorSeverity": {
             "amazon": 3,
+            "azure": 2,
             "nvd": 2,
             "redhat": 2
           },
@@ -17832,6 +17925,7 @@
           ],
           "VendorSeverity": {
             "amazon": 3,
+            "azure": 2,
             "nvd": 2,
             "redhat": 2
           },
@@ -17884,6 +17978,7 @@
           ],
           "VendorSeverity": {
             "amazon": 3,
+            "azure": 2,
             "nvd": 2
           },
           "CVSS": {
@@ -17893,7 +17988,8 @@
             }
           },
           "References": [
-            "https://github.com/libexpat/libexpat/pull/1249"
+            "https://github.com/libexpat/libexpat/pull/1249",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-56404"
           ],
           "PublishedDate": "2026-06-21T16:16:27.62Z",
           "LastModifiedDate": "2026-06-23T20:15:05.85Z"
@@ -17928,6 +18024,7 @@
           ],
           "VendorSeverity": {
             "amazon": 3,
+            "azure": 2,
             "nvd": 2,
             "redhat": 2
           },
@@ -17979,6 +18076,7 @@
           ],
           "VendorSeverity": {
             "amazon": 3,
+            "azure": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -17995,6 +18093,43 @@
           ],
           "PublishedDate": "2026-06-21T16:16:27.87Z",
           "LastModifiedDate": "2026-06-23T16:29:06.077Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-56409",
+          "PkgID": "libexpat1@2.7.1-2",
+          "PkgName": "libexpat1",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libexpat1@2.7.1-2?arch=arm64\u0026distro=debian-13.5",
+            "UID": "a01e2ab0f3a6c74d"
+          },
+          "InstalledVersion": "2.7.1-2",
+          "Status": "affected",
+          "Layer": {
+            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
+            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-56409",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Fingerprint": "sha256:6979b11a7c7a0c7df9cccd92e7eb9a38e2cefc0487147d5f08ac8ea45699d98a",
+          "Title": "xmlwf in libexpat before 2.8.2 has an integer overflow for the output  ...",
+          "Description": "xmlwf in libexpat before 2.8.2 has an integer overflow for the output filename when -d outputDir is used.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "VendorSeverity": {
+            "azure": 2
+          },
+          "References": [
+            "https://github.com/libexpat/libexpat/pull/1259",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-56409"
+          ],
+          "PublishedDate": "2026-06-21T16:16:28.23Z",
+          "LastModifiedDate": "2026-06-23T16:21:55.607Z"
         },
         {
           "VulnerabilityID": "CVE-2026-56410",
@@ -18024,6 +18159,7 @@
             "CWE-190"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -18069,6 +18205,7 @@
             "CWE-190"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -18116,6 +18253,7 @@
           ],
           "VendorSeverity": {
             "amazon": 3,
+            "azure": 2,
             "nvd": 2,
             "redhat": 2
           },
@@ -18226,6 +18364,7 @@
           ],
           "VendorSeverity": {
             "amazon": 1,
+            "azure": 1,
             "photon": 3,
             "redhat": 1
           },
@@ -18247,39 +18386,6 @@
           ],
           "PublishedDate": "2026-04-16T17:16:54.917Z",
           "LastModifiedDate": "2026-06-17T10:46:08.237Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2026-56409",
-          "PkgID": "libexpat1@2.7.1-2",
-          "PkgName": "libexpat1",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libexpat1@2.7.1-2?arch=arm64\u0026distro=debian-13.5",
-            "UID": "a01e2ab0f3a6c74d"
-          },
-          "InstalledVersion": "2.7.1-2",
-          "Status": "affected",
-          "Layer": {
-            "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
-            "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-56409",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Fingerprint": "sha256:6979b11a7c7a0c7df9cccd92e7eb9a38e2cefc0487147d5f08ac8ea45699d98a",
-          "Title": "xmlwf in libexpat before 2.8.2 has an integer overflow for the output  ...",
-          "Description": "xmlwf in libexpat before 2.8.2 has an integer overflow for the output filename when -d outputDir is used.",
-          "Severity": "UNKNOWN",
-          "CweIDs": [
-            "CWE-190"
-          ],
-          "References": [
-            "https://github.com/libexpat/libexpat/pull/1259"
-          ],
-          "PublishedDate": "2026-06-21T16:16:28.23Z",
-          "LastModifiedDate": "2026-06-23T16:21:55.607Z"
         },
         {
           "VulnerabilityID": "CVE-2026-50811",
@@ -18305,14 +18411,18 @@
           "Title": "An out-of-bounds read vulnerability exists in FreeType 2.14.3 and vers ...",
           "Description": "An out-of-bounds read vulnerability exists in FreeType 2.14.3 and versions before commit 5a280ecde6f324de0d226261036e736e0cb49a71 in src/truetype/ttgxvar.c, in the TT_Get_Var_Design implementation used by FT_Get_Var_Design_Coordinates",
           "Severity": "UNKNOWN",
+          "CweIDs": [
+            "CWE-125"
+          ],
           "References": [
             "https://gist.github.com/junius-sec/6dd0fb25b643f89914083a38e5e57ace",
             "https://github.com/freetype/freetype/commit/5a280ecde6f324de0d226261036e736e0cb49a71",
             "https://gitlab.freedesktop.org/freetype/freetype/-/commit/5a280ecde6f324de0d226261036e736e0cb49a71",
-            "https://gitlab.freedesktop.org/freetype/freetype/-/issues/1436"
+            "https://gitlab.freedesktop.org/freetype/freetype/-/issues/1436",
+            "https://gitlab.freedesktop.org/freetype/freetype/-/work_items/1436"
           ],
           "PublishedDate": "2026-07-07T23:16:55.017Z",
-          "LastModifiedDate": "2026-07-07T23:16:55.017Z"
+          "LastModifiedDate": "2026-07-09T17:02:37.96Z"
         },
         {
           "VulnerabilityID": "CVE-2018-6829",
@@ -18674,7 +18784,7 @@
             "cbl-mariner": 2,
             "debian": 1,
             "oracle-oval": 2,
-            "photon": 2,
+            "photon": 3,
             "redhat": 1,
             "rocky": 1,
             "ubuntu": 1
@@ -19396,6 +19506,7 @@
           },
           "References": [
             "https://github.com/strukturag/libheif/security/advisories/GHSA-wqjg-4x9g-6cvg",
+            "https://ubuntu.com/security/notices/USN-8526-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-47254"
           ]
         },
@@ -19427,6 +19538,7 @@
           },
           "References": [
             "https://github.com/strukturag/libheif/security/advisories/GHSA-4h72-vqgp-9376",
+            "https://ubuntu.com/security/notices/USN-8526-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-47709"
           ]
         },
@@ -19458,6 +19570,7 @@
           },
           "References": [
             "https://github.com/strukturag/libheif/security/advisories/GHSA-h4wm-6wwf-qvhx",
+            "https://ubuntu.com/security/notices/USN-8526-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-47714"
           ]
         },
@@ -19489,6 +19602,7 @@
           },
           "References": [
             "https://github.com/strukturag/libheif/security/advisories/GHSA-6x5f-qchq-cxqv",
+            "https://ubuntu.com/security/notices/USN-8526-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-48029"
           ]
         },
@@ -19568,6 +19682,7 @@
           },
           "References": [
             "https://github.com/strukturag/libheif/security/advisories/GHSA-jvmp-j3cw-84mh",
+            "https://ubuntu.com/security/notices/USN-8526-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-50142"
           ]
         },
@@ -20218,6 +20333,7 @@
           },
           "References": [
             "https://github.com/strukturag/libheif/security/advisories/GHSA-wqjg-4x9g-6cvg",
+            "https://ubuntu.com/security/notices/USN-8526-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-47254"
           ]
         },
@@ -20249,6 +20365,7 @@
           },
           "References": [
             "https://github.com/strukturag/libheif/security/advisories/GHSA-4h72-vqgp-9376",
+            "https://ubuntu.com/security/notices/USN-8526-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-47709"
           ]
         },
@@ -20280,6 +20397,7 @@
           },
           "References": [
             "https://github.com/strukturag/libheif/security/advisories/GHSA-h4wm-6wwf-qvhx",
+            "https://ubuntu.com/security/notices/USN-8526-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-47714"
           ]
         },
@@ -20311,6 +20429,7 @@
           },
           "References": [
             "https://github.com/strukturag/libheif/security/advisories/GHSA-6x5f-qchq-cxqv",
+            "https://ubuntu.com/security/notices/USN-8526-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-48029"
           ]
         },
@@ -20390,6 +20509,7 @@
           },
           "References": [
             "https://github.com/strukturag/libheif/security/advisories/GHSA-jvmp-j3cw-84mh",
+            "https://ubuntu.com/security/notices/USN-8526-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-50142"
           ]
         },
@@ -21040,6 +21160,7 @@
           },
           "References": [
             "https://github.com/strukturag/libheif/security/advisories/GHSA-wqjg-4x9g-6cvg",
+            "https://ubuntu.com/security/notices/USN-8526-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-47254"
           ]
         },
@@ -21071,6 +21192,7 @@
           },
           "References": [
             "https://github.com/strukturag/libheif/security/advisories/GHSA-4h72-vqgp-9376",
+            "https://ubuntu.com/security/notices/USN-8526-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-47709"
           ]
         },
@@ -21102,6 +21224,7 @@
           },
           "References": [
             "https://github.com/strukturag/libheif/security/advisories/GHSA-h4wm-6wwf-qvhx",
+            "https://ubuntu.com/security/notices/USN-8526-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-47714"
           ]
         },
@@ -21133,6 +21256,7 @@
           },
           "References": [
             "https://github.com/strukturag/libheif/security/advisories/GHSA-6x5f-qchq-cxqv",
+            "https://ubuntu.com/security/notices/USN-8526-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-48029"
           ]
         },
@@ -21212,6 +21336,7 @@
           },
           "References": [
             "https://github.com/strukturag/libheif/security/advisories/GHSA-jvmp-j3cw-84mh",
+            "https://ubuntu.com/security/notices/USN-8526-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-50142"
           ]
         },
@@ -21443,7 +21568,7 @@
             "cbl-mariner": 2,
             "debian": 1,
             "oracle-oval": 2,
-            "photon": 2,
+            "photon": 3,
             "redhat": 1,
             "rocky": 1,
             "ubuntu": 1
@@ -21687,7 +21812,7 @@
             "cbl-mariner": 2,
             "debian": 1,
             "oracle-oval": 2,
-            "photon": 2,
+            "photon": 3,
             "redhat": 1,
             "rocky": 1,
             "ubuntu": 1
@@ -21931,7 +22056,7 @@
             "cbl-mariner": 2,
             "debian": 1,
             "oracle-oval": 2,
-            "photon": 2,
+            "photon": 3,
             "redhat": 1,
             "rocky": 1,
             "ubuntu": 1
@@ -22142,6 +22267,7 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "nvd": 2,
             "redhat": 2
           },
@@ -22783,7 +22909,8 @@
             "UID": "8e3a70aaa8f64c18"
           },
           "InstalledVersion": "5.8.1-1",
-          "Status": "affected",
+          "FixedVersion": "5.8.1-1+deb13u1",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:3be819c1c8cfde074541a1d875fbf2da3642b0ec6bb39aaa2ce7d56052b67dc1",
             "DiffID": "sha256:221f7a7e2aa9a3dc4a14beca97f5dada40cf6915886474e7840e3b44c2b24f1a"
@@ -22890,6 +23017,7 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "nvd": 2,
             "redhat": 2
           },
@@ -23260,11 +23388,13 @@
             "CWE-444"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "ubuntu": 2
           },
           "References": [
             "https://github.com/bikini/exploitarium/tree/main/nghttp2-nghttpx-upgrade-queue-poison-poc",
             "https://github.com/nghttp2/nghttp2/commit/ab28105c4a0197da24f8bfc414bc116055249e1e",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-58055",
             "https://ubuntu.com/security/notices/USN-8495-1",
             "https://www.cve.org/CVERecord?id=CVE-2026-58055",
             "https://www.vulncheck.com/advisories/nghttp2-nghttpx-http-request-response-smuggling-via-upgrade-request-with-content-length"
@@ -23310,13 +23440,15 @@
             }
           },
           "References": [
+            "https://access.redhat.com/errata/RHSA-2026:37469",
             "https://access.redhat.com/security/cve/CVE-2026-13757",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2494556",
+            "https://github.com/advisories/GHSA-p2wm-69qx-x25w",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-13757",
             "https://www.cve.org/CVERecord?id=CVE-2026-13757"
           ],
           "PublishedDate": "2026-06-29T19:16:40.907Z",
-          "LastModifiedDate": "2026-07-08T03:34:36.15Z"
+          "LastModifiedDate": "2026-07-11T17:16:25Z"
         },
         {
           "VulnerabilityID": "CVE-2026-54411",
@@ -23678,6 +23810,7 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "nvd": 2,
             "redhat": 2
           },
@@ -24276,12 +24409,18 @@
             "CWE-835"
           ],
           "VendorSeverity": {
+            "azure": 2,
+            "julia": 3,
             "nvd": 3,
             "photon": 3,
             "redhat": 2,
             "ubuntu": 2
           },
           "CVSS": {
+            "julia": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+              "V40Score": 8.2
+            },
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "V3Score": 7.5
@@ -24293,6 +24432,7 @@
           },
           "References": [
             "https://access.redhat.com/security/cve/CVE-2026-55199",
+            "https://github.com/advisories/GHSA-3cfq-4xx4-rmpg",
             "https://github.com/libssh2/libssh2/commit/17626857d20b3c9a1addfa45979dadcee1cd84a4",
             "https://github.com/libssh2/libssh2/pull/1864",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-55199",
@@ -24337,12 +24477,17 @@
           ],
           "VendorSeverity": {
             "azure": 3,
+            "julia": 4,
             "nvd": 3,
             "photon": 3,
             "redhat": 2,
             "ubuntu": 2
           },
           "CVSS": {
+            "julia": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+              "V40Score": 9.2
+            },
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L",
               "V3Score": 8.3
@@ -24354,6 +24499,8 @@
           },
           "References": [
             "https://access.redhat.com/security/cve/CVE-2026-55200",
+            "https://github.com/advisories/GHSA-r8mh-x5qv-7gg2",
+            "https://github.com/bikini/exploitarium/tree/main/libssh2-cve-2026-55200-poc",
             "https://github.com/libssh2/libssh2/commit/97acf3dfda80c91c3a8c9f2372546301d4a1a7a8",
             "https://github.com/libssh2/libssh2/pull/2052",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-55200",
@@ -24462,11 +24609,17 @@
             "CWE-125"
           ],
           "VendorSeverity": {
+            "azure": 2,
+            "julia": 3,
             "nvd": 2,
             "redhat": 2,
             "ubuntu": 2
           },
           "CVSS": {
+            "julia": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N",
+              "V40Score": 8.3
+            },
             "nvd": {
               "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
               "V3Score": 6.5
@@ -24478,6 +24631,7 @@
           },
           "References": [
             "https://access.redhat.com/security/cve/CVE-2025-15661",
+            "https://github.com/advisories/GHSA-3wqh-87fg-ffgg",
             "https://github.com/libssh2/libssh2/commit/2dae3024897e1898d389835151f4e9606227721d",
             "https://github.com/libssh2/libssh2/pull/1705",
             "https://github.com/libssh2/libssh2/pull/1717",
@@ -24749,7 +24903,8 @@
             "UID": "8b8aec1e65d5b247"
           },
           "InstalledVersion": "4.20.0-2",
-          "Status": "affected",
+          "FixedVersion": "4.20.0-2+deb13u1",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -24796,7 +24951,7 @@
             "https://gitlab.com/gnutls/libtasn1",
             "https://gitlab.com/gnutls/libtasn1/-/merge_requests/121",
             "https://linux.oracle.com/cve/CVE-2025-13151.html",
-            "https://linux.oracle.com/errata/ELSA-2026-28253.html",
+            "https://linux.oracle.com/errata/ELSA-2026-36728.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-13151",
             "https://ubuntu.com/security/notices/USN-7954-1",
             "https://ubuntu.com/security/notices/USN-7954-2",
@@ -25517,6 +25672,7 @@
             "https://marc.info/?l=ncurses-bug\u0026m=176540731801330\u0026w=2",
             "https://marc.info/?l=ncurses-bug\u0026m=176545557728083\u0026w=2",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-69720",
+            "https://ubuntu.com/security/notices/USN-8503-1",
             "https://www.cve.org/CVERecord?id=CVE-2025-69720"
           ],
           "PublishedDate": "2026-03-19T15:16:21.293Z",
@@ -25894,6 +26050,7 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "nvd": 2,
             "redhat": 2
           },
@@ -26245,7 +26402,8 @@
             "UID": "d586e4a2c14cd3c7"
           },
           "InstalledVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u2",
-          "Status": "affected",
+          "FixedVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u3",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -26348,7 +26506,8 @@
             "UID": "d586e4a2c14cd3c7"
           },
           "InstalledVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u2",
-          "Status": "affected",
+          "FixedVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u3",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -26408,7 +26567,8 @@
             "UID": "d586e4a2c14cd3c7"
           },
           "InstalledVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u2",
-          "Status": "affected",
+          "FixedVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u3",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -26428,6 +26588,7 @@
           ],
           "VendorSeverity": {
             "amazon": 1,
+            "azure": 1,
             "photon": 1,
             "redhat": 1,
             "ubuntu": 2
@@ -26460,7 +26621,8 @@
             "UID": "d586e4a2c14cd3c7"
           },
           "InstalledVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u2",
-          "Status": "affected",
+          "FixedVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u3",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -26566,7 +26728,8 @@
             "UID": "d586e4a2c14cd3c7"
           },
           "InstalledVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u2",
-          "Status": "affected",
+          "FixedVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u3",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -26619,7 +26782,8 @@
             "UID": "6dd82ed25583f499"
           },
           "InstalledVersion": "1:3.5.17-1+b3",
-          "Status": "affected",
+          "FixedVersion": "1:3.5.17-1+deb13u1",
+          "Status": "fixed",
           "Layer": {
             "Digest": "sha256:74e33773ee422c9fd79e13f2cdd7e6303f90714d16a722175ed5fff61d220195",
             "DiffID": "sha256:cdba327ac2d60d5bcda3553117d740aebbd7d3859f6e37798d7f36f57695aea4"
@@ -26639,6 +26803,7 @@
           ],
           "VendorSeverity": {
             "amazon": 2,
+            "azure": 2,
             "redhat": 2,
             "ubuntu": 2
           },
@@ -26901,6 +27066,7 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "nvd": 2,
             "redhat": 2
           },
@@ -27437,6 +27603,7 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "nvd": 2,
             "redhat": 2
           },
@@ -27847,6 +28014,7 @@
             "https://marc.info/?l=ncurses-bug\u0026m=176540731801330\u0026w=2",
             "https://marc.info/?l=ncurses-bug\u0026m=176545557728083\u0026w=2",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-69720",
+            "https://ubuntu.com/security/notices/USN-8503-1",
             "https://www.cve.org/CVERecord?id=CVE-2025-69720"
           ],
           "PublishedDate": "2026-03-19T15:16:21.293Z",
@@ -27984,6 +28152,7 @@
             "https://marc.info/?l=ncurses-bug\u0026m=176540731801330\u0026w=2",
             "https://marc.info/?l=ncurses-bug\u0026m=176545557728083\u0026w=2",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-69720",
+            "https://ubuntu.com/security/notices/USN-8503-1",
             "https://www.cve.org/CVERecord?id=CVE-2025-69720"
           ],
           "PublishedDate": "2026-03-19T15:16:21.293Z",
@@ -28832,7 +29001,7 @@
             "https://metacpan.org/release/HAARG/HTTP-Tiny-0.095-TRIAL/changes"
           ],
           "PublishedDate": "2026-07-07T19:16:55.53Z",
-          "LastModifiedDate": "2026-07-07T21:17:29.48Z"
+          "LastModifiedDate": "2026-07-08T15:56:29.29Z"
         },
         {
           "VulnerabilityID": "TEMP-0517018-A83CE6",
@@ -29053,6 +29222,7 @@
             "CWE-416"
           ],
           "VendorSeverity": {
+            "azure": 2,
             "nvd": 2,
             "redhat": 2
           },
