@@ -296,7 +296,6 @@ The automation was validated using the following images:
 
 # Screenshots
 
-```markdown
 ## GitHub Actions
 
 <img width="2501" height="1698" alt="image" src="https://github.com/user-attachments/assets/964579f9-9ae7-4b42-8fb8-1479a8fe19ae" />
