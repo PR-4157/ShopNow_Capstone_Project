@@ -139,6 +139,7 @@ shopnow_vulnerabilities{image="backend",severity="HIGH"} 29
 shopnow_vulnerabilities{image="frontend",severity="HIGH"} 11
 shopnow_vulnerabilities{image="admin",severity="LOW"} 28
 ```
+<img width="3024" height="1266" alt="image" src="https://github.com/user-attachments/assets/db49fbed-7a81-4f1c-890d-88ca74c1eb3e" />
 
 ---
 
@@ -270,22 +271,6 @@ The Grafana dashboard provides:
 
 ---
 
-# Sample Metrics
-
-```text
-images_scanned 5
-
-critical_vulnerabilities 2
-
-high_vulnerabilities 8
-
-medium_vulnerabilities 14
-
-low_vulnerabilities 27
-```
-
----
-
 # Screenshots
 
 ## Grafana Dashboard
@@ -341,7 +326,7 @@ The dashboard was tested by:
 
 # Final Outcome
 
-Sprint 4 completes the DevSecOps pipeline by adding continuous monitoring and visualization. Vulnerability data collected during automated container image scans is exported to Prometheus and displayed in Grafana, allowing teams to monitor security trends, analyze historical data, and quickly identify high-risk container images.
+Sprint 4 completes the DevSecOps workflow by providing a centralized dashboard for historical vulnerability tracking and security monitoring. By integrating Prometheus with Grafana, vulnerability metrics are collected automatically and visualized through interactive charts and filters. This enables DevOps teams to monitor trends, identify recurring security issues, and make informed decisions based on historical vulnerability data.
 
 ---
 
