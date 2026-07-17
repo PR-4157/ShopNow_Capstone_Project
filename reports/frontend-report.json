@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.72.0"
   },
-  "ReportID": "019f6194-0597-7b8d-9485-e0e8743da03b",
-  "CreatedAt": "2026-07-14T22:31:58.551757+05:30",
+  "ReportID": "019f6fd1-7d47-776e-b551-e4201bd5356d",
+  "CreatedAt": "2026-07-17T16:53:47.911489+05:30",
   "ArtifactID": "sha256:8088f27817783cdb6a72ef8ab6efd7e3413ed16c2969a497aea5edfdbefdc9cc",
   "ArtifactName": "shopnow-frontend:v1",
   "ArtifactType": "container_image",
@@ -5110,6 +5110,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2430389",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2430390",
             "https://cert-portal.siemens.com/productcert/html/ssa-434797.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-734552.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-11187",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15467",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15468",
@@ -5123,7 +5124,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-1473.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-wvhq-3h88-rf6g",
             "https://github.com/guiimoraes/CVE-2025-15467",
             "https://github.com/openssl/openssl/commit/2c8f0e5fa9b6ee5508a0349e4572ddb74db5a703",
@@ -5140,7 +5141,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2025-15467"
           ],
           "PublishedDate": "2026-01-27T16:16:14.257Z",
-          "LastModifiedDate": "2026-06-30T03:16:46.053Z"
+          "LastModifiedDate": "2026-07-15T02:17:20.357Z"
         },
         {
           "VulnerabilityID": "CVE-2025-69421",
@@ -5239,7 +5240,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-1473.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-w9rv-xc8m-cmqp",
             "https://github.com/openssl/openssl/commit/3524a29271f8191b8fd8a5257eb05173982a097b",
             "https://github.com/openssl/openssl/commit/36ecb4960872a4ce04bf6f1e1f4e78d75ec0c0c7",
@@ -5337,7 +5338,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-4472.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-x77r-97gw-wh89",
             "https://github.com/openssl/openssl/commit/41be0f216404f14457bbf3b9cc488dba60b49296",
             "https://github.com/openssl/openssl/commit/7e9cac9832e4705b91987c2474ed06a37a93cecb",
@@ -5418,9 +5419,10 @@
             "https://cert-portal.siemens.com/productcert/html/ssa-253495.html",
             "https://cert-portal.siemens.com/productcert/html/ssa-265688.html",
             "https://cert-portal.siemens.com/productcert/html/ssa-485750.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-585531.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-9230",
             "https://errata.almalinux.org/9/ALSA-2026-2776.html",
-            "https://errata.rockylinux.org/RLSA-2025:21255",
+            "https://errata.rockylinux.org/RLSA-2025:21248",
             "https://github.com/openssl/openssl/commit/5965ea5dd6960f36d8b7f74f8eac67a8eb8f2b45",
             "https://github.com/openssl/openssl/commit/9e91358f365dee6c446dcdcdb01c04d2743fd280",
             "https://github.com/openssl/openssl/commit/a79c4ce559c6a3a8fd4109e9f33c1185d5bf2def",
@@ -5437,7 +5439,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2025-9230"
           ],
           "PublishedDate": "2025-09-30T14:15:41.05Z",
-          "LastModifiedDate": "2026-06-17T10:08:33.973Z"
+          "LastModifiedDate": "2026-07-14T13:18:07.327Z"
         },
         {
           "VulnerabilityID": "CVE-2024-13176",
@@ -6264,7 +6266,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-1473.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-g78j-46j5-97cr",
             "https://github.com/openssl/openssl/commit/384011202af92605d926fafe4a0bcd6b65d162ad",
             "https://github.com/openssl/openssl/commit/475c466ef2fbd8fc1df6fae1c3eed9c813fc8ff6",
@@ -6373,7 +6375,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-1473.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-78qr-24v5-7q73",
             "https://github.com/openssl/openssl/commit/372fc5c77529695b05b4f5b5187691a57ef5dffc",
             "https://github.com/openssl/openssl/commit/4016975d4469cd6b94927c607f7c511385f928d8",
@@ -6482,7 +6484,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-1473.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-w42r-ph9f-9x66",
             "https://github.com/openssl/openssl/commit/27c7012c91cc986a598d7540f3079dfde2416eb9",
             "https://github.com/openssl/openssl/commit/4e254b48ad93cc092be3dd62d97015f33f73133a",
@@ -6553,6 +6555,7 @@
             "https://cert-portal.siemens.com/productcert/html/ssa-089022.html",
             "https://cert-portal.siemens.com/productcert/html/ssa-253495.html",
             "https://cert-portal.siemens.com/productcert/html/ssa-485750.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-585531.html",
             "https://github.com/advisories/GHSA-76r2-c3cg-f5r9",
             "https://github.com/openssl/openssl/commit/2b4ec20e47959170422922eaff25346d362dcb35",
             "https://github.com/openssl/openssl/commit/654dc11d23468a74fc8ea4672b702dd3feb7be4b",
@@ -6566,7 +6569,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2025-9232"
           ],
           "PublishedDate": "2025-09-30T14:15:41.313Z",
-          "LastModifiedDate": "2026-06-17T10:08:34.333Z"
+          "LastModifiedDate": "2026-07-14T13:18:07.783Z"
         },
         {
           "VulnerabilityID": "CVE-2026-22795",
@@ -6659,7 +6662,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-1473.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-3vqq-45qg-2xf6",
             "https://github.com/openssl/openssl/commit/2502e7b7d4c0cf4f972a881641fe09edc67aeec4",
             "https://github.com/openssl/openssl/commit/572844beca95068394c916626a6d3a490f831a49",
@@ -6768,7 +6771,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-1473.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-r9hf-rxjm-gv2f",
             "https://github.com/openssl/openssl/commit/2502e7b7d4c0cf4f972a881641fe09edc67aeec4",
             "https://github.com/openssl/openssl/commit/572844beca95068394c916626a6d3a490f831a49",
@@ -7797,6 +7800,7 @@
             "https://bugzilla.redhat.com/show_bug.cgi?id=2430389",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2430390",
             "https://cert-portal.siemens.com/productcert/html/ssa-434797.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-734552.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-11187",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15467",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15468",
@@ -7810,7 +7814,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-1473.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-wvhq-3h88-rf6g",
             "https://github.com/guiimoraes/CVE-2025-15467",
             "https://github.com/openssl/openssl/commit/2c8f0e5fa9b6ee5508a0349e4572ddb74db5a703",
@@ -7827,7 +7831,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2025-15467"
           ],
           "PublishedDate": "2026-01-27T16:16:14.257Z",
-          "LastModifiedDate": "2026-06-30T03:16:46.053Z"
+          "LastModifiedDate": "2026-07-15T02:17:20.357Z"
         },
         {
           "VulnerabilityID": "CVE-2025-69421",
@@ -7926,7 +7930,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-1473.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-w9rv-xc8m-cmqp",
             "https://github.com/openssl/openssl/commit/3524a29271f8191b8fd8a5257eb05173982a097b",
             "https://github.com/openssl/openssl/commit/36ecb4960872a4ce04bf6f1e1f4e78d75ec0c0c7",
@@ -8024,7 +8028,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-4472.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-x77r-97gw-wh89",
             "https://github.com/openssl/openssl/commit/41be0f216404f14457bbf3b9cc488dba60b49296",
             "https://github.com/openssl/openssl/commit/7e9cac9832e4705b91987c2474ed06a37a93cecb",
@@ -8105,9 +8109,10 @@
             "https://cert-portal.siemens.com/productcert/html/ssa-253495.html",
             "https://cert-portal.siemens.com/productcert/html/ssa-265688.html",
             "https://cert-portal.siemens.com/productcert/html/ssa-485750.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-585531.html",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-9230",
             "https://errata.almalinux.org/9/ALSA-2026-2776.html",
-            "https://errata.rockylinux.org/RLSA-2025:21255",
+            "https://errata.rockylinux.org/RLSA-2025:21248",
             "https://github.com/openssl/openssl/commit/5965ea5dd6960f36d8b7f74f8eac67a8eb8f2b45",
             "https://github.com/openssl/openssl/commit/9e91358f365dee6c446dcdcdb01c04d2743fd280",
             "https://github.com/openssl/openssl/commit/a79c4ce559c6a3a8fd4109e9f33c1185d5bf2def",
@@ -8124,7 +8129,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2025-9230"
           ],
           "PublishedDate": "2025-09-30T14:15:41.05Z",
-          "LastModifiedDate": "2026-06-17T10:08:33.973Z"
+          "LastModifiedDate": "2026-07-14T13:18:07.327Z"
         },
         {
           "VulnerabilityID": "CVE-2024-13176",
@@ -8951,7 +8956,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-1473.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-g78j-46j5-97cr",
             "https://github.com/openssl/openssl/commit/384011202af92605d926fafe4a0bcd6b65d162ad",
             "https://github.com/openssl/openssl/commit/475c466ef2fbd8fc1df6fae1c3eed9c813fc8ff6",
@@ -9060,7 +9065,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-1473.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-78qr-24v5-7q73",
             "https://github.com/openssl/openssl/commit/372fc5c77529695b05b4f5b5187691a57ef5dffc",
             "https://github.com/openssl/openssl/commit/4016975d4469cd6b94927c607f7c511385f928d8",
@@ -9169,7 +9174,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-1473.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-w42r-ph9f-9x66",
             "https://github.com/openssl/openssl/commit/27c7012c91cc986a598d7540f3079dfde2416eb9",
             "https://github.com/openssl/openssl/commit/4e254b48ad93cc092be3dd62d97015f33f73133a",
@@ -9240,6 +9245,7 @@
             "https://cert-portal.siemens.com/productcert/html/ssa-089022.html",
             "https://cert-portal.siemens.com/productcert/html/ssa-253495.html",
             "https://cert-portal.siemens.com/productcert/html/ssa-485750.html",
+            "https://cert-portal.siemens.com/productcert/html/ssa-585531.html",
             "https://github.com/advisories/GHSA-76r2-c3cg-f5r9",
             "https://github.com/openssl/openssl/commit/2b4ec20e47959170422922eaff25346d362dcb35",
             "https://github.com/openssl/openssl/commit/654dc11d23468a74fc8ea4672b702dd3feb7be4b",
@@ -9253,7 +9259,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2025-9232"
           ],
           "PublishedDate": "2025-09-30T14:15:41.313Z",
-          "LastModifiedDate": "2026-06-17T10:08:34.333Z"
+          "LastModifiedDate": "2026-07-14T13:18:07.783Z"
         },
         {
           "VulnerabilityID": "CVE-2026-22795",
@@ -9346,7 +9352,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-1473.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-3vqq-45qg-2xf6",
             "https://github.com/openssl/openssl/commit/2502e7b7d4c0cf4f972a881641fe09edc67aeec4",
             "https://github.com/openssl/openssl/commit/572844beca95068394c916626a6d3a490f831a49",
@@ -9455,7 +9461,7 @@
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22795",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-22796",
             "https://errata.almalinux.org/9/ALSA-2026-1473.html",
-            "https://errata.rockylinux.org/RLSA-2026:1473",
+            "https://errata.rockylinux.org/RLSA-2026:1472",
             "https://github.com/advisories/GHSA-r9hf-rxjm-gv2f",
             "https://github.com/openssl/openssl/commit/2502e7b7d4c0cf4f972a881641fe09edc67aeec4",
             "https://github.com/openssl/openssl/commit/572844beca95068394c916626a6d3a490f831a49",

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ShopNow Security Report</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            margin:40px;
+        }
+
+        table{
+            border-collapse: collapse;
+            width:60%;
+        }
+
+        th,td{
+            border:1px solid black;
+            padding:10px;
+            text-align:center;
+        }
+
+        th{
+            background:#4CAF50;
+            color:white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Container Security Report</h1>
+
+<h2>{{ image }}</h2>
+
+<table>
+
+<tr>
+
+<th>Severity</th>
+<th>Count</th>
+
+</tr>
+
+<tr>
+
+<td>CRITICAL</td>
+<td>{{ critical }}</td>
+
+</tr>
+
+<tr>
+
+<td>HIGH</td>
+<td>{{ high }}</td>
+
+</tr>
+
+<tr>
+
+<td>MEDIUM</td>
+<td>{{ medium }}</td>
+
+</tr>
+
+<tr>
+
+<td>LOW</td>
+<td>{{ low }}</td>
+
+</tr>
+
+<tr>
+
+<th>Total</th>
+<th>{{ total }}</th>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
