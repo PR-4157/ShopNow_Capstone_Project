@@ -1,0 +1,8 @@
+Approved Vulnerabilities
+------------------------
+
+CVE: CVE-2026-48758
+Reason: Vendor patch pending
+Approved By: Security Team
+Review Date: 2026-08-01
+----------------------------------------

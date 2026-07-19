@@ -1,0 +1,5 @@
+approved:
+  - cve: CVE-2026-48758
+    reason: Vendor patch pending
+    approved_by: Security Team
+    review_date: 2026-08-01
