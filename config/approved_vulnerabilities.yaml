@@ -3,3 +3,8 @@ approved:
     reason: Vendor patch pending
     approved_by: Security Team
     review_date: 2026-08-01
+
+  - cve: CVE-2026-33750
+    reason: Accepted business risk
+    approved_by: DevSecOps Team
+    review_date: 2026-09-15
