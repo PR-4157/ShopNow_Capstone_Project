@@ -3,9 +3,7 @@ name: ShopNow Security Pipeline
 on:
   push:
     branches:
-      - main
-      - sprint1
-      - sprint2
+      - sprint4
 
 jobs:
   security-scan:
@@ -41,9 +39,23 @@ jobs:
       - name: Run Security Scan
         run: ./scripts/scan.sh
 
+      # Sprint 3 Features (only if implemented)
+      - name: Generate Security Report
+        run: python scripts/report_generator.py
+
+      - name: Send Slack Notification
+        run: python scripts/slack_notify.py
+
+      # Sprint 4 Features (only if implemented)
+      - name: Update Historical Reports
+        run: python scripts/history_manager.py
+
+      - name: Update Dashboard
+        run: python scripts/dashboard.py
+
       - name: Upload Reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: trivy-reports
+          name: sprint4-security-reports
           path: reports/
