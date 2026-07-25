@@ -3,9 +3,6 @@ name: ShopNow Security Pipeline
 on:
   push:
     branches:
-      - main
-      - sprint1
-      - sprint2
       - sprint3
 
 jobs:
@@ -41,13 +38,6 @@ jobs:
 
       - name: Run Security Scan
         run: ./scripts/scan.sh
-
-      # Sprint 3 Features
-      - name: Generate Security Report
-        run: python scripts/report_generator.py
-
-      - name: Send Slack Notification
-        run: python scripts/slack_notify.py
 
       - name: Upload Reports
         if: always()
