@@ -6,6 +6,7 @@ on:
       - main
       - sprint1
       - sprint2
+      - sprint3
 
 jobs:
   security-scan:
@@ -41,9 +42,16 @@ jobs:
       - name: Run Security Scan
         run: ./scripts/scan.sh
 
+      # Sprint 3 Features
+      - name: Generate Security Report
+        run: python scripts/report_generator.py
+
+      - name: Send Slack Notification
+        run: python scripts/slack_notify.py
+
       - name: Upload Reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: trivy-reports
+          name: security-reports
           path: reports/
