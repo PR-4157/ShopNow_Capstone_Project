@@ -1,0 +1,61 @@
+name: ShopNow Security Pipeline
+
+on:
+  push:
+    branches:
+      - sprint4
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Verify Docker
+        run: docker --version
+
+      - name: Install Trivy
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl
+          curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sudo sh -s -- -b /usr/local/bin
+
+      - name: Verify Trivy
+        run: trivy --version
+
+      - name: Make Scripts Executable
+        run: |
+          chmod +x scripts/build.sh
+          chmod +x scripts/scan.sh
+
+      - name: Build Docker Images
+        run: ./scripts/build.sh
+
+      - name: Run Security Scan
+        run: ./scripts/scan.sh
+
+      # Sprint 3 Features (only if implemented)
+      - name: Generate Security Report
+        run: python scripts/report_generator.py
+
+      - name: Send Slack Notification
+        run: python scripts/slack_notify.py
+
+      # Sprint 4 Features (only if implemented)
+      - name: Update Historical Reports
+        run: python scripts/history_manager.py
+
+      - name: Update Dashboard
+        run: python scripts/dashboard.py
+
+      - name: Upload Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sprint4-security-reports
+          path: reports/
