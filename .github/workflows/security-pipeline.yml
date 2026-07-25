@@ -6,6 +6,7 @@ on:
       - main
       - sprint1
       - sprint2
+      - sprint5
 
 jobs:
   security-scan:
@@ -41,9 +42,16 @@ jobs:
       - name: Run Security Scan
         run: ./scripts/scan.sh
 
+      # Sprint 5
+      - name: Run Exception Handler
+        run: python scripts/exception_handler.py
+
+      - name: Compare Reports
+        run: python scripts/compare_reports.py
+
       - name: Upload Reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: trivy-reports
+          name: sprint5-security-reports
           path: reports/
