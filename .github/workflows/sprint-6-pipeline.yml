@@ -6,6 +6,8 @@ on:
       - main
       - sprint1
       - sprint2
+      - sprint3
+      - sprint4-Dashboard
       - sprint5
       - sprint6
 
