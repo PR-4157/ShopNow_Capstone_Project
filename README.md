@@ -264,7 +264,6 @@ Supported report formats
 - HTML
 - PDF
 
-<img width="2322" height="988" alt="image" src="https://github.com/user-attachments/assets/c38ba3b9-8b4e-4aa1-b2b3-2e8f7c33f259" />
 <img width="1161" height="494" alt="Screenshot 2026-07-28 at 7 41 28 PM" src="https://github.com/user-attachments/assets/7d3d2c56-2f11-4fdb-8f44-7276cdf9625d" />
 
 ---
@@ -272,13 +271,15 @@ Supported report formats
 # 📈 Grafana Dashboard
 
 Open browser
-```
+
 Prometheus:
 http://localhost:9090/query
+<img width="1511" height="806" alt="Screenshot 2026-07-28 at 7 43 01 PM" src="https://github.com/user-attachments/assets/a6e3b70f-7865-480f-bd9f-a26619a46213" />
 
 Grafana:
 http://localhost:3002
-```
+<img width="3015" height="1809" alt="image" src="https://github.com/user-attachments/assets/74cd7b02-92e0-4d14-b75c-80b8c2af8165" />
+
 ---
 
 # 🔄 CI/CD Integration
@@ -299,6 +300,7 @@ Workflow file
 .github/workflows/security-pipeline.yml
 ```
 <img width="2320" height="652" alt="image" src="https://github.com/user-attachments/assets/e85e4c44-3743-4e7d-8091-c9bd50303e80" />
+<img width="3021" height="1811" alt="image" src="https://github.com/user-attachments/assets/a5d2f44f-497c-4a79-8a03-dec900a6c509" />
 
 ---
 
@@ -344,18 +346,26 @@ The project has been tested on
 
 <img width="3024" height="784" alt="image" src="https://github.com/user-attachments/assets/b1c9e88e-3e76-49f4-9292-f93d4d2f5a5c" />
 
+<img width="2928" height="1827" alt="image" src="https://github.com/user-attachments/assets/0250ab12-00cc-4c90-8ef4-9517c3b08abe" />
 
-```
-docs/screenshots/
+<img width="3024" height="1335" alt="image" src="https://github.com/user-attachments/assets/9db35f03-68a3-4fbf-ac9e-66077dd5a2c2" />
 
 dashboard.png
+<img width="3021" height="1811" alt="image" src="https://github.com/user-attachments/assets/26fae24f-9afd-469e-a3d6-dce193050dc1" />
+<img width="3024" height="1715" alt="image" src="https://github.com/user-attachments/assets/6f768b10-935e-4574-8f1f-5272a8600e74" />
+<img width="3024" height="1530" alt="image" src="https://github.com/user-attachments/assets/1af586fd-6120-4ed6-9d83-0afefa7e4b42" />
 
 slack-alert.png
+<img width="3022" height="1797" alt="image" src="https://github.com/user-attachments/assets/12c1904d-7539-4266-a18d-faa0d2142068" />
 
 github-actions.png
+<img width="3024" height="1807" alt="image" src="https://github.com/user-attachments/assets/0ad3fb00-4938-4327-8680-a1feb80076cc" />
 
 jenkins-build.png
-```
+<img width="3024" height="1516" alt="image" src="https://github.com/user-attachments/assets/58faa3d8-4b39-4d14-841e-dc9a524bb6a4" />
+<img width="3024" height="1735" alt="image" src="https://github.com/user-attachments/assets/adf84311-c3ee-4532-8768-d0f9865fa7ab" />
+<img width="3024" height="1817" alt="image" src="https://github.com/user-attachments/assets/310f4d99-50cc-49a0-bb43-a4efe863d0f0" />
+
 
 ---
 
